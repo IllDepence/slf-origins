@@ -1,0 +1,45 @@
+{
+  "name": "Stadt, Land, Fluß",
+  "work-title": "Österreichische Zeitung vom 14.11.1954",
+  "year": 1954,
+  "page": 9,
+  "sources": [
+    "https://anno.onb.ac.at/cgi-content/anno?aid=oez&datum=19541114&seite=9"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Land",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Fluss",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Blume",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Tier",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Dichter",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "schriftlich",
+  "slf-antwortzeitstruktur": "zeitgleich",
+  "slf-antwortzeitende": "Spieler mit vollständiger Antwort",
+  "slf-buchstabenwechsel": "pro Runde",
+  "slf-buchstabenwahl": "zufällig",
+  "slf-spielende": "-",
+  "slf-wertung": "10/10/5/0",
+  "slf-abcstop": true,
+  "notes": "",
+  "text": "Stadt, Land, Fluß\nEin Spieler sagt sich in Gedanken das Abc vor. Wird ihm „Halt!“ zugerufen, muß er den Buchstaben nennen, bei dem er eben angelangt war. War es zum Beispiel ein F, so müssen alle Kinder auf ihre vorbereiteten Zettel Stadt, Land, Fluß, Blume, Tier, Dichter usw. schreiben. Naürlich muß bei allen der Anfangsbuchstabe ein F sein. Wer zuerst fertig ist, ruft „Halt!“ Wer eine Stadt usw. allein wählte, darf sich 10 Gutpunkte notieren. Wurde sie von zwei oder mehreren Spielern genannt, hat jeder 5 Punkte. Wer am Ende des Spieles die höchste Punkteanzahl hat, ist Sieger."
+}

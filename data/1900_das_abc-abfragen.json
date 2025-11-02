@@ -1,0 +1,40 @@
+{
+  "name": "Das ABC-Abfragen",
+  "work-title": "Großes illustriertes Spielbuch für Mädchen",
+  "work-subtitle": "eine Auswahl der schönsten Spiele, anregender und unterhaltender Beschäftigungen und Belustigungen im Freien und im Zimmer",
+  "year": 1900,
+  "author": "Jeanne Marie Gayette-Georgens",
+  "publisher": "Herlet",
+  "page": 1,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D61800000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745158323&PHYSID=PHYS_0011"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Bauwerk",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Kunststück",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gemälde",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gewerbe",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "zufällig",
+  "slf-spielende": "-",
+  "slf-wertung": "_/_/_/-1",
+  "notes": "",
+  "text": "Das ABC-Abfragen\n\nVon den Spielenden ſteht eine in der Mitte des Kreiſes und die um ſie herumſitzenden haben von einem Buchſtaben zum anderen auf eine Frage eine paſſende Antwort mit dem betreffenden Anfangslaut zu geben. Lange nachgedacht darf nicht werden. Es geht raſch weiter, und wer nichts weiß, muß ſich hinter den Stuhl ſtellen, bis eine andere die Beſtrafte ablöſt. Die Fragende beginnt:\nA: „Ein Bauwerk?“    Antwort: „Amphitheater.“\nB: „Ein Kunſtſtück?“    “     „Bänder aus dem Munde ziehen.“\nC: „Ein Gemälde?“       “     „Columbus auf dem Schiff, die\n                               Meuterer zu ſeinen Füßen.“\nD: „Ein Gewerbe?“       “     „Drechslerei.“\nSo geht es weiter von der erſten zur zweiten, zur dritten ſtockt es und iſt erſt die vierte oder fünfte mit einer Antwort zur Hand, ſo müſſen ſich alle drei oder vier vorher befragten hinter ihre Stühle ſtellen, bis ſie von anderen Nichtwiſſenden abgelöſt werden.\nDas Antworten erheiſcht kein Nachdenken, aber etwas wiſſen muß man und Geiſtesgegenwart haben."
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Das ABC-Spiel",
+  "work-title": "Das Buch der Spiele und Unterhaltungen für Knaben und Mädchen",
+  "year": 1887,
+  "author": "Erich Sartorius",
+  "publisher": "Ad. Spaarmann",
+  "page": 25,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D7A000000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745998185&PHYSID=PHYS_0027&DMDID=DMDLOG_0001"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Handelsware",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "alphabetisch",
+  "slf-spielende": "alle Buchstaben durch",
+  "slf-wertung": "_/_/_/-1",
+  "notes": "",
+  "text": "Das ABC-Spiel.\nEiner aus der Geſellſchaft, der durch Auszählen beſimmt wird, fragt ſeinen Nachbar links: Wie heißt Du? Antwort: Ich heiße Anton. Wo kommſt Du her? Ich komme aus Amſterdam. Womit handelſt Du? Mit Apfelſinen. Wo gehſt Du hin? Nach Annaburg. — Jetzt fragt der, welcher bisher geantwortet hat, ſeinen Nachbar zur Linken, und dieſer antwortet auf die vorſtehenden Fragen etwa: „Ich heiße Bernhard, komme aus Bromberg, handle mit Bratheringen und gehe nach Bitterfeld.\" So geht es der Reihe nach fort. Der Dritte kann z. B. antworten: „Ich heiße Cäsar, komme aus Celle, handle mit Citronen und gehe nach Chemnitz.\" Hierauf folgen die Antworten D, E, F, G, H, ꝛc., immer nach dem Alphabete. Schwere Buchſtaben, wie Q, X, Y, werden weggelaſſen. Wer nicht raſch und gewandt antwortet, gibt ein Pfand zur Strafe."
+}

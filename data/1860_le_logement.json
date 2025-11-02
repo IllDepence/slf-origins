@@ -1,0 +1,39 @@
+{
+  "name": "Le Logement",
+  "work-title": "Jeux et exercises de jeunes filles",
+  "year": 1860,
+  "author": "Chabreul",
+  "publisher": "Hachette",
+  "page": 192,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000F31100000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN767214722&PHYSID=PHYS_0203"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Hotelname",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Speise",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "frei gewählt",
+  "slf-spielende": "-",
+  "slf-wertung": "_/_/_/_",
+  "notes": "",
+  "text": "LE LOGEMENT.\n\nChaque jeune fille prend une lettre de l’alphabet et là-dessus on forme tous les mots nécessaires au récit d’un voyage. Quand cela est fait, la maîtresse du jeu demande à celle qui a choisi l’A: Comment vous appelez-vous? Il faut qu’elle réponde Annette, ou Aline, ou bien un nom d’homme commençant par la lettre choisie, si c’est ainsi convenu, et ensuite un surnom à son choix qui commence par la même lettre. On lui demande ensuite : D'où venez-vous? elle répond: d'Amiens ou d’Arras, etc. Il faut répondre de la même manière pour dire l’enseigne de l’auberge où on a logé, le nom de l’hôte, celui de l’hôtesse, celui de la servante, le mets qu’on a mangé; on peut multiplier les questions pour rendre le jeu plus difficile, en demandant au voyageur le nom des arbres qui étaient dans le lieu d’où il vient, les médicaments qu’on a donnés à un malade; les armes dont on s’est servi dans une bataille, le vêtement que l’on portait, etc. Les réponses doivent être faites, autant que possible, dans le sens de la question, et il faut tâcher d’y mettre un peu d’intérêt."
+}

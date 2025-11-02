@@ -1,0 +1,32 @@
+{
+  "name": "Schreibspiel",
+  "work-title": "Spiele aus meiner Jugend für die Jugend",
+  "author": "Louisa Cortin-Gehr",
+  "publisher": "Körner",
+  "year": 1911,
+  "page": 26,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5C000000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745127436&PHYSID=PHYS_0030"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Land",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "schriftlich",
+  "slf-antwortzeitstruktur": "zeitgleich",
+  "slf-antwortzeitende": "Zeitlimit",
+  "slf-buchstabenwechsel": "pro Runde",
+  "slf-buchstabenwahl": "zufällig",
+  "slf-spielende": "-",
+  "slf-wertung": "1/1/1/0",
+  "slf-mehrfachnennungen": true,
+  "notes": "",
+  "text": "SCHREIBSPIEL\n\nDie Gesellschaft sitzt um den Tisch. Jedes Kind hat eine Tafel oder ein Stück Papier mit Bleistift vor sich. Auf ein gegebenes Zeichen der Spielleiterin (Spielleiter) als „nun“, — „jetzt”, beginnen die Kinder, in 5 Minuten, alle ihnen bekannten Städte- und Ländernamen mit M aufzuschreiben. Ein andermal mit B oder irgend einem beliebigen Buchstaben, dem die Spielleiterin (Spielleiter) wählt. Nach der festgesetzten Zeit, müssen alle sofort den Bleistift niederlegen. Gewöhnlich tut ihnen die Spielleiterin (Spielleiter) durch Klopfen kund, wann dieser Moment gekommen. Jedes Kind zählt nun, wieviel Wörder es aufgeschrieben hat. Wer die meisten aufweisen kann, darf sie vorlesen."
+}

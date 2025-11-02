@@ -1,0 +1,36 @@
+{
+  "name": "Das ABC-Spiel",
+  "work-title": "Kinder-Conversations-Lexikon",
+  "work-subtitle": "eine Gabe für die wiß- und lernbegierige Jugend",
+  "year": 1874,
+  "author": "Wilhelm Weiss",
+  "publisher": "Manz",
+  "page": 724,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D78500000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745861873&PHYSID=PHYS_0732"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Speise",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "alphabetisch",
+  "slf-spielende": "alle Buchstaben durch",
+  "slf-wertung": "_/_/_/-1",
+  "notes": "",
+  "text": "6. Das A B C-Spiel.\n\nJeder muß drei Wörter nennen, die mit gleichen Buchſtaben anfangen: einen Vornamen, den Namen einer Stadt, und einer Speiſe, z. B. Ich heiße Auguſt, bin aus Augsburg, und eſſe gern Auſtern — und ſo muß es fortgehen durch das ganze Alphabet; wer ein Wort nicht zu finden weiß, muß ein Pfand geben und hernach löſen."
+}

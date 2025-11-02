@@ -1,0 +1,57 @@
+{
+  "name": "Steeple-Chase",
+  "work-title": "Spielbuch",
+  "work-subtitle": "enthaltend Gesellschaftsspiele, Auslösen der Pfänder, Rätsel, Charaden",
+  "year": 1887,
+  "author": "Robert Löwicke",
+  "publisher": "Flemming",
+  "page": 102,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D71400000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745605478&PHYSID=PHYS_0114"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Feldherr",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Dichter",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Komponist",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Maler",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Bildhauer",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Schauspieler",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Virtuose",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "berühmte Frau",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "schriftlich",
+  "slf-antwortzeitstruktur": "zeitgleich",
+  "slf-antwortzeitende": "Zeitlimit",
+  "slf-buchstabenwechsel": "pro Runde",
+  "slf-buchstabenwahl": "zufällig",
+  "slf-spielende": "-",
+  "slf-wertung": "1/1/1/0",
+  "slf-mehrfachnennungen": true,
+  "notes": "",
+  "text": "Steeple-Chase.\n\nBei dem „Steeple-Chase“ kommt es darauf an, in einer zuvor feſtgeſetzten Zeit, z.B. fünf Minuten, möglichſt viele berühmte Namen, z.B. von Feldherrn, Dichtern, Komponiſten, Malern, Bildhauern, Schauſpielern, Virtuoſen u. ſ. w. aufzuſchreiben, und zwar nur Namen mit einem beſtimmten Anfangsbuchſtaben.\nMan einigt ſich zunächſt über drei Kategorien von Namen und wählt z.B. Feldherrn, Komponiſten und berühmte Frauen. Nachdem ein Anfansgbuchſtabe durch das Los beſtimmt iſt, erhält jeder aus der Geſellſchaft einen Zettel und einen Bleiſtift. Sofort nach der Verteilung der Zettel wird eine Uhr auf den Tiſch gelegt und eine Friſt, z. B. fünf Minuten, feſtgeſetzt. Wer in dieſer Zeit die meiſten gültigen Namen auſgeſchrieben hat, geht als Sieger aus dem Wettſtreit hervor. Über Gültigkeit reſpektive Ungültigkeit der einzelnen Namen entſcheidet die Majorität der Geſellſchaft, und zwar in der folgenden Weiſe: Nachdem die zum Aufſchreiben bewilligte Zeit verſtrichen iſt, übergiebt jeder ſofort ſeinen Zettel dem Nachbar zur Linken. Die Zettel werden nun der Reihe nach vorgeleſen, und über jeden Namen, deſſen Gültigkeit zweifelhaft erſcheint, wird abgeſtimmt. Erklärt ihn die Majorität für ungültig, ſo wird er geſtrichen. Alle nicht geſtrichenen Namen eines Zettels werden dann zuſammengezählt und die Summenzahl wird am Ende des Zettels notiert.\nDer Reiz des „Steeple-Chase“ beſteht darin, daß die ruhige Überlegung, die Prüfung der einzelnen Namen immer durch die Haſt beim Aufſchreiben und durch das Verlangen, als Sieger hervorzugeben, ſehr beeinträchtigt wird. Daher finden ſich wohl auf jedem Zettel einige ganz unberechtigte Eindringlinge, die aber die ganze Geſellſchaft in der fröhlichſten Stimmung begrüßt. Oft trägt ein luſtiger Einfall dazu bei, die frohe Laune noch zu erhöhnen. So hatte bei einer Probe unſeres Spiel ein Schalk auch Guſtav Kühn in Neu-Ruppin als berühmten Maler, Diana und Circe als berühmte Frauen, den Kater und den Kuckuck als berühmte Virtuoſen aufgeführt."
+}

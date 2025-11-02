@@ -1,0 +1,36 @@
+{
+  "name": "Mein Nachbar gefällt mir",
+  "work-title": "Illustriertes Spielbuch für Knaben",
+  "work-subtitle": "planmäßig geordnete Sammlung zahlreicher anregender Belustigungen, Spiele und Beschäftigungen für Körper und Geist, im Freien und im Zimmer",
+  "year": 1909,
+  "author": "Hermann Wagner",
+  "publisher": "Spamer",
+  "page": 302,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D76D00000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745846971&PHYSID=PHYS_0334"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Positive Eigenschaft",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Situation",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "frei gewählt",
+  "slf-spielende": "-",
+  "slf-wertung": "_/_/_/_",
+  "notes": "Ähnlich zu\n* [[Mein Nachbar gefällt mir (1836)]]\n* [[Mein Nachbar gefällt mir (1874)]]\n* [[Mein Nachbar gefällt mir (1909 b)]]",
+  "text": "560. Mein Nachbar gefällt mir. Jeder bekommt einen Buchſtaben, z.B. A, F, L u.ſ.w. oder wählt den Anfangsbuchſtaben ſeines Namens. Er hat nun ſeinem Nachbar zu erklären, warum, wo und wann letzterer ihm gefalle. Das Stichwort muß in allen drei Fällen mit dem vom Nachbar gewählten Anfangsbuchſtaben beginnen. Beispiel: Der Anfangsbuchſtabe iſt B, ſo kann die Ausſage lauten: Er gefällt mir weil er bedächtig iſt; er gefällt mir im Bade; er gefällt mir, wenn er Ball ſpielt."
+}

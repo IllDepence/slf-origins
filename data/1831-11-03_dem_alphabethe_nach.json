@@ -1,0 +1,32 @@
+{
+  "name": "Dem Alphabethe nach",
+  "work-title": "Der Sammler vom 03.11.1831",
+  "year": 1831,
+  "page": 3,
+  "sources": [
+    "https://anno.onb.ac.at/cgi-content/anno?aid=sam&datum=18311103&seite=3"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Stand",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "?",
+  "slf-buchstabenwahl": "?",
+  "slf-spielende": "?",
+  "slf-wertung": "?",
+  "notes": "Inhaltlich identisch zu [[Mit demſelben Anfangs-Buchſtaben (13.08.1814)]].",
+  "text": "Anekdoten.\n\nEngel (geb. 1741, geſt. 28. Juny 1802) befand ſich in einer Geſellſchaft, wo man ſich mit dem Spiel die Zeit vertrieb, daß jeder nach dem Alphabethe Nahmen, Gebursort und Stand mit dem nähmlichen Anfangsbuchſtaben bezeichnen mußte.\nEngel erhielt den Buchſtaben K, und er ſagte ſogleich: „Ich heiße Kant, ſtamme von Königsberg, und handle mit Kritik der reinen Vernunft.“"
+}

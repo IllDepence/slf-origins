@@ -1,0 +1,40 @@
+{
+  "name": "Mein Nachbar gefällt mir",
+  "work-title": "Die reinste Quelle jugendlicher Freuden, oder 300 Spiele",
+  "work-subtitle": "zur Ausbildung des Geistes, Kräftigung des Körpers und zur geselligen Erheiterung im Freien wie im Zimmer : theils gesammelt, theils selbst bearbeitet und durch 37 Abbildungen erläutert",
+  "year": 1836,
+  "author": "Johann Adolf Ludwig Werner",
+  "publisher": "Arnold",
+  "page": 128,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000F01D00000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN766629139&PHYSID=PHYS_0146&DMDID=DMDLOG_0004"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Positive Eigenschaft",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Nahrungsmittel",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gegenstand",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "alphabetisch",
+  "slf-spielende": "alle Buchstaben durch",
+  "slf-wertung": "_/_/_/-1",
+  "notes": "Buch-Editionen\n* erste: ?\n* zweite: 1836",
+  "text": "Mein Nachbar gefällt mir.\n\nJeder aus der Geſsellſchaft ſagt der Reihe nach: Mein Nachbar gefällt mir, und giebt dabei 1) die Urſache an, warum er ihm gefällt, 2) womit er ihn täglich ernährt, 3) in welche Stadt er ihn ſchickt und 4) was er ihm auf die Reiſe mitgiebt.\nDieſe vier Sachen müſſen ſich aber alle mit einem und demſselben Anfangsbuchſtaben aus dem Alphabete anfangen. Der Erſte nimmt den Buchſtaben A, der Zeite B, der Dritte C, u.ſ.w. Z.B. Mein Nachbar gefällt mir, weil er ſo artig iſt, ich ernähre ihn übrigens mit Amſeln, ſchicke ihn in Kurzem nach Aachen und gebe ihm ein Achtgroſchenſtück mit auf den Weg. Mach Nachbar gefällt mir, weil er niemals brummt, deßhalb ernähre ich ihn mit Butterbrot, ſchicke ihn aber nach Budiſſin und gebe ihm ein halb Schock Birnen auf die Reiſe.\nWer bei dem betreffenden Satze kein Wort unter dem beſtimmten Buchſtaben zu treffen weiß, giebt eine Strafe. Wurde aber ein, vielleicht abſichtlich gemachter Fehler von der Geſellſchaft nicht bemerkt, ſo kann derjenige, der ihn machte, die ganze Geſellſchaft ſtrafen."
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Das Handel-Bandel-Spiel",
+  "work-title": "Spiel und Spaß und noch etwas",
+  "work-subtitle": "ein Unterhaltungs- und Beschäftigungsbuch für kleinere und größere Kinder",
+  "author": "K. Dorenwell",
+  "publisher": "Teubner",
+  "year": 1911,
+  "page": 104,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D73300000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745725198&PHYSID=PHYS_0048"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Stadt/Land",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Handelsware",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "zufällig",
+  "slf-spielende": "-",
+  "slf-wertung": "_/_/_/-1",
+  "notes": "",
+  "text": "Das Handel-Bandel-Spiel.TeubnerTeubner\n\nDer Spielleiter teilt jedem Mitſpielenden einen Buchſtaben des Abc zu, dem erſten A, dem zweiten B, dem dritten C uſw. Jeder hat ſich nun einen Vornamen, eine Stadt oder ein Land und eine Ware auszudenken, die mit dem ihm zugeteilten Buchſtaben beginnt; z. B. Alfred, Alfeld, Aprikoſe — Hans, Hamburg, Hering. Und dann hat jeder zu ſagen, wie er heißt, woher er kommt, wo er wohnt und womit er handelt. Z. B.: „Alfred heiße ich, aus Alfeld komme ich, mit Aprikoſen handle ich.“ — „Ich heiße Theodor, wohne in der Türkei und verkaufe Tabak.“ Wer nichts weiß, muß ein Pfand zahlen."
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Mit demſelben Anfangs-Buchſtaben",
+  "work-title": "Morgenblatt für gebildete Stände vom 13.08.1814",
+  "year": 1814,
+  "page": 3,
+  "sources": [
+    "https://mdz-nbn-resolving.de/view:bsb10531670_00163_u001"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Geschäft",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "?",
+  "slf-buchstabenwahl": "?",
+  "slf-spielende": "?",
+  "slf-wertung": "?",
+  "notes": "",
+  "text": "Züge aus dem Leben.\n\n[...]\n\nEngel ſpielte mit bey dem bekannten Spiele, wo man Namen, Geburtsort und Geſchäft mit demſelben Anfangs-Buchſtaben bezeichnet nennen muß. Als die Reihe an ihn kam, ſagte er: Ich heiſſe Kant, ſtamme von Königsberg, und handle mit Kritik der reinen Vernunft."
+}

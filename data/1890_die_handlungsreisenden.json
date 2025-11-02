@@ -1,0 +1,34 @@
+{
+  "name": "Die Handlungsreisenden",
+  "work-title": "Beschäftigungsbuch für Mädchen",
+  "work-subtitle": "praktische Anleitung zu weiblichen Handarbeiten, Beschäftigungen mit Puppen, nützlicher häuslicher Thätigkeit, künstlerischen und Phantasie-Arbeiten, Zimmergärtnerei, Tierpflege im Hause und zur Unterhaltung jüngerer Geschwister",
+  "year": 1890,
+  "page": 319,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D85900000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746238983&PHYSID=PHYS_0335"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Handelsware",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Runde",
+  "slf-buchstabenwahl": "alphabetisch",
+  "slf-spielende": "alle Buchstaben durch",
+  "slf-wertung": "_/_/_/_",
+  "notes": "Zuvor in [[Das Kaufmannsſpiel (1791)]].",
+  "text": "16. Die Handlungsreiſenden. Die Geſellſchaft ſtellt Handlungsreiſende vor, die ſich gegenſeitig der Reihe nach mitteilen, wie ſie heißen, woher ſie kommen, wohin ſie gehen und womit ſie handeln. Jeder der dabei von einem Reiſenden genannten Namen und Orte aber muß mit demſelben Buchſtaben anfangen, und zwar wird das Alphabet nach der Reihe durchgenommen, der erſte hat A, der zweite B und ſo fort.\nBeispiel: Ich heiße Auguſt und komme von Achen und gehe nach Augsburg und handle mit Atlas. Zweitens: Ich heiße Berthold und komme von Berlin und gehe nach Breslau und handle mit Bändern."
+}

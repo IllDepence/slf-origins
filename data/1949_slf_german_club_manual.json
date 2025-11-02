@@ -1,0 +1,55 @@
+{
+  "name": "Stadt, Land, Fluß",
+  "work-title": "German Club Manual",
+  "author": "Emma Marie Birkmaier",
+  "publisher": "Thrift Press",
+  "year": 1949,
+  "page": 70,
+  "sources": [
+    "https://brittlebooks.library.illinois.edu/brittlebooks_closed/Books2009-03/birkem0001gerclu/birkem0001gerclu.pdf",
+    "https://www.google.co.jp/books/edition/German_Club_Manual/Gf69NIjadmsC"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Land",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Fluss",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gebirge",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Beruf",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Blube",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Tier",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "schriftlich",
+  "slf-antwortzeitstruktur": "zeitgleich",
+  "slf-antwortzeitende": "Spieler mit vollständiger Antwort",
+  "slf-buchstabenwechsel": "pro Runde",
+  "slf-buchstabenwahl": "zufällig",
+  "slf-spielende": "-",
+  "slf-wertung": "1/1/0/0",
+  "notes": "Text fast identisch zu [[Stadt, Land, Fluß (1937)]].",
+  "text": "Stadt, Land, Fluß\nJeder schreibt oben auf sein quergelegtes Papier nacheinander die Wörter: Stadt, Land, Fluß, Gebirge, Name, Beruf, Blume, Tier. Dann wird wieder ein Buchstabe ausgemacht; und nun gilt es, unter jeden der aufgeschriebenen Begriffe einen Namen zu setzen. Mit A würde es, wenn es richtig und fertig wäre, so aussehen: Augsburg, Asien, Ahr, Alpen, Adelbert, Anstreicher, Aster, Affe. Wenn einer alles ausgefüllt hat, müssen alle aufhören und für das Fehlende Striche machen. Einer liest vor, und wieder wird alles Gleiche gestrichen. Zum SchluB zählt jeder, wieviel ihm übriggeblieben ist und schreibt die Punktzahl daneben. Dann kommt der nächste Buchstabe an die Reihe. Bevor man mit diesem Spiel Schluß macht, zählt jeder alle seine Punkte zusammen, damit der Sieger festgestellt werden kann."
+}

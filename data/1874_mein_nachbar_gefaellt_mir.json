@@ -1,0 +1,40 @@
+{
+  "name": "Mein Nachbar gefällt mir",
+  "work-title": "Encyklopädie der Gesellschafts-Spiele",
+  "work-subtitle": "ein Handbüchlein für lebensfrohe Familien, welche Munterkeit und Scherz mit Anstand und Sitte zu verbinden wünschen",
+  "year": 1874,
+  "author": "Ludwig Alvensleben",
+  "publisher": "Voigt",
+  "page": 228,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5DF00000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139280&PHYSID=PHYS_0256&DMDID=DMDLOG_0001"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Positive Eigenschaft",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Nahrungsmittel",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gegenstand",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "alphabetisch",
+  "slf-spielende": "alle Buchstaben durch",
+  "slf-wertung": "_/_/_/-1",
+  "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]], nur mit anderem Text beschrieben.",
+  "text": "Mein Nachbar gefällt mir!\n\nDer Reihe nach ſagt jedes Mitglied der Geſellſchaft: „Mein Nachbar gefällt mir!“ Dabei giebt er dann die Urſache an, weshalb ihm ſein Nachbar gefällt, die tägliche Nahrung, die er ihm giebt, in welche Stadt er ihn ſchickt und was er ihm auf dieſe Reiſe mitgiebt. Dieſe vier verſchiedenen Gegenſtände müſſen aber mit einem und demſselben Buchſtaben des Alphabets anfangen, und zwar bei dem Erſtes mit A, bei dem Zeiten mit B, dem Dritten mit C, u.ſ.w. Zum Beispiel: Meine Nachbarin gefällt mir, weil ſie ſo anmutg iſt; deshalb gebe ich ihr auch täglich „Ananas“ zu eſſen, und wenn ich mich einmal von ihr trennen muß, um ſie nach „Ausburg“ zu ſchicken, gebe ich ihr „Auſtern“ mit, weil ſie dieſe außerordentlich gerne ißt. — Order: Mein Nachbar gefällt mir, weil er „beſcheiden“ iſt, obgleich er als tägliche Nahrung nichts als „Backobſt“ bekommt; zuweilen ſchicke ich ihn nach „Bernburg“, und gebe ihm dann „Bretzeln“ mit. — Wer sich zu lage beſinnt oder einen falſchen Buchſtaben nennt, giebt ein Pfand. — Macht Einer abſichtlich ein Versehen, und dies wird von Niemand gerügt, ſo giebt er es ſelbſt an, und dann müſſen außer ihm Alle ein Pfand geben."
+}

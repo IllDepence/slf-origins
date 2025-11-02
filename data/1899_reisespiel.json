@@ -1,0 +1,44 @@
+{
+  "name": "Reiſeſpiel",
+  "work-title": "Das Buch der Jugend-Spiele und -Beschäftigungen",
+  "work-subtitle": "für Knaben und Mädchen von 3-16 Jahren zur Unterhaltung und Belehrung",
+  "author": "Felix Moser",
+  "publisher": "Hartleben",
+  "year": 1899,
+  "page": 275,
+  "sources": [
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D6E700000000",
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745588514&PHYSID=PHYS_0295"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Stadt",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gebirge",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Gegenstand",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Eigenschaftswort",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Spieler",
+  "slf-buchstabenwahl": "-",
+  "slf-spielende": "-",
+  "slf-wertung": "_/_/_/_",
+  "notes": "",
+  "text": "Reiſeſpiel.\n\nEin anderes Reiſeſpiel iſt folgendes, bei dem die erzählende Form innegehalten werden muß. Alle Hauptwörter müſſen unbedingt die gleichen Anfangsbuchſtaben haben. Der Abwechslung wegen hat jeden Theilnehmer einen anderen Buchſtaben zu wählen. Jeder Satz muß der Reihenfolge nach einen Namen, eine Stadt, ein Gebirge, einen Gegenſtand und ein Eigenſchaftswort enthalten, die, wie geſagt, alle mit dem gleichen Buchſtaben zu beginnen haben.\nZum Beiſpiel: Ich heiße Anton, reiſe morgen von Altona über die Alpen nach Alexandrien, ſuche dort Anemonen und kehre altersſchwach heim."
+}

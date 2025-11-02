@@ -1,0 +1,33 @@
+{
+  "name": "Das Kaufmannsſpiel",
+  "work-title": "Gesellſchaftliche Spiele für Kinder und junge Leute",
+  "work-subtitle": "beſtehend in einem zwölffachen und dreyßig andern unterhaltenden Spielen, wodurch eine Menge nützlicher Kenntniſſe auf eine angenehme Art beygebracht werden kann",
+  "year": 1817,
+  "page": 167,
+  "sources": [
+    "https://doi.org/10.58003/ums.book-2022-39"
+  ],
+  "slf-kategorien": [
+    {
+      "anzeige": "Ort",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Name",
+      "text-marker": ""
+    },
+    {
+      "anzeige": "Handelsware",
+      "text-marker": ""
+    }
+  ],
+  "slf-antwortform": "verbal",
+  "slf-antwortzeitstruktur": "sequenziell",
+  "slf-antwortzeitende": "-",
+  "slf-buchstabenwechsel": "pro Runde",
+  "slf-buchstabenwahl": "alphabetisch",
+  "slf-spielende": "-",
+  "slf-wertung": "_/_/-1/-1",
+  "notes": "Zuvor in [[Das Kaufmannsſpiel (1791)]].",
+  "text": "Das Kaufmannsſpiel\nMan ſetzt sich im Kreiſe, und Einer fängt an und ſagt: ich bin aus z. B. Amſterdam; heiſſe Adler und handle mit Aalen. Jeder muß nun in der Reihe herum auf diese Art drey Worte, die ſich mit A anfangen, ſagen, und muß ein Pfand geben, wenn er ein Wort ſagt, das ſchon da war, oder ſich auf keines beſinnen kann. Iſt der Buchſtabe A herum, ſo fängt der Nachbar zur Rechten neben dem, der mit A angefangen hat, drey Worte in B an, und ſo fort, bis das Alphabet durch iſt."
+}
