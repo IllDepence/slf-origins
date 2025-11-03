@@ -6,7 +6,8 @@
     <title>Stadt, Land, Fluss</title>
     
     <!-- Pico.css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/pico.colors.min.css">
     
     <!-- Lora Font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,10 @@
             max-width: 65ch;
             margin: 0 auto;
             padding: 2rem 2rem;
+        }
+
+        figure {
+            margin: 1rem;
         }
     </style>
 </head>
@@ -54,6 +59,9 @@
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </section>
+            <figure id="fig1">
+                <figcaption>Abbildung 1: Duis aute irure dolor in reprehenderit.</figcaption>
+            </figure>
             <section>
                 <h2>Zweileitung</h2>
                 <p>
@@ -71,5 +79,26 @@
         </article>
     </main>
 </body>
+<script src="js/d3.v7.min.js"></script>
+<script src="js/data.js"></script>
+<script>
+function drawFig1() {
+    const width = document.getElementById('fig1').clientWidth;
+
+    const fig1 = d3.select("#fig1").insert("svg", "figcaption")
+        .attr("width", width)
+        .attr("height", 400);
+
+    fig1.append("rect")
+        .attr("width", "100%")
+        .attr("height", "100%")
+}
+
+document.onreadystatechange = function() {
+  if (document.readyState === "complete") {
+    drawFig1();
+  }
+};
+</script>
 </html>
 
