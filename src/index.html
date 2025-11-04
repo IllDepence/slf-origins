@@ -81,22 +81,36 @@
 <script src="js/data.js"></script>
 <script>
 function drawFig1() {
-    const width = document.getElementById('fig1').clientWidth;
+    const figId = 'fig1'
+    const figNode = document.getElementById(figId);
 
-    const fig1 = d3.select("#fig1").insert("svg", "figcaption")
+    // clear if already exists
+    const existingSvg = figNode.querySelector('svg');
+    if (existingSvg) {
+        figNode.removeChild(existingSvg);
+    }
+
+    // draw
+    const width = figNode.clientWidth;
+    const svg = d3.select(`#${figId}`).insert("svg", "figcaption")
         .attr("width", width)
         .attr("height", 400);
-
-    fig1.append("rect")
+    svg.append("rect")
         .attr("width", "100%")
         .attr("height", "100%")
+}
+function drawFigs(){
+    drawFig1();
 }
 
 document.onreadystatechange = function() {
   if (document.readyState === "complete") {
-    drawFig1();
+    drawFigs();
   }
 };
+
+window.onresize = drawFigs;
+
 </script>
 </html>
 
