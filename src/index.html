@@ -33,6 +33,28 @@
         figure {
             margin: 1rem;
         }
+
+        #fig1 {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+
+        #fig1 svg {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #fig1 div#infocard {
+            grid-column: 2;
+            grid-row: 1;
+            background-color: lightslategray;
+        }
+
+        #fig1 figcaption {
+            grid-column: 1 / -1;
+            grid-row: 2;
+            background-color: darkslategray;
+        }
     </style>
 </head>
 <body>
@@ -58,6 +80,7 @@
                 </p>
             </section>
             <figure id="fig1">
+                <div id="infocard"></div>
                 <figcaption>Abbildung 1: Duis aute irure dolor in reprehenderit.</figcaption>
             </figure>
             <section>
@@ -92,8 +115,8 @@ function drawFig1() {
 
     // draw
     const width = figNode.clientWidth;
-    const svg = d3.select(`#${figId}`).insert("svg", "figcaption")
-        .attr("width", width)
+    const svg = d3.select(`#${figId}`).insert("svg", "#infocard")
+        .attr("width", 100)
         .attr("height", 400);
     svg.append("rect")
         .attr("width", "100%")
@@ -109,7 +132,7 @@ document.onreadystatechange = function() {
   }
 };
 
-window.onresize = drawFigs;
+// window.onresize = drawFigs;
 
 </script>
 </html>
