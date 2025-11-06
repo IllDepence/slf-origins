@@ -33,6 +33,11 @@
         figure {
             margin: 1rem;
         }
+
+        .tick text {
+            font-size: calc(var(--pico-font-size) * 1.25);
+            font-family: var(--pico-font-family);
+        }
     </style>
 </head>
 <body>
@@ -92,12 +97,47 @@ function drawFig1() {
 
     // draw
     const width = figNode.clientWidth;
+    const height = 400;
+    const margin = { top: 16, right: 16, bottom: 24, left: 48 };
+
     const svg = d3.select(`#${figId}`).insert("svg", "figcaption")
         .attr("width", width)
-        .attr("height", 400);
-    svg.append("rect")
-        .attr("width", "100%")
-        .attr("height", "100%")
+        .attr("height", height);
+    // svg.append("rect")
+    //     .attr("width", "100%")
+    //     .attr("height", "100%")
+    //     .attr("fill", "grey")
+
+    // y-scale from year data
+    const years = data.map(d => d.year);
+    const yearExtent = d3.extent(years);
+    const y = d3.scaleLinear()
+        .domain(yearExtent)
+        .range([margin.top, height - margin.bottom])
+        .nice();
+
+    const axisLeft = d3.axisLeft(y)
+        .ticks(8)
+        .tickFormat(d3.format('d'));
+
+    svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(axisLeft);
+
+    // draw data points as a vertical strip next to the axis
+    const cx = margin.left + 20;
+    svg.append("g")
+        .selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("cx", cx)
+        .attr("cy", d => y(d.year))
+        .attr("r", 3)
+        .attr("fill", "white")
+        .attr("opacity", 0.5)
+        .append("title")
+        .text(d => `${d.year} — ${d.name || ''}`.trim());
 }
 function drawFigs(){
     drawFig1();
