@@ -141,7 +141,7 @@ function drawFig1() {
         .attr("cx", cx)
         .attr("cy", d => y(d.year))
         .attr("r", 3)
-        .attr("fill", "white")
+        .attr("fill", "var(--pico-color)")
         .attr("opacity", 0.5)
         .append("title")
         .text(d => `${d.year} — ${d.name || ''}`.trim());
