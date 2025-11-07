@@ -132,17 +132,48 @@ function drawFig1() {
         .call(axisLeft);
 
     // draw data points as a vertical strip next to the axis
-    const cx = margin.left + 20;
+    // Use force simulation to avoid collisions
+    const defaultX = margin.left + 20;
+    const radius = 3;
+
+    // Prepare data with initial positions
+    const nodes = data.map(d => {
+        const yPos = y(d.year);
+        return {
+            year: d.year,
+            name: d.name,
+            x: defaultX,
+            y: yPos,
+            fy: yPos // fix y position
+        };
+    });
+
+    // Create force simulation
+    const simulation = d3.forceSimulation(nodes)
+        .force("collision", d3.forceCollide().radius(radius * 2.5))
+        .force("x", d3.forceX(defaultX).strength(0.3)) // gently pull towards default x
+        .stop();
+
+    // Run simulation to convergence
+    for (let i = 0; i < 250; ++i) {
+        simulation.tick();
+        // Constrain x to be >= defaultX (only move right)
+        nodes.forEach(node => {
+            if (node.x < defaultX) node.x = defaultX;
+        });
+    }
+
+    // Draw circles
     svg.append("g")
         .selectAll("circle")
-        .data(data)
+        .data(nodes)
         .enter()
         .append("circle")
-        .attr("cx", cx)
-        .attr("cy", d => y(d.year))
-        .attr("r", 3)
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y)
+        .attr("r", radius)
         .attr("fill", "var(--pico-color)")
-        .attr("opacity", 0.5)
+        .attr("opacity", 0.75)
         .append("title")
         .text(d => `${d.year} — ${d.name || ''}`.trim());
 }
