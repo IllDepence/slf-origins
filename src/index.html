@@ -246,22 +246,30 @@ function drawFig1() {
         });
     }
 
-    // Draw circles
+    // Create symbol generator
+    const symbolGenerator = d3.symbol()
+        .size(Math.PI * radius * radius);
+
+    // Draw symbols (circles, triangles, stars)
     svg.append("g")
-        .selectAll("circle")
+        .selectAll("path")
         .data(nodes)
         .enter()
-        .append("circle")
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y)
-        .attr("r", radius)
+        .append("path")
+        .attr("d", d => {
+            const symbolType = d['slf-antwortform'] === 'verbal'
+                ? d3.symbolCircle
+                : d['slf-antwortzeitende'] === 'Zeitlimit'
+                    ? d3.symbolTriangle
+                    : d3.symbolStar;
+            return symbolGenerator.type(symbolType)();
+        })
+        .attr("transform", d => `translate(${d.x},${d.y})`)
         .attr(
             "fill",
-            d => d['slf-antwortform'] === 'verbal'
-            ? "color-mix(in hsl, var(--pico-del-color) 65%,  var(--pico-primary) 35%)"
-            : d['slf-antwortzeitende'] === 'Zeitlimit'
-                ? "color-mix(in hsl, var(--pico-ins-color) 50%,  var(--pico-primary) 50%)"
-                : "var(--pico-primary)"
+            d => d.name.match(/Stadt, Land, Flu(ss|ß)/)
+            ? "var(--pico-primary)"
+            : "var(--pico-color)"
         )
         .attr("opacity", 0.75)
         .append("title")
