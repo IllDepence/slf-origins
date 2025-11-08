@@ -27,7 +27,11 @@
         emph {
             font-style: italic;
         }
-        
+
+        a {
+            hyphens: none;
+        }
+
         header, article {
             max-width: 65ch;
             margin: 0 auto;
@@ -84,15 +88,32 @@
 
         <article>
             <section>
-                <h2>Zusammenfassung</h2>
+                <h2>Übersicht</h2>
                 <p>
-                    Das Ka­te­go­rien-und-An­fangs­buch­sta­ben-Prin­zip gibt es seit mindestens 1784&nbsp;<a href="#lit1">[1]</a>;
-                    Regeln bezüglich gleichen und fehlenden Antworten werden spätestens 1791 beschrieben&nbsp;<a href="#lit2">[2]</a>.
+                    Seit wann gibt es Stadt, Land, Fluss? Kommt ganz darauf an. Den Namen seit spätestens 1939&nbsp;<a href="#lit34" title="zur Quellenangabe">[34]</a>,
+                    das Spielprinzip, je nach Auslegung, aber schon seit 1784&nbsp;<a href="#lit1" title="zur Quellenangabe">[1]</a>.
+                    Einen Überblick der graduellen Entwicklung gibt folgende Abbildung.
+                </p>
+                <figure id="fig1">
+                    <figcaption>Abbildung 1: Literaturquellen zu „Stadt, Land, Fluss“ und Vorgängervarianten.</figcaption>
+                </figure>
+                <p>
+                    <!-- TODO: consider leading with explicit text -->
+                    <!-- TODO: give broader overview (three phases) brief with examples -->
+                    Verschiedene Stufen der Etablierung von „Stadt, Land, Fluss“, wie wir es heutzutage kennen, lassen sich wie folgt beschreiben.
+                    Das Ka­te­go­rien-und-An­fangs­buch­sta­ben-Prin­zip gibt es mindestens seit dem „Handlungs-Spiel“, beschrieben 1784&nbsp;<a href="#lit1">[1]</a>,
+                    bei dem allerdings gesprochen statt geschrieben wird, es keine Wertung gibt, und der Buchstabe von Spieler zu Spieler wechselt.
+                    Ein Buchstabenwechsel pro Runde statt Spieler, und Regeln bezüglich gleichen und fehlenden Antworten kommen 1791 mit dem „Kaufmannsſpiel“ dazu&nbsp;<a href="#lit2">[2]</a>.
+                </p>
+                <p>
+                    Eine Schreibvariante lässt dann fast 100 Jahre auf sich warten, besteht aber spätestens seit 1887 mit „Steeple-Chase“&nbsp;<a href="#lit16">[16]</a>,
+                    wobei hier mehrere Antworten pro Kategorie innerhalb eines Zeitlimits gegeben werden.
+                    Seit mindestens 1937 findet sich der Name „Stadt, Land, Fluss“ in der Literatur&nbsp;<a href="#lit34">[34]</a>,
+                    und das dort beschriebene Spiel umfasst nun auch die Regel, dass wenn einer fertig ist alle anderen mit Schreiben aufhören müssen,
+                    allerdings fehlen noch Extra-Punkte für eine Antwort in einer Kategorie, in der niemand anders etwas hat, sowie das ikonische ABC im Kopf aufsagen und „Stop!“.
+                    Diese letzten beiden Aspekte Aspekte finden sich ein Jahr später, 1938, im „lehrreichen Spiel“<a href="#lit35">[34]</a> — hier ist also der Name wieder anders.
                 </p>
             </section>
-            <figure id="fig1">
-                <figcaption>Abbildung 1: Duis aute irure dolor in reprehenderit.</figcaption>
-            </figure>
             <section>
                 <h2>Zweileitung</h2>
                 <p>
@@ -203,8 +224,7 @@ function drawFig1() {
     const nodes = data.map(d => {
         const yPos = y(d.year);
         return {
-            year: d.year,
-            name: d.name,
+            ...d,  // spread all attributes from d
             x: defaultX,
             y: yPos,
             fy: yPos // fix y position
@@ -235,7 +255,14 @@ function drawFig1() {
         .attr("cx", d => d.x)
         .attr("cy", d => d.y)
         .attr("r", radius)
-        .attr("fill", "var(--pico-color)")
+        .attr(
+            "fill",
+            d => d['slf-antwortform'] === 'verbal'
+            ? "color-mix(in hsl, var(--pico-del-color) 65%,  var(--pico-primary) 35%)"
+            : d['slf-antwortzeitende'] === 'Zeitlimit'
+                ? "color-mix(in hsl, var(--pico-ins-color) 50%,  var(--pico-primary) 50%)"
+                : "var(--pico-primary)"
+        )
         .attr("opacity", 0.75)
         .append("title")
         .text(d => `${d.year} — ${d.name || ''}`.trim());
