@@ -23,6 +23,10 @@
         h1, h2, h3, h4, h5, h6 {
             --pico-font-weight: 600;
         }
+
+        emph {
+            font-style: italic;
+        }
         
         header, article {
             max-width: 65ch;
@@ -31,10 +35,34 @@
         }
 
         header small {
+            /** date with repo link */
             font-family: monospace;
             display: block;
             text-align: right;
         }
+
+        article {
+            hyphens: auto;
+        }
+
+        section:not(:first-of-type) {
+            /** space between sections */
+            margin-top: 2rem;
+        }
+
+        li:target {
+            animation: fadeHighlight 3s ease-out forwards;
+        }
+
+        @keyframes fadeHighlight {
+            0% {
+                background-color: var(--pico-primary-focus);
+            }
+            100% {
+                background-color: transparent;
+            }
+        }
+
 
         figure {
             margin: 1rem;
@@ -56,17 +84,10 @@
 
         <article>
             <section>
-                <h2>Einleitung</h2>
+                <h2>Zusammenfassung</h2>
                 <p>
-                    Stadt, Land, Fluss ſ→f Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. 
-                </p>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Das Ka­te­go­rien-und-An­fangs­buch­sta­ben-Prin­zip gibt es seit mindestens 1784&nbsp;<a href="#lit1">[1]</a>;
+                    Regeln bezüglich gleichen und fehlenden Antworten werden spätestens 1791 beschrieben&nbsp;<a href="#lit2">[2]</a>.
                 </p>
             </section>
             <figure id="fig1">
@@ -85,6 +106,13 @@
                     fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
+            </section>
+            <section>
+                <h2>Literaturverzeichnis</h2>
+                <ol>
+                    <li id="lit1"><emph>Das Handlungs-Spiel</emph> in „Deutſches Leſebuch für die erſten Anfänger“ von Carl Friedrich Splittegarb (1784) S. 17 <a href="https://scripta.bbf.dipf.de/viewer/image/477674860/24/">↗</a></li>
+                    <li id="lit2"><emph>Das Kaufmannsſpiel</emph> in „Der angenehme Gesellſchafter“ von Der Sammler (1791) S. 9 <a href="https://www.google.de/books/edition/Der_angenehme_Gesellschafter/fygPiVhRZUoC">↗</a></li>
+                </ol>
             </section>
         </article>
     </main>
