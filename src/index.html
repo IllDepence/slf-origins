@@ -355,6 +355,95 @@ function drawFig1() {
                 d3.select(this).attr("fill", d.originalFill);
             });
         });
+
+    // Function to add annotation for a data point
+    function addAnnotation(dataPoint, optionalText) {
+        // Find the corresponding node to get its position
+        const node = nodes.find(n => n.year === dataPoint.year && n.name === dataPoint.name);
+        if (!node) return;
+
+        // Create a group for the annotation
+        const annotationGroup = svg.append("g")
+            .attr("class", "annotation");
+
+        // Calculate positions
+        const dataPointX = node.x;
+        const dataPointY = node.y;
+        const rectPadding = 8;
+        const rectRadius = 4;
+        const lineGap = 8; // Gap between line end and rectangle
+
+        // Prepare text content
+        const nameText = dataPoint.name || '';
+        const yearText = `(${dataPoint.year})`;
+        const mainText = `${nameText} ${yearText}`;
+        
+        // Create temporary text element to measure width
+        const tempText = svg.append("text")
+            .attr("opacity", 0)
+            .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+            .attr("font-family", "var(--pico-font-family)")
+            .text(mainText);
+        const mainTextWidth = tempText.node().getBBox().width;
+        const mainTextHeight = tempText.node().getBBox().height;
+        tempText.remove();
+
+        // Calculate rectangle dimensions
+        const rectWidth = mainTextWidth + rectPadding * 2;
+        const rectHeight = mainTextHeight + rectPadding * 2;
+
+        // Position rectangle at the right edge, anchored at top
+        const rectX = width - margin.right - rectWidth;
+        const rectY = dataPointY;
+
+        // Draw connecting line from data point to rectangle
+        annotationGroup.append("line")
+            .attr("x1", dataPointX)
+            .attr("y1", dataPointY)
+            .attr("x2", rectX - lineGap)
+            .attr("y2", rectY)
+            .attr("stroke", "var(--pico-color)")
+            .attr("stroke-width", 1)
+            .attr("opacity", 0.5);
+
+        // Draw rectangle with rounded corners
+        annotationGroup.append("rect")
+            .attr("x", rectX)
+            .attr("y", rectY)
+            .attr("width", rectWidth)
+            .attr("height", rectHeight)
+            .attr("rx", rectRadius)
+            .attr("ry", rectRadius)
+            .attr("fill", "none")
+            .attr("stroke", "var(--pico-color)")
+            .attr("stroke-width", 0.5);
+
+        // Add main text (name and year) inside rectangle
+        annotationGroup.append("text")
+            .attr("x", rectX + rectPadding)
+            .attr("y", rectY + rectPadding + mainTextHeight * 0.75) // Approximate baseline position
+            .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+            .attr("font-family", "var(--pico-font-family)")
+            .attr("fill", "var(--pico-color)")
+            .text(mainText);
+
+        // Add optional text below rectangle if provided
+        if (optionalText) {
+            annotationGroup.append("text")
+                .attr("x", rectX + rectPadding)
+                .attr("y", rectY + rectHeight + mainTextHeight)
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .attr("fill", "var(--pico-color)")
+                .attr("font-style", "italic")
+                .text(optionalText);
+        }
+    }
+
+    // Test: call it for the first data point
+    if (nodes.length > 0) {
+        addAnnotation(nodes[0], "kateogieren und anfangsbuchstaben");
+    }
 }
 function drawFigs(){
     drawFig1();
