@@ -308,6 +308,10 @@ function drawFig1() {
 
     // Variable to track the additional tick label
     let additionalTickLabel = null;
+    // Variable to track the hover annotation
+    let hoverAnnotation = null;
+    // Array to store default annotation groups
+    const defaultAnnotations = [];
 
     // Add hover effects
     paths
@@ -338,6 +342,14 @@ function drawFig1() {
 
             // Make the hovered data point colored 'var(--pico-primary)'
             d3.select(this).attr("fill", "var(--pico-primary)");
+
+            // Hide all default annotations
+            defaultAnnotations.forEach(ann => {
+                if (ann) ann.attr("opacity", 0);
+            });
+
+            // Show annotation for hovered data point (without extra text or delta)
+            hoverAnnotation = addAnnotation(d.name, d.year);
         })
         .on("mouseout", function(event, d) {
             // Restore all tick labels opacity to 1
@@ -354,6 +366,17 @@ function drawFig1() {
             paths.each(function(d) {
                 d3.select(this).attr("fill", d.originalFill);
             });
+
+            // Show all default annotations again
+            defaultAnnotations.forEach(ann => {
+                if (ann) ann.attr("opacity", 1);
+            });
+
+            // Remove hover annotation
+            if (hoverAnnotation) {
+                hoverAnnotation.remove();
+                hoverAnnotation = null;
+            }
         });
 
     // Function to add annotation for a data point
@@ -400,17 +423,21 @@ function drawFig1() {
             .x(d => d.x)
             .y(d => d.y);
 
-        const linkData = {
-            source: { x: dataPointX + lineGap, y: dataPointY },
-            target: { x: rectX - lineGap, y: rectY + rectHeight/2 }
-        };
-
-        annotationGroup.append("path")
-            .attr("d", linkGenerator(linkData))
-            .attr("stroke", "var(--pico-color)")
-            .attr("stroke-width", 1)
-            .attr("fill", "none")
-            .attr("opacity", 0.5);
+        const linkSourceX = dataPointX + lineGap;
+        const linkTargetX = rectX - lineGap;
+        // Only draw if there's enough of a gap to draw a line
+        if (linkTargetX - linkSourceX > 5) {
+            const linkData = {
+                source: { x: linkSourceX, y: dataPointY },
+                target: { x: linkTargetX, y: rectY + rectHeight/2 }
+            };
+            annotationGroup.append("path")
+                .attr("d", linkGenerator(linkData))
+                .attr("stroke", "var(--pico-color)")
+                .attr("stroke-width", 1)
+                .attr("fill", "none")
+                .attr("opacity", 0.5);
+        }
 
         // Draw rectangle with rounded corners
         annotationGroup.append("rect")
@@ -445,13 +472,22 @@ function drawFig1() {
                 .attr("font-style", "italic")
                 .text(optionalText);
         }
+
+        // Return the annotation group for reference
+        return annotationGroup;
     }
 
-    addAnnotation("Das Handlungs-Spiel", 1784, "Kateogieren und Anfangsbuchstaben");
-    addAnnotation("Das Kaufmannsſpiel", 1791, "Regeln für gleiche/fehlenden Antworten", 50);
-    addAnnotation("Steeple-Chase", 1887, "Antworten schreiben statt aufsagen", -50);
-    addAnnotation("Das Achterſpiel", 1934, "Stop sobald erster fertig", -40);
-    addAnnotation("Stadt, Land, Fluß", 1937, "", 15);
+    // Create default annotations and store references
+    const ann1 = addAnnotation("Das Handlungs-Spiel", 1784, "Kateogieren und Anfangsbuchstaben");
+    if (ann1) defaultAnnotations.push(ann1);
+    const ann2 = addAnnotation("Das Kaufmannsſpiel", 1791, "Regeln für gleiche/fehlenden Antworten", 50);
+    if (ann2) defaultAnnotations.push(ann2);
+    const ann3 = addAnnotation("Steeple-Chase", 1887, "Antworten schreiben statt aufsagen", -50);
+    if (ann3) defaultAnnotations.push(ann3);
+    const ann4 = addAnnotation("Das Achterſpiel", 1934, "Stop sobald erster fertig", -40);
+    if (ann4) defaultAnnotations.push(ann4);
+    const ann5 = addAnnotation("Stadt, Land, Fluß", 1937, "", 15);
+    if (ann5) defaultAnnotations.push(ann5);
 }
 function drawFigs(){
     drawFig1();
