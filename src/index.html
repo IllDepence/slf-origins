@@ -349,7 +349,7 @@ function drawFig1() {
             });
 
             // Show annotation for hovered data point (without extra text or delta)
-            hoverAnnotation = addAnnotation(d.name, d.year);
+            hoverAnnotation = addAnnotation({ name: d.name, year: d.year });
         })
         .on("mouseout", function(event, d) {
             // Restore all tick labels opacity to 1
@@ -380,7 +380,7 @@ function drawFig1() {
         });
 
     // Function to add annotation for a data point
-    function addAnnotation(name, year, optionalText, yDelta) {
+    function addAnnotation({ name, year, optionalText, yDelta }) {
         // Find the corresponding node to get its position
         const node = nodes.find(n => n.year === year && n.name === name);
         if (!node) return;
@@ -478,15 +478,15 @@ function drawFig1() {
     }
 
     // Create default annotations and store references
-    const ann1 = addAnnotation("Das Handlungs-Spiel", 1784, "Kateogieren und Anfangsbuchstaben");
+    const ann1 = addAnnotation({ name: "Das Handlungs-Spiel", year: 1784, optionalText: "Kateogieren und Anfangsbuchstaben" });
     if (ann1) defaultAnnotations.push(ann1);
-    const ann2 = addAnnotation("Das Kaufmannsſpiel", 1791, "Regeln für gleiche/fehlenden Antworten", 50);
+    const ann2 = addAnnotation({ name: "Das Kaufmannsſpiel", year: 1791, optionalText: "Regeln für gleiche/fehlenden Antworten", yDelta: 50 });
     if (ann2) defaultAnnotations.push(ann2);
-    const ann3 = addAnnotation("Steeple-Chase", 1887, "Antworten schreiben statt aufsagen", -50);
+    const ann3 = addAnnotation({ name: "Steeple-Chase", year: 1887, optionalText: "Antworten schreiben statt aufsagen", yDelta: -50 });
     if (ann3) defaultAnnotations.push(ann3);
-    const ann4 = addAnnotation("Das Achterſpiel", 1934, "Stop sobald erster fertig", -40);
+    const ann4 = addAnnotation({ name: "Das Achterſpiel", year: 1934, optionalText: "Stop sobald erster fertig", yDelta: -40 });
     if (ann4) defaultAnnotations.push(ann4);
-    const ann5 = addAnnotation("Stadt, Land, Fluß", 1937, "", 15);
+    const ann5 = addAnnotation({ name: "Stadt, Land, Fluß", year: 1937, optionalText: "", yDelta: 15 });
     if (ann5) defaultAnnotations.push(ann5);
 }
 function drawFigs(){
