@@ -369,7 +369,7 @@ function drawFig1() {
         // Calculate positions
         const dataPointX = node.x;
         const dataPointY = node.y;
-        const rectPadding = 8;
+        const rectPadding = 4;
         const rectRadius = 4;
         const lineGap = 8; // Gap between line end and rectangle
 
@@ -377,7 +377,7 @@ function drawFig1() {
         const nameText = dataPoint.name || '';
         const yearText = `(${dataPoint.year})`;
         const mainText = `${nameText} ${yearText}`;
-        
+
         // Create temporary text element to measure width
         const tempText = svg.append("text")
             .attr("opacity", 0)
@@ -396,14 +396,21 @@ function drawFig1() {
         const rectX = width - margin.right - rectWidth;
         const rectY = dataPointY;
 
-        // Draw connecting line from data point to rectangle
-        annotationGroup.append("line")
-            .attr("x1", dataPointX)
-            .attr("y1", dataPointY)
-            .attr("x2", rectX - lineGap)
-            .attr("y2", rectY)
+        // Draw connecting line from data point to rectangle using d3.linkHorizontal()
+        const linkGenerator = d3.linkHorizontal()
+            .x(d => d.x)
+            .y(d => d.y);
+
+        const linkData = {
+            source: { x: dataPointX + lineGap, y: dataPointY },
+            target: { x: rectX - lineGap, y: rectY + rectHeight/2 }
+        };
+
+        annotationGroup.append("path")
+            .attr("d", linkGenerator(linkData))
             .attr("stroke", "var(--pico-color)")
             .attr("stroke-width", 1)
+            .attr("fill", "none")
             .attr("opacity", 0.5);
 
         // Draw rectangle with rounded corners
