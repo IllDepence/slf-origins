@@ -437,8 +437,9 @@ function drawFig1() {
         // Add optional text below rectangle if provided
         if (optionalText) {
             annotationGroup.append("text")
-                .attr("x", rectX + rectPadding)
+                .attr("x", rectX + rectWidth - rectPadding)
                 .attr("y", rectY + rectHeight + mainTextHeight)
+                .attr("text-anchor", "end")
                 .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
                 .attr("font-family", "var(--pico-font-family)")
                 .attr("fill", "var(--pico-color)")
@@ -449,7 +450,7 @@ function drawFig1() {
 
     // Test: call it for the first data point
     if (nodes.length > 0) {
-        addAnnotation(nodes[0], "kateogieren und anfangsbuchstaben");
+        addAnnotation(nodes[0], "Kateogieren und Anfangsbuchstaben");
     }
 }
 function drawFigs(){
