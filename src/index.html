@@ -349,7 +349,7 @@ function drawFig1() {
             });
 
             // Show annotation for hovered data point (without extra text or delta)
-            hoverAnnotation = addAnnotation({ name: d.name, year: d.year });
+            hoverAnnotation = addAnnotation({ name: d.name, year: d.year, workTitle: d['work-title'] });
         })
         .on("mouseout", function(event, d) {
             // Restore all tick labels opacity to 1
@@ -380,9 +380,13 @@ function drawFig1() {
         });
 
     // Function to add annotation for a data point
-    function addAnnotation({ name, year, optionalText, yDelta }) {
+    function addAnnotation({ name, year, optionalText, yDelta, workTitle }) {
         // Find the corresponding node to get its position
-        const node = nodes.find(n => n.year === year && n.name === name);
+        const node = nodes.find(
+            n => n.year === year &&
+            n.name === name &&
+            (!workTitle || n['work-title'] === workTitle)
+        );
         if (!node) return;
 
         // Create a group for the annotation
