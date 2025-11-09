@@ -44,7 +44,7 @@
             text-align: right;
         }
 
-        article {
+        article, blockquote {
             hyphens: auto;
         }
 
@@ -73,6 +73,52 @@
         .tick text {
             font-size: calc(var(--pico-font-size) * 1.25);
             font-family: monospace;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--pico-background);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 2rem;
+        }
+
+        .overlay.active {
+            display: flex;
+        }
+
+        .overlay-card {
+            max-width: 65ch;
+            width: 100%;
+            background-color: var(--pico-switch-background-color);
+            border-radius: var(--pico-border-radius);
+            padding: 2rem;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .overlay-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--pico-color);
+            padding: 0.5rem;
+            line-height: 1;
+        }
+
+        .overlay-close:hover {
+            color: var(--pico-primary);
         }
     </style>
 </head>
@@ -187,12 +233,20 @@
                     <li id="lit33"><emph>Das Achterſpiel</emph> in „Der Wiener Tag vom 29.07.1934“ S. 26 <a href="https://anno.onb.ac.at/cgi-content/anno?aid=tag&datum=19340729&seite=29">↗</a></li>
                     <li id="lit34"><emph>Stadt, Land, Fluß</emph> in „Kinder, wir spielen!“ von Ilse Obrig (1937) S. 17 <a href="https://d-nb.info/575286601">↗</a></li>
                     <li id="lit35"><emph>Ein lehrreiches Spiel</emph> in „Neuigkeits-Welt-Blatt (Wien) vom 20.02.1938“ S. 43 <a href="https://anno.onb.ac.at/cgi-content/anno?aid=nws&datum=19380220&seite=43">↗</a></li>
-                    <li id="lit36"><emph>Stadt, Land, Fluß</emph> in „German Club Manual“ von Emma Marie Birkmaier (1949) S. 70 <a href="https://www.google.co.jp/books/edition/German_Club_Manual/Gf69NIjadmsC">↗</a></li>
+                    <li id="lit36"><emph>Stadt, Land, Fluß</emph> in „German Club Manual“ von Emma Marie Birkmaier (1949) S. 70 <a href="https://www.google.de/books/edition/German_Club_Manual/Gf69NIjadmsC">↗</a></li>
                     <li id="lit37"><emph>Stadt, Land, Fluß</emph> in „Österreichische Zeitung vom 14.11.1954“ S. 9 <a href="https://anno.onb.ac.at/cgi-content/anno?aid=oez&datum=19541114&seite=9">↗</a></li>
                 </ol>
             </section>
         </article>
     </main>
+
+    <!-- Overlay for data point details -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-card">
+            <button class="overlay-close" aria-label="Close">×</button>
+            <div id="overlay-content"></div>
+        </div>
+    </div>
 </body>
 <script src="js/d3.v7.min.js"></script>
 <script src="js/data.js"></script>
@@ -294,6 +348,7 @@ function drawFig1() {
             : "var(--pico-color)"
         )
         .attr("opacity", 0.75)
+        .attr("cursor", "pointer");
 
     // Store original fill colors for restoration
     paths.each(function(d) {
@@ -378,6 +433,44 @@ function drawFig1() {
                 hoverAnnotation = null;
             }
         });
+
+    // Overlay functions
+    function showOverlay(dataPoint) {
+        const overlay = document.getElementById('overlay');
+        const content = document.getElementById('overlay-content');
+        // Build HTML content
+        let html = '';
+        html += `<h3>${dataPoint.name}</h3>`
+        html += `<p>In: „${dataPoint['work-title']}“`
+        if (dataPoint.author) {
+            html += ` von ${dataPoint.author}`
+        }
+        html += ` (${dataPoint.year}) S. ${dataPoint.page}`
+        let sourceNum = 1;
+        for (const source of dataPoint.sources) {
+            if (sourceNum > 1) {
+                html += `,`
+            }
+            html += ` <a href="${source}">↗</a>`
+            sourceNum += 1;
+        }
+        html += '</p>'
+        html += `<p><blockquote>${dataPoint.text.replaceAll("\n", '<br>')}</blockquote></p>`
+
+        content.innerHTML = html;
+        overlay.classList.add('active');
+    }
+
+    function hideOverlay() {
+        const overlay = document.getElementById('overlay');
+        overlay.classList.remove('active');
+    }
+
+    // Add click handler to paths
+    paths.on("click", function(event, d) {
+        event.stopPropagation();
+        showOverlay(d);
+    });
 
     // Function to add annotation for a data point
     function addAnnotation({ name, year, optionalText, yDelta, workTitle }) {
@@ -500,6 +593,33 @@ function drawFigs(){
 document.onreadystatechange = function() {
   if (document.readyState === "complete") {
     drawFigs();
+    
+    // Set up overlay event listeners (only once)
+    const overlayElement = document.getElementById('overlay');
+    const closeButton = overlayElement.querySelector('.overlay-close');
+
+    overlayElement.addEventListener('click', function(event) {
+        if (event.target === overlayElement) {
+            const overlay = document.getElementById('overlay');
+            overlay.classList.remove('active');
+        }
+    });
+
+    closeButton.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const overlay = document.getElementById('overlay');
+        overlay.classList.remove('active');
+    });
+
+    // Close overlay on Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            const overlay = document.getElementById('overlay');
+            if (overlay.classList.contains('active')) {
+                overlay.classList.remove('active');
+            }
+        }
+    });
   }
 };
 
