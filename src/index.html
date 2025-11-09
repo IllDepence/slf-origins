@@ -357,7 +357,7 @@ function drawFig1() {
         });
 
     // Function to add annotation for a data point
-    function addAnnotation(dataPoint, optionalText) {
+    function addAnnotation(dataPoint, optionalText, yDelta) {
         // Find the corresponding node to get its position
         const node = nodes.find(n => n.year === dataPoint.year && n.name === dataPoint.name);
         if (!node) return;
@@ -369,6 +369,7 @@ function drawFig1() {
         // Calculate positions
         const dataPointX = node.x;
         const dataPointY = node.y;
+        const delta = yDelta || 0; // Apply y delta if provided
         const rectPadding = 4;
         const rectRadius = 4;
         const lineGap = 8; // Gap between line end and rectangle
@@ -392,9 +393,9 @@ function drawFig1() {
         const rectWidth = mainTextWidth + rectPadding * 2;
         const rectHeight = mainTextHeight + rectPadding * 2;
 
-        // Position rectangle at the right edge, anchored at top
+        // Position rectangle at the right edge, anchored at top, with y delta applied
         const rectX = width - margin.right - rectWidth;
-        const rectY = dataPointY;
+        const rectY = dataPointY + delta;
 
         // Draw connecting line from data point to rectangle using d3.linkHorizontal()
         const linkGenerator = d3.linkHorizontal()
