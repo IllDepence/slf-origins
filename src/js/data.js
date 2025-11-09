@@ -42,7 +42,7 @@ data = [
   "year": 1791,
   "page": 9,
   "sources": [
-    "https://www.google.co.jp/books/edition/Der_angenehme_Gesellschafter/fygPiVhRZUoC"
+    "https://www.google.de/books/edition/Der_angenehme_Gesellschafter/fygPiVhRZUoC"
   ],
   "slf-kategorien": [
     {
@@ -69,7 +69,7 @@ data = [
   "text": "Das Kaufmannsſpiel.\nMan ſetzt sich im Kreis, und einer fängt an, und ſagt: ich bin aus, z. B. Amſterdam, ich heiſſe Adler und handle mit Aalen, jeder muß nun in der Reihe herum auf diese Art 3 Worte auf A ſagen und muß ein Pfand geben, wenn er ein Wort ſagt, das ſchon da war oder ſich auf kein's Beſinnen kann. Iſt der Buchſtabe herum, ſo fängt der Nachbar zur Rechten neben dem, der mit A angefangen hat, 3 Worte in B an, und ſo fort, bis das Alphabet durch iſt."
 },
 {
-  "name": "Mit demſelben Anfangs-Buchſtaben",
+  "name": "Züge aus dem Leben",
   "work-title": "Morgenblatt für gebildete Stände vom 13.08.1814",
   "year": 1814,
   "page": 3,
@@ -134,7 +134,7 @@ data = [
   "text": "Das Kaufmannsſpiel\nMan ſetzt sich im Kreiſe, und Einer fängt an und ſagt: ich bin aus z. B. Amſterdam; heiſſe Adler und handle mit Aalen. Jeder muß nun in der Reihe herum auf diese Art drey Worte, die ſich mit A anfangen, ſagen, und muß ein Pfand geben, wenn er ein Wort ſagt, das ſchon da war, oder ſich auf keines beſinnen kann. Iſt der Buchſtabe A herum, ſo fängt der Nachbar zur Rechten neben dem, der mit A angefangen hat, drey Worte in B an, und ſo fort, bis das Alphabet durch iſt."
 },
 {
-  "name": "Dem Alphabethe nach",
+  "name": "Anekdoten",
   "work-title": "Der Sammler vom 03.11.1831",
   "year": 1831,
   "page": 3,
