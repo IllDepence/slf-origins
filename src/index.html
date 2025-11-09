@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stadt, Land, Fluss</title>
-    
+
     <!-- Pico.css -->
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="css/pico.colors.min.css">
-    
+
     <!-- Lora Font -->
     <link rel="stylesheet" href="css/fonts.css">
 
-    
     <style>
         /* Override Pico.css font variable to use Lora */
         :root {
@@ -67,14 +66,13 @@
             }
         }
 
-
         figure {
             margin: 1rem;
         }
 
         .tick text {
             font-size: calc(var(--pico-font-size) * 1.25);
-            font-family: var(--pico-font-family);
+            font-family: monospace;
         }
     </style>
 </head>
@@ -234,7 +232,7 @@ function drawFig1() {
         .ticks(8)
         .tickFormat(d3.format('d'));
 
-    svg.append("g")
+    const axisGroup = svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
         .call(axisLeft);
 
@@ -274,7 +272,8 @@ function drawFig1() {
         .size(Math.PI * radius * radius);
 
     // Draw symbols (circles, triangles, stars)
-    svg.append("g")
+    const pathsGroup = svg.append("g");
+    const paths = pathsGroup
         .selectAll("path")
         .data(nodes)
         .enter()
@@ -295,8 +294,67 @@ function drawFig1() {
             : "var(--pico-color)"
         )
         .attr("opacity", 0.75)
-        .append("title")
-        .text(d => `${d.year} — ${d.name || ''}`.trim());
+
+    // Store original fill colors for restoration
+    paths.each(function(d) {
+        d.originalFill = d3.select(this).attr("fill");
+    });
+
+    // Get tick positioning values from existing ticks to avoid magic numbers
+    const firstTick = axisGroup.select(".tick");
+    const tickLineX2 = firstTick.select("line").attr("x2");
+    const tickTextX = firstTick.select("text").attr("x");
+    const tickTextDy = firstTick.select("text").attr("dy");
+
+    // Variable to track the additional tick label
+    let additionalTickLabel = null;
+
+    // Add hover effects
+    paths
+        .on("mouseover", function(event, d) {
+            // Set all tick labels to opacity 0.3 (excluding the additional one we'll add)
+            axisGroup.selectAll(".tick:not(.additional-tick) text")
+                .attr("opacity", 0.3);
+
+            // Add additional tick label with exact year
+            const tickY = y(d.year);
+            additionalTickLabel = axisGroup.append("g")
+                .attr("class", "tick additional-tick")
+                .attr("transform", `translate(0,${tickY})`);
+
+            additionalTickLabel.append("line")
+                .attr("x2", tickLineX2)
+                .attr("stroke", "currentColor");
+
+            additionalTickLabel.append("text")
+                .attr("x", tickTextX)
+                .attr("dy", tickTextDy)
+                .attr("text-anchor", "end")
+                .attr("fill", "currentColor")
+                .text(d.year);
+
+            // Make all data points colored 'var(--pico-color)'
+            paths.attr("fill", "var(--pico-color)");
+
+            // Make the hovered data point colored 'var(--pico-primary)'
+            d3.select(this).attr("fill", "var(--pico-primary)");
+        })
+        .on("mouseout", function(event, d) {
+            // Restore all tick labels opacity to 1
+            axisGroup.selectAll(".tick text")
+                .attr("opacity", 1);
+
+            // Remove additional tick label
+            if (additionalTickLabel) {
+                additionalTickLabel.remove();
+                additionalTickLabel = null;
+            }
+
+            // Restore original fill colors
+            paths.each(function(d) {
+                d3.select(this).attr("fill", d.originalFill);
+            });
+        });
 }
 function drawFigs(){
     drawFig1();
@@ -312,4 +370,3 @@ window.onresize = drawFigs;
 
 </script>
 </html>
-
