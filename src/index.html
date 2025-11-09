@@ -357,9 +357,9 @@ function drawFig1() {
         });
 
     // Function to add annotation for a data point
-    function addAnnotation(dataPoint, optionalText, yDelta) {
+    function addAnnotation(name, year, optionalText, yDelta) {
         // Find the corresponding node to get its position
-        const node = nodes.find(n => n.year === dataPoint.year && n.name === dataPoint.name);
+        const node = nodes.find(n => n.year === year && n.name === name);
         if (!node) return;
 
         // Create a group for the annotation
@@ -375,9 +375,7 @@ function drawFig1() {
         const lineGap = 8; // Gap between line end and rectangle
 
         // Prepare text content
-        const nameText = dataPoint.name || '';
-        const yearText = `(${dataPoint.year})`;
-        const mainText = `${nameText} ${yearText}`;
+        const mainText = `${name} (${year})`;
 
         // Create temporary text element to measure width
         const tempText = svg.append("text")
@@ -449,10 +447,11 @@ function drawFig1() {
         }
     }
 
-    // Test: call it for the first data point
-    if (nodes.length > 0) {
-        addAnnotation(nodes[0], "Kateogieren und Anfangsbuchstaben");
-    }
+    addAnnotation("Das Handlungs-Spiel", 1784, "Kateogieren und Anfangsbuchstaben");
+    addAnnotation("Das Kaufmannsſpiel", 1791, "Regeln für gleiche/fehlenden Antworten", 50);
+    addAnnotation("Steeple-Chase", 1887, "Antworten schreiben statt aufsagen", -50);
+    addAnnotation("Das Achterſpiel", 1934, "Stop sobald erster fertig", -40);
+    addAnnotation("Stadt, Land, Fluß", 1937, "", 15);
 }
 function drawFigs(){
     drawFig1();
