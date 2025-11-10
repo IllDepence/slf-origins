@@ -130,6 +130,14 @@
         .overlay-close:hover {
             color: var(--pico-primary-hover);
         }
+
+        .category {
+            background-color: var(--pico-form-element-active-background-color);
+            border: solid 1px var(--pico-ins-color);
+            border-radius: calc(var(--pico-border-radius) * 2);
+            padding: 0 8px;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -603,8 +611,11 @@
                 html += ` <a href="${source}">↗</a>`
                 sourceNum += 1;
             }
-            html += '</p>'
-            html += `<p><blockquote>${dataPoint.text.replaceAll("\n", '<br>')}</blockquote></p>`
+            html += '</p><p>'
+            for (const cat of dataPoint['slf-kategorien']) {
+                html += ` <small class="category">${cat.anzeige}</small>`
+            }
+            html += `</p><p><blockquote>${dataPoint.text.replaceAll("\n", '<br>')}</blockquote></p>`
 
             content.innerHTML = html;
             overlay.classList.add('active');
