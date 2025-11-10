@@ -704,7 +704,9 @@
                 .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
                 .attr("font-family", "var(--pico-font-family)")
                 .attr("fill", "var(--pico-color)")
-                .text(mainText);
+                .attr("cursor", "pointer")
+                .text(mainText)
+                .on("click", () => showOverlay(node));
 
             // Add optional text below rectangle if provided
             if (optionalText) {
