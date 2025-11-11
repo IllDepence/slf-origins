@@ -66,7 +66,7 @@ data = [
   "slf-spielende": "alle Buchstaben durch",
   "slf-wertung": "_/_/-1/-1",
   "notes": "Fast identisch wieder beschrieben in [[Das Kaufmannsſpiel (1817)]].",
-  "text": "Das Kaufmannsſpiel.\nMan ſetzt sich im Kreis, und einer fängt an, und ſagt: ich bin aus, z. B. Amſterdam, ich heiſſe Adler und handle mit Aalen, jeder muß nun in der Reihe herum auf diese Art 3 Worte auf A ſagen und muß ein Pfand geben, wenn er ein Wort ſagt, das ſchon da war oder ſich auf kein's Beſinnen kann. Iſt der Buchſtabe herum, ſo fängt der Nachbar zur Rechten neben dem, der mit A angefangen hat, 3 Worte in B an, und ſo fort, bis das Alphabet durch iſt."
+  "text": "Das Kaufmannsſpiel.\nMan ſetzt sich im Kreis, und einer fängt an, und ſagt: ich bin aus, z. B. Amſterdam, ich heiſſe Adler und handle mit Aalen, jeder muß nun in der Reihe herum auf diese Art 3 Worte auf A ſagen und muß ein Pfand geben, wenn er ein Wort ſagt, das ſchon da war oder ſich auf keines Beſinnen kann. Iſt der Buchſtabe herum, ſo fängt der Nachbar zur Rechten neben dem, der mit A angefangen hat, 3 Worte in B an, und ſo fort, bis das Alphabet durch iſt."
 },
 {
   "name": "Züge aus dem Leben",
