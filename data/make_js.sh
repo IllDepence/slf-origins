@@ -1,6 +1,6 @@
 #!/bin/bash
 
-out_fn="../src/js/data.js"
+out_fn="../docs/js/data.js"
 
 echo "data = [" > $out_fn
 for fn in ./*.json; do
