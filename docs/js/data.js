@@ -358,8 +358,9 @@ data = [
   "slf-spielende": "alle Buchstaben durch",
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]] und [[Mein Nachbar gefällt mir (1874)]], nur mit anderem Text beschrieben.",
-  "text": "336. Mein Nachbar gefällt mir.\n(Für größere Kinder.)\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt Einer nach dem $nderen: „Mein Nachbar gefällt mir“ und gibt dabei an: 1. die Urſache, warum er ihm gefällt; 2. die Speiſe, mit der er ihn täglich ernährt; 3. den Ort, nach welchem hin er ihn ſchickt; 4. den Gegenſtand, den er ihm auf die Reiſe mitgibt. Die Namen dieſer vier Gegenſtände müſſen aber mit demſelben Anfangsbuchſtaben beginnen. Auch muſs von den Neneneinanderſitzenden die alphabetiſche Aufeinanderfolge der Buchſtaben beibehalten werden. So beginnt z.B. der Erſte und ſagt:\nMein Nachbar gefällt mir, weil er aufmerkſam iſt, ich gebe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Amerika ſchiffen und ihm als Reiſegeld ein Achtgroſchenſtück geben.\nDer Zweite fährt fort:\nMein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchiffe ihn nach Breslau und gebe ihm einen Bedienten mit ꝛc.\nWer beim betreffenden Satze kein Wort mit dem beſtimmten Buchſtaben zu treffen weiß, gibt eine Strafe (Pfand). Man kann auch abſichtlich einen Fehler machen, und wenn derſelbe nicht bemerkt wird, die ganze Geſellſchaft in Strafe nehmen. —"
-},
+  "text": "336. Mein Nachbar gefällt mir.\n(Für größere Kinder.)\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt Einer nach dem $nderen: „Mein Nachbar gefällt mir“ und gibt dabei an: 1. die Urſache, warum er ihm gefällt; 2. die Speiſe, mit der er ihn täglich ernährt; 3. den Ort, nach welchem hin er ihn ſchickt; 4. den Gegenſtand, den er ihm auf die Reiſe mitgibt. Die Namen dieſer vier Gegenſtände müſſen aber mit demſelben Anfangsbuchſtaben beginnen. Auch muſz von den Neneneinanderſitzenden die alphabetiſche Aufeinanderfolge der Buchſtaben beibehalten werden. So beginnt z.B. der Erſte und ſagt:\nMein Nachbar gefällt mir, weil er aufmerkſam iſt, ich gebe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Amerika ſchiffen und ihm als Reiſegeld ein Achtgroſchenſtück geben.\nDer Zweite fährt fort:\nMein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchiffe ihn nach Breslau und gebe ihm einen Bedienten mit ꝛc.\nWer beim betreffenden Satze kein Wort mit dem beſtimmten Buchſtaben zu treffen weiß, gibt eine Strafe (Pfand). Man kann auch abſichtlich einen Fehler machen, und wenn derſelbe nicht bemerkt wird, die ganze Geſellſchaft in Strafe nehmen. —"
+}
+,
 {
   "name": "Mit gegebenen Anfangsbuchſtaben",
   "work-title": "Illustrirtes allgemeines Familien-Spielbuch",
@@ -461,8 +462,9 @@ data = [
   "slf-spielende": "-",
   "slf-wertung": "_/_/_/-1",
   "notes": "",
-  "text": "69. Die Poſt.\n\nEiner fängt an: „Trara!“ Der Spielordner fragt: „Wer da?“ Antweot: „Die Poſt.“ — „Woher?“ Und herauf muß mit dem Namen eines Landes, einer Stadt, oder ſonſt eines Ortes mit A anfangend geantwortet werden. Dann: „wohin geht ſie?“ worauf wieder mit einem Orte auf A geantwortet werden muß, und endlich: „was bringt ſie mit?“ worauf irgend eine Ware oder Sache wieder auf A geantwortet wird. Iſt der Erſte fertig, ſo muß entweder der Nächſte oder (damit niemand im voraus wiſſe, welcher Buchſtabe ihn treffen wird) ein vom Spielordner hierzu Aufgeforderter mit B, der Dritte mit C u. ſ. w. fortfahren. Wer ſtecken bleibt, giebt ein Pfand."
-},
+  "text": "69. Die Poſt.\n\nEiner fängt an: „Trara!“ Der Spielordner fragt: „Wer da?“ Antwort: „Die Poſt.“ — „Woher?“ Und herauf muß mit dem Namen eines Landes, einer Stadt, oder ſonſt eines Ortes mit A anfangend geantwortet werden. Dann: „wohin geht ſie?“ worauf wieder mit einem Orte auf A geantwortet werden muß, und endlich: „was bringt ſie mit?“ worauf irgend eine Ware oder Sache wieder auf A geantwortet wird. Iſt der Erſte fertig, ſo muß entweder der Nächſte oder (damit niemand im voraus wiſſe, welcher Buchſtabe ihn treffen wird) ein vom Spielordner hierzu Aufgeforderter mit B, der Dritte mit C u. ſ. w. fortfahren. Wer ſtecken bleibt, giebt ein Pfand."
+}
+,
 {
   "name": "Die vier Wortklaſſen",
   "work-title": "Das Spiel im Zimmer",
@@ -541,8 +543,9 @@ data = [
   "slf-spielende": "-",
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]], nur mit anderem Text beschrieben.",
-  "text": "61. Mein Nachbar gefällt mir.\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt nun der eine nach dem anderen: „Mein Nachbar gefällt mir!“ und giebt dabei an 1., die Urſache, warum er ihm gefällt, 2. die Speiſe, mit welcher er ihn täglich ernährt, 3. den Ort, an den er ihn ſickt und 4. den Gegenſtand, den er ihm auf die Reiſe mitgiebt. Die Namen der vier Gegenſtände müſſen aber mit demſselben Anfangsbuchſtaben beginnen. So beginnt z.B. der Erſte: „Mein Nachbar gefällt mir, weil er artig iſt, ich gehe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Afrika ſicken und ihm ein Glas Augenwaſſer mitgeben. Der zweite fährt fort: Mein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchicke ihn nach Berline und gebe ihm einen Bedienten mit. In dieſer Weiſe geht es weider, bis das Alphabet durch iſt. Wer ſtecken bleibt, giebt ein Pfand."
-},
+  "text": "61. Mein Nachbar gefällt mir.\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt nun der eine nach dem anderen: „Mein Nachbar gefällt mir!“ und giebt dabei an 1., die Urſache, warum er ihm gefällt, 2. die Speiſe, mit welcher er ihn täglich ernährt, 3. den Ort, an den er ihn ſickt und 4. den Gegenſtand, den er ihm auf die Reiſe mitgiebt. Die Namen der vier Gegenſtände müſſen aber mit demſselben Anfangsbuchſtaben beginnen. So beginnt z.B. der Erſte: „Mein Nachbar gefällt mir, weil er artig iſt, ich gehe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Afrika ſicken und ihm ein Glas Augenwaſſer mitgeben. Der zweite fährt fort: Mein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchicke ihn nach Berlin und gebe ihm einen Bedienten mit. In dieſer Weiſe geht es weider, bis das Alphabet durch iſt. Wer ſtecken bleibt, giebt ein Pfand."
+}
+,
 {
   "name": "Steeple-Chase",
   "work-title": "Spielbuch",
