@@ -12,11 +12,11 @@
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(Namen eines Landes, einer Stadt oder eines Dorfes|Ortsnamen)"
     },
     {
       "anzeige": "Ware/Sache",
-      "text-marker": ""
+      "text-marker": "Waren oder Sache"
     }
   ],
   "slf-antwortform": "verbal",

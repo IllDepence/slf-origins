@@ -13,35 +13,35 @@
   "slf-kategorien": [
     {
       "anzeige": "Feldherr",
-      "text-marker": ""
+      "text-marker": "Feldherrn"
     },
     {
       "anzeige": "Dichter",
-      "text-marker": ""
+      "text-marker": "Dichter"
     },
     {
       "anzeige": "Komponist",
-      "text-marker": ""
+      "text-marker": "Komponiſten"
     },
     {
       "anzeige": "Maler",
-      "text-marker": ""
+      "text-marker": "Maler"
     },
     {
       "anzeige": "Bildhauer",
-      "text-marker": ""
+      "text-marker": "Bildhauer"
     },
     {
       "anzeige": "Schauspieler",
-      "text-marker": ""
+      "text-marker": "Schauſpieler"
     },
     {
       "anzeige": "Virtuose",
-      "text-marker": ""
+      "text-marker": "Virtuoſe"
     },
     {
       "anzeige": "berühmte Frau",
-      "text-marker": ""
+      "text-marker": "berühmte Frau"
     }
   ],
   "slf-antwortform": "schriftlich",

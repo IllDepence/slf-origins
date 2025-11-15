@@ -138,6 +138,11 @@
             padding: 0 8px;
             display: inline-block;
         }
+
+        .cat-mark {
+            text-decoration: underline dotted var(--pico-ins-color);
+            text-decoration-thickness: 2px;
+        }
     </style>
 </head>
 
@@ -758,10 +763,15 @@
                 sourceNum += 1;
             }
             html += '</p><p>'
+            let sourceText = dataPoint.text.replaceAll("\n", '<br>')
             for (const cat of dataPoint['slf-kategorien']) {
                 html += ` <small class="category">${cat.anzeige}</small>`
+                if (cat['text-marker'].length > 0) {
+                    const mrkPatt = new RegExp(cat['text-marker'], 'g')
+                    sourceText = sourceText.replace(mrkPatt, '<span class="cat-mark">$&</span>')
+                }
             }
-            html += `</p><p><blockquote>${dataPoint.text.replaceAll("\n", '<br>')}</blockquote></p>`
+            html += `</p><p><blockquote>${sourceText}</blockquote></p>`
             // TODO: underline category texts in ins color
 
             content.innerHTML = html;

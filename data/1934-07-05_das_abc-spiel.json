@@ -9,15 +9,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "heiße(?= A)"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(komme aus|reiſe nach)(?= A)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit(?= A)"
     }
   ],
   "slf-antwortform": "verbal",

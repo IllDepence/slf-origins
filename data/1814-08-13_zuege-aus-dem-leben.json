@@ -9,15 +9,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "ort"
     },
     {
       "anzeige": "Geschäft",
-      "text-marker": ""
+      "text-marker": "Geſchäft"
     }
   ],
   "slf-antwortform": "verbal",

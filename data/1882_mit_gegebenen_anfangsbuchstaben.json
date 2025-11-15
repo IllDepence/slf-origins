@@ -12,16 +12,16 @@
   ],
   "slf-kategorien": [
     {
-      "anzeige": "Ort",
-      "text-marker": ""
+      "anzeige": "Name",
+      "text-marker": "heiße(?= A)"
     },
     {
-      "anzeige": "Name",
-      "text-marker": ""
+      "anzeige": "Ort",
+      "text-marker": "(komme von(?= A)|reiſe nach(?= dem A))"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit(?= A)"
     }
   ],
   "slf-antwortform": "verbal",

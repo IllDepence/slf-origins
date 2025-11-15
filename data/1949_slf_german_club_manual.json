@@ -12,35 +12,35 @@
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Fluß"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name(?=,)"
     },
     {
       "anzeige": "Beruf",
-      "text-marker": ""
+      "text-marker": "Beruf"
     },
     {
       "anzeige": "Blube",
-      "text-marker": ""
+      "text-marker": "Blume"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier"
     }
   ],
   "slf-antwortform": "schriftlich",

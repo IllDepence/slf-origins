@@ -13,19 +13,19 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Wie heißt du(?=\\? D)"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Wo kommſt du her(?=\\? Ich komme aus A)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Womit handelſt du(?=\\? Ich handle mit A)"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Was ißt du(?=\\? A)"
     }
   ],
   "slf-antwortform": "verbal",

@@ -10,15 +10,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "bin aus"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "heiſſe"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit"
     }
   ],
   "slf-antwortform": "verbal",

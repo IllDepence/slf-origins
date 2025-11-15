@@ -13,19 +13,19 @@
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "(Urſache|weshalb ihm ſein Nachbar gefällt)"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Nahrung"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "(was er ihm|mitgiebt)"
     }
   ],
   "slf-antwortform": "verbal",

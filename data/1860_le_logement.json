@@ -12,19 +12,35 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "(appelez-vous|nom(?= de l’hôte))"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "venez-vous"
     },
     {
       "anzeige": "Hotelname",
-      "text-marker": ""
+      "text-marker": "l’enseigne de l’auberge"
     },
     {
       "anzeige": "Speise",
-      "text-marker": ""
+      "text-marker": "mets"
+    },
+    {
+      "anzeige": "Baumart",
+      "text-marker": "arbres"
+    },
+    {
+      "anzeige": "Medikament",
+      "text-marker": "médicaments"
+    },
+    {
+      "anzeige": "Waffe",
+      "text-marker": "armes"
+    },
+    {
+      "anzeige": "Kleidungsstück",
+      "text-marker": "vêtement"
     }
   ],
   "slf-antwortform": "verbal",

@@ -13,15 +13,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Vorname"
     },
     {
       "anzeige": "Stadt/Land",
-      "text-marker": ""
+      "text-marker": "(Stadt|Land)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Ware"
     }
   ],
   "slf-antwortform": "verbal",

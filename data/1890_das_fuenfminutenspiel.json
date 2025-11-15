@@ -13,19 +13,19 @@
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Städtenamen"
     },
     {
       "anzeige": "Berühmter Mann",
-      "text-marker": ""
+      "text-marker": "berühmte Männer"
     },
     {
       "anzeige": "Dichter",
-      "text-marker": ""
+      "text-marker": "Dichter"
     },
     {
       "anzeige": "Maler",
-      "text-marker": ""
+      "text-marker": "Maler"
     }
   ],
   "slf-antwortform": "schriftlich",

@@ -13,19 +13,19 @@
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "Urſache, warum er ihm gefällt"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Speiſe"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Ort"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "Gegenſtand"
     }
   ],
   "slf-antwortform": "verbal",

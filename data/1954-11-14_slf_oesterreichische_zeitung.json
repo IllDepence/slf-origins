@@ -9,27 +9,27 @@
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt(?=,)"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Fluß"
     },
     {
       "anzeige": "Blume",
-      "text-marker": ""
+      "text-marker": "Blume"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier"
     },
     {
       "anzeige": "Dichter",
-      "text-marker": ""
+      "text-marker": "Dichter"
     }
   ],
   "slf-antwortform": "schriftlich",

@@ -12,15 +12,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name"
     },
     {
       "anzeige": "Stadt/Land",
-      "text-marker": ""
+      "text-marker": "(Stadt oder|Land)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Ware"
     }
   ],
   "slf-antwortform": "verbal",
@@ -47,15 +47,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "bin aus"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "heiſſe"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit"
     }
   ],
   "slf-antwortform": "verbal",
@@ -79,15 +79,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "ort"
     },
     {
       "anzeige": "Geschäft",
-      "text-marker": ""
+      "text-marker": "Geſchäft"
     }
   ],
   "slf-antwortform": "verbal",
@@ -112,15 +112,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "bin aus"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "heiſſe"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit"
     }
   ],
   "slf-antwortform": "verbal",
@@ -144,15 +144,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Nahme"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "ort"
     },
     {
       "anzeige": "Stand",
-      "text-marker": ""
+      "text-marker": "Stand"
     }
   ],
   "slf-antwortform": "verbal",
@@ -180,19 +180,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "(Urſache|warum er ihm gefällt)"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "womit er ihn täglich ernährt"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "was er ihm auf die Reiſe mitgiebt"
     }
   ],
   "slf-antwortform": "verbal",
@@ -219,19 +219,35 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "(appelez-vous|nom(?= de l’hôte))"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "venez-vous"
     },
     {
       "anzeige": "Hotelname",
-      "text-marker": ""
+      "text-marker": "l’enseigne de l’auberge"
     },
     {
       "anzeige": "Speise",
-      "text-marker": ""
+      "text-marker": "mets"
+    },
+    {
+      "anzeige": "Baumart",
+      "text-marker": "arbres"
+    },
+    {
+      "anzeige": "Medikament",
+      "text-marker": "médicaments"
+    },
+    {
+      "anzeige": "Waffe",
+      "text-marker": "armes"
+    },
+    {
+      "anzeige": "Kleidungsstück",
+      "text-marker": "vêtement"
     }
   ],
   "slf-antwortform": "verbal",
@@ -259,15 +275,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Vorname"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Speise",
-      "text-marker": ""
+      "text-marker": "Speiſe"
     }
   ],
   "slf-antwortform": "verbal",
@@ -295,19 +311,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "(Urſache|weshalb ihm ſein Nachbar gefällt)"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Nahrung"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "(was er ihm|mitgiebt)"
     }
   ],
   "slf-antwortform": "verbal",
@@ -335,19 +351,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "Urſache, warum er ihm gefällt"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Speiſe"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Ort"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "Gegenſtand"
     }
   ],
   "slf-antwortform": "verbal",
@@ -359,8 +375,7 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]] und [[Mein Nachbar gefällt mir (1874)]], nur mit anderem Text beschrieben.",
   "text": "336. Mein Nachbar gefällt mir.\n(Für größere Kinder.)\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt Einer nach dem $nderen: „Mein Nachbar gefällt mir“ und gibt dabei an: 1. die Urſache, warum er ihm gefällt; 2. die Speiſe, mit der er ihn täglich ernährt; 3. den Ort, nach welchem hin er ihn ſchickt; 4. den Gegenſtand, den er ihm auf die Reiſe mitgibt. Die Namen dieſer vier Gegenſtände müſſen aber mit demſelben Anfangsbuchſtaben beginnen. Auch muſz von den Neneneinanderſitzenden die alphabetiſche Aufeinanderfolge der Buchſtaben beibehalten werden. So beginnt z.B. der Erſte und ſagt:\nMein Nachbar gefällt mir, weil er aufmerkſam iſt, ich gebe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Amerika ſchiffen und ihm als Reiſegeld ein Achtgroſchenſtück geben.\nDer Zweite fährt fort:\nMein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchiffe ihn nach Breslau und gebe ihm einen Bedienten mit ꝛc.\nWer beim betreffenden Satze kein Wort mit dem beſtimmten Buchſtaben zu treffen weiß, gibt eine Strafe (Pfand). Man kann auch abſichtlich einen Fehler machen, und wenn derſelbe nicht bemerkt wird, die ganze Geſellſchaft in Strafe nehmen. —"
-}
-,
+},
 {
   "name": "Mit gegebenen Anfangsbuchſtaben",
   "work-title": "Illustrirtes allgemeines Familien-Spielbuch",
@@ -375,16 +390,16 @@ data = [
   ],
   "slf-kategorien": [
     {
-      "anzeige": "Ort",
-      "text-marker": ""
+      "anzeige": "Name",
+      "text-marker": "heiße(?= A)"
     },
     {
-      "anzeige": "Name",
-      "text-marker": ""
+      "anzeige": "Ort",
+      "text-marker": "(komme von(?= A)|reiſe nach(?= dem A))"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit(?= A)"
     }
   ],
   "slf-antwortform": "verbal",
@@ -411,15 +426,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Wie heißt Du"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Wo kommſt Du her"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Womit handelſt Du"
     }
   ],
   "slf-antwortform": "verbal",
@@ -447,11 +462,11 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Namen eines Landes, einer Stadt, oder ſonſt eines Ortes"
     },
     {
       "anzeige": "Ware/Sache",
-      "text-marker": ""
+      "text-marker": "Ware oder Sache"
     }
   ],
   "slf-antwortform": "verbal",
@@ -463,8 +478,7 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "69. Die Poſt.\n\nEiner fängt an: „Trara!“ Der Spielordner fragt: „Wer da?“ Antwort: „Die Poſt.“ — „Woher?“ Und herauf muß mit dem Namen eines Landes, einer Stadt, oder ſonſt eines Ortes mit A anfangend geantwortet werden. Dann: „wohin geht ſie?“ worauf wieder mit einem Orte auf A geantwortet werden muß, und endlich: „was bringt ſie mit?“ worauf irgend eine Ware oder Sache wieder auf A geantwortet wird. Iſt der Erſte fertig, ſo muß entweder der Nächſte oder (damit niemand im voraus wiſſe, welcher Buchſtabe ihn treffen wird) ein vom Spielordner hierzu Aufgeforderter mit B, der Dritte mit C u. ſ. w. fortfahren. Wer ſtecken bleibt, giebt ein Pfand."
-}
-,
+},
 {
   "name": "Die vier Wortklaſſen",
   "work-title": "Das Spiel im Zimmer",
@@ -480,19 +494,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Eigeschaftswort",
-      "text-marker": ""
+      "text-marker": "Eigenſchaftswörter"
     },
     {
       "anzeige": "Hauptwort",
-      "text-marker": ""
+      "text-marker": "Hauptwörter"
     },
     {
       "anzeige": "Umstandswort",
-      "text-marker": ""
+      "text-marker": "Umſtands- \\(oder Eingenſchafts\\)wörter"
     },
     {
       "anzeige": "Zeitwort",
-      "text-marker": ""
+      "text-marker": "Zeitwörter"
     }
   ],
   "slf-antwortform": "verbal",
@@ -503,7 +517,7 @@ data = [
   "slf-spielende": "?",
   "slf-wertung": "?",
   "notes": "?\n→ fraglich ob Anfangsbuchstaben tatsächlich relevant sind",
-  "text": "121. Die vier Wortklaſſen.\n\nDer Spielordner ſetzt ſich mit Paper und Bleiſtift oben an den Tiſch und macht ſich auf dem Blatte vier Rubriken, in welche kommen:\n1. Eigenſchaftswörter, 2. Hauptwörter, 3. Umſtands- (oder Eingenſchafts)wörter, 4. Zeitwörter.\nJedes Mitglied der Geſellſchaft muß nun zuerst ein Eigenſchaftswort nennen, welches in die erſte Rubrik eingetragen wird. Darauf nennt jedes, aber in der umgekehrten Reihenfolge, d.h. das erſte Mal in der Reihenfolge A, B, C, das zweite Mal Z, Y, X, W, u. ſ. w. ein Hauptwort für die zweite Rubrik und ebenſo Umſtands- und Zeitwörter für die Rubrik Nr. 3 und 4.\nIſt das Verzeichnis beendet, ſo verlieſt der Spielordner dasſelbe und bringt jedes Beiſpiel mit den anweſenden Perſonen der Reihe nach, wie ſie am Tiſche ſitzen, in Verbindung.\n\nBeispiel. A. Verzeichnis:\nPersonen:     1.      2.        3.            4.\nHerr R.R.|grün    |Ochse   |liebens-    |ge-\n         |        |        |würdig      |träumt.\nFrl. R.R.|teuer   |Reisbrei|fürchterlich|gelechzt.\nHerr R.R.|verloren|Taſchen-|glücklich   |verſetzt.\n         |        |uhr     |            |\n\nB. Vorleſen:\nHerr R. R. hat von einem grünen Ochſen liebenswürdig geträumt.\nFrl. R. R. hat nach einem teuren Reisbrei fürchterllich gelechzt.\nHerr R. R. hat ſeine verlorene Taſchenuhr glücklich verſetzt. U. ſ. f."
+  "text": "121. Die vier Wortklaſſen.\n\nDer Spielordner ſetzt ſich mit Paper und Bleiſtift oben an den Tiſch und macht ſich auf dem Blatte vier Rubriken, in welche kommen:\n1. Eigenſchaftswörter, 2. Hauptwörter, 3. Umſtands- (oder Eingenſchafts)wörter, 4. Zeitwörter.\nJedes Mitglied der Geſellſchaft muß nun zuerst ein Eigenſchaftswort nennen, welches in die erſte Rubrik eingetragen wird. Darauf nennt jedes, aber in der umgekehrten Reihenfolge, d.h. das erſte Mal in der Reihenfolge A, B, C, das zweite Mal Z, Y, X, W, u. ſ. w. ein Hauptwort für die zweite Rubrik und ebenſo Umſtands- und Zeitwörter für die Rubrik Nr. 3 und 4.\nIſt das Verzeichnis beendet, ſo verlieſt der Spielordner dasſelbe und bringt jedes Beiſpiel mit den anweſenden Perſonen der Reihe nach, wie ſie am Tiſche ſitzen, in Verbindung.\n\n<pre>            Beispiel. A. Verzeichnis:\nPersonen:     1.      2.        3.            4.\nHerr R.R.|grün    |Ochse   |liebens-    |ge-\n         |        |        |würdig      |träumt.\nFrl. R.R.|teuer   |Reisbrei|fürchterlich|gelechzt.\nHerr R.R.|verloren|Taſchen-|glücklich   |verſetzt.\n         |        |uhr     |            |</pre>B. Vorleſen:\nHerr R. R. hat von einem grünen Ochſen liebenswürdig geträumt.\nFrl. R. R. hat nach einem teuren Reisbrei fürchterllich gelechzt.\nHerr R. R. hat ſeine verlorene Taſchenuhr glücklich verſetzt. U. ſ. f."
 },
 {
   "name": "Mein Nachbar gefällt mir",
@@ -520,19 +534,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "Urſache, warum er ihm gefällt"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Speiſe"
     },
     {
-      "anzeige": "Stadt",
-      "text-marker": ""
+      "anzeige": "Ort",
+      "text-marker": "Ort"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "Gegenſtand"
     }
   ],
   "slf-antwortform": "verbal",
@@ -544,8 +558,7 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]], nur mit anderem Text beschrieben.",
   "text": "61. Mein Nachbar gefällt mir.\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt nun der eine nach dem anderen: „Mein Nachbar gefällt mir!“ und giebt dabei an 1., die Urſache, warum er ihm gefällt, 2. die Speiſe, mit welcher er ihn täglich ernährt, 3. den Ort, an den er ihn ſickt und 4. den Gegenſtand, den er ihm auf die Reiſe mitgiebt. Die Namen der vier Gegenſtände müſſen aber mit demſselben Anfangsbuchſtaben beginnen. So beginnt z.B. der Erſte: „Mein Nachbar gefällt mir, weil er artig iſt, ich gehe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Afrika ſicken und ihm ein Glas Augenwaſſer mitgeben. Der zweite fährt fort: Mein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchicke ihn nach Berlin und gebe ihm einen Bedienten mit. In dieſer Weiſe geht es weider, bis das Alphabet durch iſt. Wer ſtecken bleibt, giebt ein Pfand."
-}
-,
+},
 {
   "name": "Steeple-Chase",
   "work-title": "Spielbuch",
@@ -561,35 +574,35 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Feldherr",
-      "text-marker": ""
+      "text-marker": "Feldherrn"
     },
     {
       "anzeige": "Dichter",
-      "text-marker": ""
+      "text-marker": "Dichter"
     },
     {
       "anzeige": "Komponist",
-      "text-marker": ""
+      "text-marker": "Komponiſten"
     },
     {
       "anzeige": "Maler",
-      "text-marker": ""
+      "text-marker": "Maler"
     },
     {
       "anzeige": "Bildhauer",
-      "text-marker": ""
+      "text-marker": "Bildhauer"
     },
     {
       "anzeige": "Schauspieler",
-      "text-marker": ""
+      "text-marker": "Schauſpieler"
     },
     {
       "anzeige": "Virtuose",
-      "text-marker": ""
+      "text-marker": "Virtuoſe"
     },
     {
       "anzeige": "berühmte Frau",
-      "text-marker": ""
+      "text-marker": "berühmte Frau"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -618,19 +631,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Städtenamen"
     },
     {
       "anzeige": "Berühmter Mann",
-      "text-marker": ""
+      "text-marker": "berühmte Männer"
     },
     {
       "anzeige": "Dichter",
-      "text-marker": ""
+      "text-marker": "Dichter"
     },
     {
       "anzeige": "Maler",
-      "text-marker": ""
+      "text-marker": "Maler"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -657,15 +670,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(woher ſie kommen|wohin ſie gehen)"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "wie ſie heißen"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "womit ſie handeln"
     }
   ],
   "slf-antwortform": "verbal",
@@ -692,11 +705,11 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(Namen eines Landes, einer Stadt oder eines Dorfes|Ortsnamen)"
     },
     {
       "anzeige": "Ware/Sache",
-      "text-marker": ""
+      "text-marker": "Waren oder Sache"
     }
   ],
   "slf-antwortform": "verbal",
@@ -724,23 +737,23 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "Gegenſtand"
     },
     {
       "anzeige": "Eigenschaftswort",
-      "text-marker": ""
+      "text-marker": "Eigenſchaftswort"
     }
   ],
   "slf-antwortform": "verbal",
@@ -768,19 +781,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Bauwerk",
-      "text-marker": ""
+      "text-marker": "Bauwerk"
     },
     {
       "anzeige": "Kunststück",
-      "text-marker": ""
+      "text-marker": "Kunſtſtück"
     },
     {
       "anzeige": "Gemälde",
-      "text-marker": ""
+      "text-marker": "Gemälde"
     },
     {
       "anzeige": "Gewerbe",
-      "text-marker": ""
+      "text-marker": "Gewerbe"
     }
   ],
   "slf-antwortform": "verbal",
@@ -804,15 +817,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "(?<=einen )Name"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(Herkunfts- und|Beſtimmungsort)"
     },
     {
       "anzeige": "Ware",
-      "text-marker": ""
+      "text-marker": "Ware"
     }
   ],
   "slf-antwortform": "verbal",
@@ -839,16 +852,16 @@ data = [
   ],
   "slf-kategorien": [
     {
-      "anzeige": "Ort",
-      "text-marker": ""
+      "anzeige": "Name",
+      "text-marker": "heiße(?= A)"
     },
     {
-      "anzeige": "Name",
-      "text-marker": ""
+      "anzeige": "Ort",
+      "text-marker": "(komme von(?= A)|reiſe nach(?= dem Ä))"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit(?= A)"
     }
   ],
   "slf-antwortform": "verbal",
@@ -876,19 +889,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Wie heißt du(?=\\? D)"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Wo kommſt du her(?=\\? Ich komme aus A)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Womit handelſt du(?=\\? Ich handle mit A)"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Was ißt du(?=\\? A)"
     }
   ],
   "slf-antwortform": "verbal",
@@ -916,19 +929,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "(Urſache|warum er ihm gefällt)"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "womit er ihn täglich ernährt"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "was er ihm auf die Reiſe mitgibt"
     }
   ],
   "slf-antwortform": "verbal",
@@ -940,8 +953,7 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]] und [[Mein Nachbar gefällt mir (1874)]], nur mit anderem Text beschrieben.",
   "text": "Mein Nachbar gefällt mir.\n\nDas Spiel iſt das Gegenſtück von dem Spiel: „Wie gefällt dir dein Nachbar?“ Jeder aus der Geſellſchaft ſagt der Reihe nach: „Mein Nachbar gefällt mir“ und gibt dabei\n  erſtens die Urſache an, warum er ihm gefällt,\n  zweitens, womit er ihn täglich ernährt,\n  drittens, in welche Stadt er ihn gern ſchicken würde, und\n  viertens, was er ihm auf die Reiſe mitgibt\nan. Dieſe vier Sachen müſſen aber mit ein und demſselben Anfangsbuchſtaben nach der Reihe des Alphabets anfangen. Der erſte nimmt den Buchſtaben A, der zweite B, dem dritte C, der vierte D uſw.\nBeispielsweiſe: „Mein Nachbar gefällt mir, weil er ſo artig iſt; ich ernähre ihn übrigens mit fein gemahlenen und in Öl gebratenen Aalfloſſen, ſchicke ihn in kurzer Zeit nach Abardeen und gebe ihm ein Achtel Bier mit auf den Weg.“ Die daneben ſitzende Dame ſagt: „Mein Nachbar gefällt mir, weil er niemals brummig ist; deshalb ernähre ich ihn auch fein ſäuberlich mit braungebrantem Bärenſchinken, will ihn nach Borodim ſchicken und gebe ihm einen Sack gebackener Birnen mit auf den Weg.“ Der nächſte Herr ſpricht: „Meine Nachbarin gefällt mir außerordentlich gut, weil ſie redneriſch begabt wie Cicero iſt; darum füttere ich ſie auch mit Citronenſaft, ſicke ſie in eine Wüſte ohne Ciſternen und gebe ihr Caramellen mit auf den Weg.“ Die nächste Dame ſpricht: „Mein lieber Nachbar gefält mir, weil er keine Dochte verſchluckt, und darum von mir mit Dorſchleber geſpeiſt wird. Ich ſicke ihn nächſtes Jahr nach Durſtfeld in Deutſch-Südweſtafrika zur Sommerfriſche und gebe ihm ein Donnerwetter mit auf den Weg” uſw. Der Nachbar muß ſich während der Lobrede vom Platze erheben. Beide können danach ihre Plätze wechſeln."
-}
-,
+},
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Illustriertes Spielbuch für Knaben",
@@ -957,15 +969,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "warum"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "wo(?= )"
     },
     {
       "anzeige": "Situation",
-      "text-marker": ""
+      "text-marker": "wann"
     }
   ],
   "slf-antwortform": "verbal",
@@ -977,8 +989,7 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "Ähnlich zu\n* [[Mein Nachbar gefällt mir (1836)]]\n* [[Mein Nachbar gefällt mir (1874)]]\n* [[Mein Nachbar gefällt mir (1909 b)]]",
   "text": "560. Mein Nachbar gefällt mir. Jeder bekommt einen Buchſtaben, z.B. A, F, L u.ſ.w. oder wählt den Anfangsbuchſtaben ſeines Namens. Er hat nun ſeinem Nachbar zu erklären, warum, wo und wann letzterer ihm gefalle. Das Stichwort muß in allen drei Fällen mit dem vom Nachbar gewählten Anfangsbuchſtaben beginnen. Beispiel: Der Anfangsbuchſtabe iſt B, ſo kann die Ausſage lauten: Er gefällt mir weil er bedächtig iſt; er gefällt mir im Bade; er gefällt mir, wenn er Ball ſpielt."
-}
-,
+},
 {
   "name": "The Holiday ABC",
   "work-title": "The new Children's encyclopædia",
@@ -992,11 +1003,11 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "holiday place"
     },
     {
       "anzeige": "Tätigkeitsbeschreibung (Satz, alle Wörter)",
-      "text-marker": ""
+      "text-marker": "(What shall you do there(?=\\?” A)|every word)"
     }
   ],
   "slf-antwortform": "verbal",
@@ -1007,7 +1018,7 @@ data = [
   "slf-spielende": "-",
   "slf-wertung": "_/_/_/-1",
   "notes": "",
-  "text": "THE HOLIDAY ABC\n\nA GOOD game for the train, and one that is quite appropriate to holiday-makers, is what may be called the Holiday ABC. Having decided who shall begin, a player gives quickly the name of some holiday place that begins with A. Then the next player asks: “What shall you do there?” Andthe first player must give an appropriate answer, every word in which begins with A. Then the second player gives the name of a place beginning with B, and the third player asks: “What shall you do there?” to which number 2 must answer in a sentence of words beginning with B; and so on. Thirty seconds only are allowed for an answer, and those who take longer are given one mark for each second that they take over the thirty. At the end of the game the player with the fewest marks wins. Of course, after getting to the end of the alphabet, we can begin again, and give fresh places, if we are not tired of the game. The letters X and Z should be left out, as hey are too difficult. Here are one or two specimen answers: I am going to Aberystwyth. What shall you do there? Attempt almost anything. I am going to Brighton. What shall you do there? Breath briny breezes. I am going to Clacton. What shall you do there? Catch crawling crabs."
+  "text": "THE HOLIDAY ABC\n\nA GOOD game for the train, and one that is quite appropriate to holiday-makers, is what may be called the Holiday ABC. Having decided who shall begin, a player gives quickly the name of some holiday place that begins with A. Then the next player asks: “What shall you do there?” And the first player must give an appropriate answer, every word in which begins with A. Then the second player gives the name of a place beginning with B, and the third player asks: “What shall you do there?” to which number 2 must answer in a sentence of words beginning with B; and so on. Thirty seconds only are allowed for an answer, and those who take longer are given one mark for each second that they take over the thirty. At the end of the game the player with the fewest marks wins. Of course, after getting to the end of the alphabet, we can begin again, and give fresh places, if we are not tired of the game. The letters X and Z should be left out, as hey are too difficult. Here are one or two specimen answers: I am going to Aberystwyth. What shall you do there? Attempt almost anything. I am going to Brighton. What shall you do there? Breath briny breezes. I am going to Clacton. What shall you do there? Catch crawling crabs."
 },
 {
   "name": "Das Handel-Bandel-Spiel",
@@ -1024,15 +1035,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Vorname"
     },
     {
       "anzeige": "Stadt/Land",
-      "text-marker": ""
+      "text-marker": "(Stadt|Land)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Ware"
     }
   ],
   "slf-antwortform": "verbal",
@@ -1060,19 +1071,19 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "Urſache, warum er ihm gefällt"
     },
     {
       "anzeige": "Nahrungsmittel",
-      "text-marker": ""
+      "text-marker": "Speiſe"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Ort"
     },
     {
       "anzeige": "Gegenstand",
-      "text-marker": ""
+      "text-marker": "Gegenſtand"
     }
   ],
   "slf-antwortform": "verbal",
@@ -1099,11 +1110,11 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Städte"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Länder"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -1128,23 +1139,23 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Städte(?=, L)"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Länder"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Flüſſe"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge"
     },
     {
       "anzeige": "See",
-      "text-marker": ""
+      "text-marker": "Seen"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -1169,15 +1180,15 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "heiße(?= A)"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(komme aus|reiſe nach)(?= A)"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "handle mit(?= A)"
     }
   ],
   "slf-antwortform": "verbal",
@@ -1201,31 +1212,31 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land(?= und)"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt(?= und)"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge(?= und)"
     },
     {
       "anzeige": "Gewässer",
-      "text-marker": ""
+      "text-marker": "Gewäſſer(?= ü)"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier(?= und)"
     },
     {
       "anzeige": "Pflanze",
-      "text-marker": ""
+      "text-marker": "Pflanze(?= und)"
     },
     {
       "anzeige": "Berühmter Mann",
-      "text-marker": ""
+      "text-marker": "Berühmter Mann(?= und)"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -1251,35 +1262,35 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt(?=, L)"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land(?=, F)"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Fluß(?=(, G|...))"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name(?=, B)"
     },
     {
       "anzeige": "Beruf",
-      "text-marker": ""
+      "text-marker": "Beruf"
     },
     {
       "anzeige": "Blume",
-      "text-marker": ""
+      "text-marker": "Blume"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -1303,31 +1314,31 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt(?=, )"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land(?=, F)"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Fluß(?=, B)"
     },
     {
       "anzeige": "Berg",
-      "text-marker": ""
+      "text-marker": "Berg(?=, F)"
     },
     {
       "anzeige": "Filmschauspielerin",
-      "text-marker": ""
+      "text-marker": "Filmſchauſpielerin(?=, S)"
     },
     {
       "anzeige": "Speise",
-      "text-marker": ""
+      "text-marker": "Speiſe(?=, T)"
     },
     {
       "anzeige": "Getränk",
-      "text-marker": ""
+      "text-marker": "Trank(?=, Z)"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -1355,35 +1366,35 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Fluß"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Name(?=,)"
     },
     {
       "anzeige": "Beruf",
-      "text-marker": ""
+      "text-marker": "Beruf"
     },
     {
       "anzeige": "Blube",
-      "text-marker": ""
+      "text-marker": "Blume"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier"
     }
   ],
   "slf-antwortform": "schriftlich",
@@ -1407,27 +1418,27 @@ data = [
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt(?=,)"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Fluß"
     },
     {
       "anzeige": "Blume",
-      "text-marker": ""
+      "text-marker": "Blume"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier"
     },
     {
       "anzeige": "Dichter",
-      "text-marker": ""
+      "text-marker": "Dichter"
     }
   ],
   "slf-antwortform": "schriftlich",

@@ -13,19 +13,19 @@
   "slf-kategorien": [
     {
       "anzeige": "Bauwerk",
-      "text-marker": ""
+      "text-marker": "Bauwerk"
     },
     {
       "anzeige": "Kunststück",
-      "text-marker": ""
+      "text-marker": "Kunſtſtück"
     },
     {
       "anzeige": "Gemälde",
-      "text-marker": ""
+      "text-marker": "Gemälde"
     },
     {
       "anzeige": "Gewerbe",
-      "text-marker": ""
+      "text-marker": "Gewerbe"
     }
   ],
   "slf-antwortform": "verbal",

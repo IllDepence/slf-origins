@@ -9,15 +9,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "(?<=einen )Name"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(Herkunfts- und|Beſtimmungsort)"
     },
     {
       "anzeige": "Ware",
-      "text-marker": ""
+      "text-marker": "Ware"
     }
   ],
   "slf-antwortform": "verbal",

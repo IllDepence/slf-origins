@@ -11,15 +11,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "(woher ſie kommen|wohin ſie gehen)"
     },
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "wie ſie heißen"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "womit ſie handeln"
     }
   ],
   "slf-antwortform": "verbal",

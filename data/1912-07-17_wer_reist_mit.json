@@ -9,23 +9,23 @@
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Städte(?=, L)"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Länder"
     },
     {
       "anzeige": "Fluss",
-      "text-marker": ""
+      "text-marker": "Flüſſe"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge"
     },
     {
       "anzeige": "See",
-      "text-marker": ""
+      "text-marker": "Seen"
     }
   ],
   "slf-antwortform": "schriftlich",

@@ -9,31 +9,31 @@
   "slf-kategorien": [
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Land(?= und)"
     },
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Stadt(?= und)"
     },
     {
       "anzeige": "Gebirge",
-      "text-marker": ""
+      "text-marker": "Gebirge(?= und)"
     },
     {
       "anzeige": "Gewässer",
-      "text-marker": ""
+      "text-marker": "Gewäſſer(?= ü)"
     },
     {
       "anzeige": "Tier",
-      "text-marker": ""
+      "text-marker": "Tier(?= und)"
     },
     {
       "anzeige": "Pflanze",
-      "text-marker": ""
+      "text-marker": "Pflanze(?= und)"
     },
     {
       "anzeige": "Berühmter Mann",
-      "text-marker": ""
+      "text-marker": "Berühmter Mann(?= und)"
     }
   ],
   "slf-antwortform": "schriftlich",

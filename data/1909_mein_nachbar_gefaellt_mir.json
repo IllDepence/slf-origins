@@ -13,15 +13,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Positive Eigenschaft",
-      "text-marker": ""
+      "text-marker": "warum"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "wo(?= )"
     },
     {
       "anzeige": "Situation",
-      "text-marker": ""
+      "text-marker": "wann"
     }
   ],
   "slf-antwortform": "verbal",

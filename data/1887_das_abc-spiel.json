@@ -12,15 +12,15 @@
   "slf-kategorien": [
     {
       "anzeige": "Name",
-      "text-marker": ""
+      "text-marker": "Wie heißt Du"
     },
     {
       "anzeige": "Ort",
-      "text-marker": ""
+      "text-marker": "Wo kommſt Du her"
     },
     {
       "anzeige": "Handelsware",
-      "text-marker": ""
+      "text-marker": "Womit handelſt Du"
     }
   ],
   "slf-antwortform": "verbal",

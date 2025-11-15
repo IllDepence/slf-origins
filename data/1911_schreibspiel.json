@@ -12,11 +12,11 @@
   "slf-kategorien": [
     {
       "anzeige": "Stadt",
-      "text-marker": ""
+      "text-marker": "Städte"
     },
     {
       "anzeige": "Land",
-      "text-marker": ""
+      "text-marker": "Länder"
     }
   ],
   "slf-antwortform": "schriftlich",
