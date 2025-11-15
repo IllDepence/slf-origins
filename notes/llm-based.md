@@ -1,4 +1,4 @@
-LLM-gestützte suche nach Literaturquellen zu Stadt, Land, Fluss und etwaigen Vorgängern.
+LLM-gestützte Suche nach Literaturquellen zu Stadt, Land, Fluss und etwaigen Vorgängern.
 
 Code: [github.com/IllDepence/slf-origins-llm](https://github.com/IllDepence/slf-origins-llm)
 
