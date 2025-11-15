@@ -114,7 +114,7 @@ https://digital.staatsbibliothek-berlin.de/suche?queryString=categories%3A%22Kin
         * nur 6 Ergrebnisse
         * ohne Einschränkung durch q: „project:colibri“ (weiterhin in Kategorie „Kinder- und Jugendbücher“) zumindest 46
         * https://digital.staatsbibliothek-berlin.de/suche?queryString=categories%3A%22Kinder-%20und%20Jugendb%C3%BCcher%22%20title%3ASpiele&sort_on=year&sort_direction=asc
-* ↓ Sucher innerhalb 46 Titeln in Kategorie „Kinder- und Jugendbücher“ mit „Spiele“ im Titel
+* ↓ Suche innerhalb 46 Titeln in Kategorie „Kinder- und Jugendbücher“ mit „Spiele“ im Titel
     * jeweils in digitalisiertem Text nach „Buchstabe“ gesucht, unten nur Titel mit Funden gelistet
 * [Die reinste Quelle jugendlicher Freuden, oder 300 Spiele (1836)](http://resolver.staatsbibliothek-berlin.de/SBB0000F01D00000000)
     * → **_Mein Nachbar gefällt mir (1836)_**
