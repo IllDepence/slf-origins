@@ -253,16 +253,17 @@
                     Wo die Grenze dabei gezogen wird, ist schlussendlich eine arbiträre Entscheidung.
                 </p>
                 <p>
-                    Die vorliegende Recherche sollen folgende zwei Kriterien voraussetzen:
-                    1. <emph>ein</emph> gegebener Buchstabe, und
-                    2. <emph>mehrere</emph> Kategorien.
-                    Ausgeschlossen sind damit Spiele wie beispielsweise
+                    Die vorliegende Recherche soll folgende zwei Kriterien voraussetzen:
+                    Antworten müssen gegeben werden
+                    (1) für <emph>einen</emph> Buchstabe
+                    (2) in <emph>mehreren</emph> Kategorien.
+                    Dadurch Ausgeschlossen werden beispielsweise
                     <a
                         href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0038">UAWG</a>,
                     bei dem Wörter mit „U“, „A“, „W“ und „G“ beginnen, also Kriterium 1 nicht erfüllt ist, und
                     <a href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745171761&PHYSID=PHYS_0067">Das
                         goldene ABC</a>, bei dem nur ein einzigens Wort mit dem gegebenen Anfangsbuchstaben gefragt ist,
-                    also Kriterium 2 nicht erfüllt wird.
+                    also Kriterium 2 nicht erfüllt ist.
                 </p>
                 <p>
                     Um den Suchraum etwas einzugrenzen, soll die Recherche primär deutschsprachige Quellen zum
@@ -382,7 +383,7 @@
                 <h2>Recherche</h2>
                 <p>
                     Die in diesem Artikel vorgestellten Literaturquellen zu Stadt, Land, Fluss sind das kombinierte
-                    Ergebnis drei verschiedener Rechercheansätzen.
+                    Ergebnis aus drei verschiedenen Rechercheansätzen.
                 </p>
                 <ol>
                     <li>Manuelle Suche: in thematisch relevanten Archiven</li>
@@ -419,11 +420,13 @@
                         href="https://github.com/IllDepence/slf-origins/blob/master/notes/manual.md#stichwort-basiert">hier</a>.
                 </p>
                 <p>
-                    3.) Die KI-gestützte Suche war möglich, da die Staatsbibliothek Berlin die gesamtheit ihrer
-                    digitalisierten Volltexte als Datensatz <a href="https://zenodo.org/records/7716098">frei
-                        verfügbar</a> macht: über 25,000 Werke, die knapp 5 Millionen Seiten Text umfassen.
-                    Die Grundidee ist dabei simpel. Die KI beurteilen lassen, ob ein Stück Text ein Spiel ähnlich zu
-                    Stadt, Land, Fluss beschreibt, und die vermeintlichen Funde dann händisch überprüfen.
+                    3.) Gegenstand der KI-gestützten Suche ist die Staatsbibliothek Berlin.
+                    Über 25,000 Werke bzw. knapp 5 Millionen Seiten Text, die von den wundervollen Leuten bei der SBB
+                    als Datensatz <a href="https://zenodo.org/records/7716098">frei verfügbar</a> gemacht wurden.
+                    Die Grundidee für die Suche ist recht simpel. Ein <a
+                        href="https://de.wikipedia.org/wiki/Large_Language_Model">Sprachmodell</a> beurteilen lassen, ob
+                    ein Stück Text ein Spiel beschreibt, das ähnlich zu Stadt, Land, Fluss ist, und die vermeintlichen
+                    Funde dann händisch überprüfen.
                 </p>
                 <p>
                     Spannend wird das ganze aber, weil bei insgesamt 5 Millionen Seiten auch schon eine vermeintlich
@@ -431,25 +434,54 @@
                     werden.
                     Beispiel: bei derzeitigen GPT-5-Kosten pro 1 Million <a
                         href="https://de.wikipedia.org/wiki/Tokenisierung">Tokens</a> von $&nbsp;1.25 bei der Eingabe
-                    und $&nbsp;10.000 bei der Ausgabe, und im Durchschnitt 5,000 Eigabe-Tokens (zu beurteilender Text
-                    und Anweisungen) sowie 25 Ausgabe-Tokens (Beurteilung der KI), kommen wir für 5 Millionen Seiten
-                    auf ein Kostenschätzung von $&nbsp;1.2 Millionen.
+                    und $&nbsp;10.000 bei der Ausgabe, sowie im Durchschnitt 5,000 Eigabe-Tokens (zu beurteilender Text
+                    und Anweisungen) und 25 Ausgabe-Tokens (Beurteilung der KI), kommen wir auf ein Kostenschätzung von
+                    $&nbsp;1.2 Millionen.
                 </p>
                 <p>
                     Noch spannender wird die Sache, da günstigere KI-Modelle wengier „clever“ sind, und deshalb
                     im Zweifelsfall ausführlichere Anweisungen brauchen.
-                    Und da Anweisungen <emph>für jede Seite</emph> anfallen, multipliziert sich jedes zusätzliche
-                    Eingabe-Token mit der Zahl der zu vearbeitenden Seiten. (Details bezüglich Prompt-Caching und der
-                    Verarbeitung mehrer Seiten in einer „Konversation“ usw. der Kürze halber hier mal weggelassen.)
+                    Da Anweisungen <emph>für jede Seite</emph> anfallen, multipliziert sich jedes zusätzliche
+                    Eingabe-Token dann mit der Zahl der zu vearbeitenden Seiten. — Details wie Prompt-Caching und
+                    die Möglichkeit der Verarbeitung mehrer Seiten in einer „Konversation“ etc. seien der Kürze halber
+                    hier weggelassen.
                 </p>
                 <p>
-                    Das Resultat diverser Abwägungen und Tests sah schlussendlich wie folgt aus: es werden nur Seiten
+                    Das Resultat diverser Abwägungen und Tests sah schlussendlich wie folgt aus. Es werden nur Seiten
                     betrachtet, die entweder das Wort „Spiel“, „Alphabet”, oder „Anfangsbuchstabe” beinhalten. Dieser
-                    Stichwort-Vorfilter reduziert die Zahl der Seiten schon mal von 5 Millionen auf 138.000.
+                    Stichwort-Vorfilter reduziert den Datensatz schon mal von 5 Millionen auf 138.000.
+                    Jede der verbleibenden Seiten wird dann beurteilt von <a
+                        href="https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506">Mistral Small
+                        3.2</a>, einem vergleichsweise leichtgewichtigen Modell.
+                    Kniffe, um der KI trotz Sparsamkeit bei der Gewichtsklasse möglichst brauchbare Urteile zu
+                    entlocken:
                 </p>
+                <ul>
+                    <li><a
+                            href="https://en.wikipedia.org/wiki/Prompt_engineering#In-context_learning">In-Context-Learning</a>:
+                        als Teil der Anweisungen werden mehrere korrekte Beispiele von Ein-/Ausgabe-Paaren mitgegeben.
+                    </li>
+                    <li><a
+                            href="https://en.wikipedia.org/wiki/Prompt_engineering#Chain-of-thought">Chain-of-Thought</a>:
+                        anstatt die KI direkt ein Urteil fällen zu lassen, lässt man sie innerhalb ihrer Antwort Schritt
+                        für Schritt darauf hinarbeiten.</li>
+                    <li>
+                        Trennung von Anweisung und Daten: zu beurteilende Texte auf Deutsch, Instruktionen auf Englisch.
+                    </li>
+                    <li>
+                        Trefferquote&thinsp;&gt;&thinsp;Genauigkeit: bei Tests vor allem darauf achten, dass
+                        tatsächliche Funde nie als irrelevant beurteilt werden.
+                    </li>
+                </ul>
                 <p>
-                    <a href="https://github.com/IllDepence/slf-origins/blob/master/notes/llm-based.md">hier</a>
-                    <a href="https://github.com/IllDepence/slf-origins-llm">hier</a>
+                    <a
+                        href="https://github.com/IllDepence/slf-origins-llm/blob/74ab72476d735bdc5a5945494501f4278b94cd9d/src/prompt.py">Hier</a>
+                    die KI-Anweisungen in ihrer Gänze. Von den 138.000 Seiten wurden damit 139 als relevant
+                    identifiziert — also laut KI mit Bescheibung eines Stadt-Land-Fluss-ähnlichen Spiels.
+                    Tatsächlich waren es dann nach manueller Überprüfung nur 23. Gekostet hat der Spaß schlussendlich
+                    übrigens $ 66,59. Notizen mit Details <a
+                        href="https://github.com/IllDepence/slf-origins/blob/master/notes/llm-based.md">hier</a> und <a
+                        href="https://github.com/IllDepence/slf-origins-llm">hier</a>.
                 </p>
             </section>
             <section>
