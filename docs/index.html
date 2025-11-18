@@ -1224,15 +1224,8 @@
             .attr("opacity", 0)
             .attr("display", "none");
 
-        // Function to update data points based on active groups
-        function updateDataPoints(group) {
-            // Toggle group in the active set
-            if (activeGroups.has(group)) {
-                activeGroups.delete(group);
-            } else {
-                activeGroups.add(group);
-            }
-
+        // Function to refresh the display based on current activeGroups
+        function refreshDisplay() {
             // Collect all data points from active groups
             const activeDataPoints = new Set();
             activeGroups.forEach(g => {
@@ -1263,6 +1256,17 @@
 
             // Update button styles
             updateButtonStyles();
+        }
+
+        // Function to toggle a group and update display
+        function updateDataPoints(group) {
+            // Toggle group in the active set
+            if (activeGroups.has(group)) {
+                activeGroups.delete(group);
+            } else {
+                activeGroups.add(group);
+            }
+            refreshDisplay();
         }
 
         // Function to add clickable highlight group button
@@ -1345,6 +1349,13 @@
             const yOffset = index * (buttonHeight + buttonSpacing);
             addHighlightGroup(group.label, group, yOffset);
         });
+
+        // Pre-select "Stadt, Land, Fluss" group
+        const stadtLandFlussGroup = highlightGroups.find(g => g.label === "Stadt, Land, Fluss");
+        if (stadtLandFlussGroup) {
+            activeGroups.add(stadtLandFlussGroup);
+            refreshDisplay();
+        }
     }
 
     function drawFigs() {
