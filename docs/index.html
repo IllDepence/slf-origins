@@ -1404,7 +1404,17 @@
         }
     };
 
-    window.onresize = drawFigs;
+    // Only redraw figures on width changes
+    // (window height changes occur on mobile just
+    //  by scrolling, b/c URL bar is shown/hidden)
+    let previousWidth = window.innerWidth;
+    window.onresize = function () {
+        const currentWidth = window.innerWidth;
+        if (currentWidth !== previousWidth) {
+            previousWidth = currentWidth;
+            drawFigs();
+        }
+    };
 
 </script>
 
