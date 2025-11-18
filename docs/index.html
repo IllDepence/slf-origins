@@ -1183,7 +1183,11 @@
         // Track active group
         let activeGroup = null;
 
-        // Draw data points as circles (will be updated based on selection)
+        // Create symbol generator
+        const symbolGenerator = d3.symbol()
+            .size(Math.PI * radius * radius);
+
+        // Draw data points with shapes matching fig1
         const dataPointGroup = svg.append("g");
         const dataPoints = dataPointGroup
             .selectAll(".data-point")
@@ -1193,14 +1197,25 @@
             .attr("class", "data-point")
             .attr("transform", d => `translate(${d.x},${d.y})`);
 
-        // Add circles (default shape)
-        dataPoints.append("circle")
-            .attr("r", radius)
+        // Determine and store original shape type for each node
+        nodes.forEach(d => {
+            d.originalSymbol = d['slf-antwortform'] === 'verbal'
+                ? d3.symbolCircle
+                : d['slf-antwortzeitende'] === 'Zeitlimit'
+                    ? d3.symbolTriangle
+                    : d3.symbolStar;
+        });
+
+        // Add original shapes (circles, triangles, stars)
+        dataPoints.append("path")
+            .attr("class", "original-shape")
+            .attr("d", d => symbolGenerator.type(d.originalSymbol)())
             .attr("fill", "var(--pico-color)")
             .attr("opacity", 0.75);
 
-        // Add squares (hidden by default)
+        // Add squares (hidden by default, for selection)
         dataPoints.append("rect")
+            .attr("class", "selection-shape")
             .attr("x", -radius)
             .attr("y", -radius)
             .attr("width", radius * 2)
@@ -1212,15 +1227,15 @@
         // Function to update data points based on active group
         function updateDataPoints(group) {
             if (activeGroup === group) {
-                // Deselect - show all as circles
+                // Deselect - show all with original shapes
                 activeGroup = null;
                 dataPoints.each(function (d) {
                     const pointGroup = d3.select(this);
-                    pointGroup.select("circle")
+                    pointGroup.select(".original-shape")
                         .attr("fill", "var(--pico-color)")
                         .attr("opacity", 0.75)
                         .attr("display", null);
-                    pointGroup.select("rect")
+                    pointGroup.select(".selection-shape")
                         .attr("opacity", 0)
                         .attr("display", "none");
                 });
@@ -1233,18 +1248,18 @@
                     const pointGroup = d3.select(this);
                     if (groupNodeSet.has(d)) {
                         // Highlighted: show as square with primary color
-                        pointGroup.select("circle")
+                        pointGroup.select(".original-shape")
                             .attr("display", "none");
-                        pointGroup.select("rect")
+                        pointGroup.select(".selection-shape")
                             .attr("opacity", 0.75)
                             .attr("display", null);
                     } else {
-                        // Not highlighted: show as circle with default color
-                        pointGroup.select("circle")
+                        // Not highlighted: show original shape with default color
+                        pointGroup.select(".original-shape")
                             .attr("fill", "var(--pico-color)")
                             .attr("opacity", 0.75)
                             .attr("display", null);
-                        pointGroup.select("rect")
+                        pointGroup.select(".selection-shape")
                             .attr("opacity", 0)
                             .attr("display", "none");
                     }
