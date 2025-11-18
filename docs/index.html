@@ -1106,18 +1106,233 @@
             });
         }
 
-        // Draw circles
+        // Helper function to find data points by name, year, and optionally work-title
+        const findDataPoint = (name, year, workTitle = null) => {
+            if (workTitle) {
+                return nodes.find(d => d.name === name && d.year === year && d['work-title'] === workTitle);
+            }
+            return nodes.find(d => d.name === name && d.year === year);
+        };
+
+        // Define highlight groups with manual assignments
+        const highlightGroups = [
+            {
+                label: "Kaufmannsspiel",
+                dataPoints: [
+                    findDataPoint("Das Handlungs-Spiel", 1784),
+                    findDataPoint("Züge aus dem Leben", 1814),
+                    findDataPoint("Das Kaufmannsſpiel", 1791),
+                    findDataPoint("Das Kaufmannsſpiel", 1817),
+                    findDataPoint("Anekdoten", 1831),
+                    findDataPoint("Mit gegebenen Anfangsbuchſtaben", 1882),
+                    findDataPoint("Das ABC-Spiel", 1887),
+                    findDataPoint("Die Handlungsreisenden", 1890),
+                    findDataPoint("Der Handlungsreiſende", 1904),
+                    findDataPoint("Mit gegebenen Anfangsbuchſtaben", 1905),
+                    findDataPoint("Das ABC der Großen oder das Reiſeſpiel", 1909),
+                    findDataPoint("Das Handel-Bandel-Spiel", 1911)
+                ].filter(d => d !== undefined)
+            },
+            {
+                label: "Mein Nachbar gefällt mir",
+                dataPoints: [
+                    findDataPoint("Mein Nachbar gefällt mir", 1836),
+                    findDataPoint("Mein Nachbar gefällt mir", 1874, "Encyklopädie der Gesellschafts-Spiele"),
+                    findDataPoint("Mein Nachbar gefällt mir", 1879),
+                    findDataPoint("Mein Nachbar gefällt mir", 1887, "Das Spiel im Zimmer"),
+                    findDataPoint("Mein Nachbar gefällt mir", 1909, "Das große illustrierte Spielbuch"),
+                    findDataPoint("Mein Nachbar gefällt mir", 1909, "Illustriertes Spielbuch für Knaben"),
+                    findDataPoint("Mein Nachbar gefällt mir", 1911)
+                ].filter(d => d !== undefined)
+            },
+            {
+                label: "Die Post",
+                dataPoints: [
+                    findDataPoint("Die Poſt", 1887),
+                    findDataPoint("Die Poſt", 1894)
+                ].filter(d => d !== undefined)
+            },
+            {
+                label: "Stadt, Land, Fluss",
+                dataPoints: [
+                    findDataPoint("Stadt, Land, Fluß", 1937),
+                    findDataPoint("Stadt, Land, Fluß", 1949),
+                    findDataPoint("Stadt, Land, Fluß", 1954)
+                ].filter(d => d !== undefined)
+            },
+            {
+                label: "Weitere",
+                dataPoints: [
+                    findDataPoint("Le Logement", 1860),
+                    findDataPoint("Das ABC-Spiel", 1874),
+                    findDataPoint("Die vier Wortklaſſen", 1887),
+                    findDataPoint("Steeple-Chase", 1887),
+                    findDataPoint("Das Fünfminutenſpiel", 1890),
+                    findDataPoint("Reiſeſpiel", 1899),
+                    findDataPoint("Das ABC-Abfragen", 1900),
+                    findDataPoint("The Holiday ABC", 1910),
+                    findDataPoint("Schreibspiel", 1911),
+                    findDataPoint("Wer reiſt mit", 1912),
+                    findDataPoint("ABC-Spiel", 1934),
+                    findDataPoint("Das Achterſpiel", 1934),
+                    findDataPoint("Ein lehrreiches Spiel", 1938)
+                ].filter(d => d !== undefined)
+            }
+        ];
+
+        // Track active group
+        let activeGroup = null;
+
+        // Draw data points as circles (will be updated based on selection)
         const dataPointGroup = svg.append("g");
-        dataPointGroup
-            .selectAll("circle")
+        const dataPoints = dataPointGroup
+            .selectAll(".data-point")
             .data(nodes)
             .enter()
-            .append("circle")
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y)
+            .append("g")
+            .attr("class", "data-point")
+            .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        // Add circles (default shape)
+        dataPoints.append("circle")
             .attr("r", radius)
             .attr("fill", "var(--pico-color)")
             .attr("opacity", 0.75);
+
+        // Add squares (hidden by default)
+        dataPoints.append("rect")
+            .attr("x", -radius)
+            .attr("y", -radius)
+            .attr("width", radius * 2)
+            .attr("height", radius * 2)
+            .attr("fill", "var(--pico-primary)")
+            .attr("opacity", 0)
+            .attr("display", "none");
+
+        // Function to update data points based on active group
+        function updateDataPoints(group) {
+            if (activeGroup === group) {
+                // Deselect - show all as circles
+                activeGroup = null;
+                dataPoints.each(function (d) {
+                    const pointGroup = d3.select(this);
+                    pointGroup.select("circle")
+                        .attr("fill", "var(--pico-color)")
+                        .attr("opacity", 0.75)
+                        .attr("display", null);
+                    pointGroup.select("rect")
+                        .attr("opacity", 0)
+                        .attr("display", "none");
+                });
+            } else {
+                // Select new group
+                activeGroup = group;
+                const groupNodeSet = new Set(group.dataPoints);
+
+                dataPoints.each(function (d) {
+                    const pointGroup = d3.select(this);
+                    if (groupNodeSet.has(d)) {
+                        // Highlighted: show as square with primary color
+                        pointGroup.select("circle")
+                            .attr("display", "none");
+                        pointGroup.select("rect")
+                            .attr("opacity", 0.75)
+                            .attr("display", null);
+                    } else {
+                        // Not highlighted: show as circle with default color
+                        pointGroup.select("circle")
+                            .attr("fill", "var(--pico-color)")
+                            .attr("opacity", 0.75)
+                            .attr("display", null);
+                        pointGroup.select("rect")
+                            .attr("opacity", 0)
+                            .attr("display", "none");
+                    }
+                });
+            }
+
+            // Update button styles
+            updateButtonStyles();
+        }
+
+        // Function to add clickable highlight group button
+        function addHighlightGroup(label, group, yOffset) {
+            const rectPadding = 4;
+            const rectRadius = 4;
+
+            // Create temporary text element to measure width
+            const tempText = svg.append("text")
+                .attr("opacity", 0)
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .text(label);
+            const textWidth = tempText.node().getBBox().width;
+            const textHeight = tempText.node().getBBox().height;
+            tempText.remove();
+
+            // Calculate rectangle dimensions
+            const rectWidth = textWidth + rectPadding * 2;
+            const rectHeight = textHeight + rectPadding * 2;
+
+            // Position at top right
+            const rectX = width - margin.right - rectWidth;
+            const rectY = margin.top + yOffset;
+
+            // Create group for button
+            const buttonGroup = svg.append("g")
+                .attr("class", "highlight-button")
+                .attr("data-label", label)
+                .attr("cursor", "pointer")
+                .on("click", () => updateDataPoints(group));
+
+            // Draw rectangle
+            buttonGroup.append("rect")
+                .attr("x", rectX)
+                .attr("y", rectY)
+                .attr("width", rectWidth)
+                .attr("height", rectHeight)
+                .attr("rx", rectRadius)
+                .attr("ry", rectRadius)
+                .attr("fill", "none")
+                .attr("stroke", "var(--pico-color)")
+                .attr("stroke-width", 0.5);
+
+            // Add text
+            buttonGroup.append("text")
+                .attr("x", rectX + rectPadding)
+                .attr("y", rectY + rectPadding + textHeight * 0.75)
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .attr("fill", "var(--pico-color)")
+                .text(label);
+
+            return buttonGroup;
+        }
+
+        // Function to update button styles based on active group
+        function updateButtonStyles() {
+            svg.selectAll(".highlight-button").each(function () {
+                const button = d3.select(this);
+                const label = button.attr("data-label");
+                const isActive = activeGroup && activeGroup.label === label;
+
+                button.select("rect")
+                    .attr("fill", isActive ? "var(--pico-primary)" : "none")
+                    .attr("stroke", isActive ? "var(--pico-primary)" : "var(--pico-color)");
+
+                button.select("text")
+                    .attr("fill", isActive ? "var(--pico-background-color)" : "var(--pico-color)");
+            });
+        }
+
+        // Add highlight group buttons
+        const buttonSpacing = 25;
+        highlightGroups.forEach((group, index) => {
+            // Calculate y offset based on button height and spacing
+            const buttonHeight = 16; // Approximate height
+            const yOffset = index * (buttonHeight + buttonSpacing);
+            addHighlightGroup(group.label, group, yOffset);
+        });
     }
 
     function drawFigs() {
