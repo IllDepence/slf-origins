@@ -500,6 +500,17 @@
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat.
                 </p>
+                <figure id="fig2">
+                    <figcaption>
+                        Abbildung 2: Literaturquellen zu „Stadt, Land, Fluss“ und Vorgängervarianten.
+                    </figcaption>
+                </figure>
+                <p>
+                    Stadt, Land, Fluss ſ→f Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
             </section>
             <section>
                 <h2>Literaturverzeichnis</h2>
@@ -1028,8 +1039,90 @@
         const ann5 = addAnnotation({ name: "Stadt, Land, Fluß", year: 1937, optionalText: "", yDelta: 15 });
         if (ann5) defaultAnnotations.push(ann5);
     }
+
+    function drawFig2() {
+        const figId = 'fig2'
+        const figNode = document.getElementById(figId);
+
+        // clear if already exists
+        const existingSvg = figNode.querySelector('svg');
+        if (existingSvg) {
+            figNode.removeChild(existingSvg);
+        }
+
+        // draw
+        const width = figNode.clientWidth;
+        const height = 400;
+        const margin = { top: 16, right: 16, bottom: 24, left: 48 };
+
+        const svg = d3.select(`#${figId}`).insert("svg", "figcaption")
+            .attr("width", width)
+            .attr("height", height);
+
+        // y-scale from year data
+        const years = data.map(d => d.year);
+        const yearExtent = d3.extent(years);
+        const y = d3.scaleLinear()
+            .domain(yearExtent)
+            .range([margin.top, height - margin.bottom])
+            .nice();
+
+        const axisLeft = d3.axisLeft(y)
+            .ticks(8)
+            .tickFormat(d3.format('d'));
+
+        const axisGroup = svg.append("g")
+            .attr("transform", `translate(${margin.left},0)`)
+            .call(axisLeft);
+
+        // draw data points as a vertical strip next to the axis
+        // Use force simulation to avoid collisions
+        const defaultX = margin.left + 20;
+        const radius = 3;
+
+        // Prepare data with initial positions
+        const nodes = data.map(d => {
+            const yPos = y(d.year);
+            return {
+                ...d,  // spread all attributes from d
+                x: defaultX,
+                y: yPos,
+                fy: yPos // fix y position
+            };
+        });
+
+        // Create force simulation
+        const simulation = d3.forceSimulation(nodes)
+            .force("collision", d3.forceCollide().radius(radius * 2.5))
+            .force("x", d3.forceX(defaultX).strength(0.3)) // gently pull towards default x
+            .stop();
+
+        // Run simulation to convergence
+        for (let i = 0; i < 250; ++i) {
+            simulation.tick();
+            // Constrain x to be >= defaultX (only move right)
+            nodes.forEach(node => {
+                if (node.x < defaultX) node.x = defaultX;
+            });
+        }
+
+        // Draw circles
+        const dataPointGroup = svg.append("g");
+        dataPointGroup
+            .selectAll("circle")
+            .data(nodes)
+            .enter()
+            .append("circle")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("r", radius)
+            .attr("fill", "var(--pico-color)")
+            .attr("opacity", 0.75);
+    }
+
     function drawFigs() {
         drawFig1();
+        drawFig2();
     }
 
     document.onreadystatechange = function () {
