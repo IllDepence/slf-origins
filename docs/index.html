@@ -502,7 +502,7 @@
                 </p>
                 <figure id="fig2">
                     <figcaption>
-                        Abbildung 2: Literaturquellen zu „Stadt, Land, Fluss“ und Vorgängervarianten.
+                        Abbildung 2: Gruppierte Literaturquellen zu „Stadt, Land, Fluss“ und Vorgängervarianten.
                     </figcaption>
                 </figure>
                 <p>
@@ -694,6 +694,46 @@
 <script src="js/d3.v7.min.js"></script>
 <script src="js/data.js"></script>
 <script>
+    // Shared overlay functions for both figures
+    function showOverlay(dataPoint) {
+        const overlay = document.getElementById('overlay');
+        const content = document.getElementById('overlay-content');
+        // Build HTML content
+        let html = '';
+        html += `<h3>${dataPoint.name}</h3>`
+        html += `<p>In: „${dataPoint['work-title']}"`
+        if (dataPoint.author) {
+            html += ` von ${dataPoint.author}`
+        }
+        html += ` (${dataPoint.year}) S. ${dataPoint.page}`
+        let sourceNum = 1;
+        for (const source of dataPoint.sources) {
+            if (sourceNum > 1) {
+                html += `,`
+            }
+            html += ` <a href="${source}">↗</a>`
+            sourceNum += 1;
+        }
+        html += '</p><p>'
+        let sourceText = dataPoint.text.replaceAll("\n", '<br>')
+        for (const cat of dataPoint['slf-kategorien']) {
+            html += ` <small class="category">${cat.anzeige}</small>`
+            if (cat['text-marker'].length > 0) {
+                const mrkPatt = new RegExp(cat['text-marker'], 'g')
+                sourceText = sourceText.replace(mrkPatt, '<span class="cat-mark">$&</span>')
+            }
+        }
+        html += `</p><p><blockquote>${sourceText}</blockquote></p>`
+
+        content.innerHTML = html;
+        overlay.classList.add('active');
+    }
+
+    function hideOverlay() {
+        const overlay = document.getElementById('overlay');
+        overlay.classList.remove('active');
+    }
+
     function drawFig1() {
         const figId = 'fig1'
         const figNode = document.getElementById(figId);
@@ -876,46 +916,6 @@
                     hoverAnnotation = null;
                 }
             });
-
-        // Overlay functions
-        function showOverlay(dataPoint) {
-            const overlay = document.getElementById('overlay');
-            const content = document.getElementById('overlay-content');
-            // Build HTML content
-            let html = '';
-            html += `<h3>${dataPoint.name}</h3>`
-            html += `<p>In: „${dataPoint['work-title']}“`
-            if (dataPoint.author) {
-                html += ` von ${dataPoint.author}`
-            }
-            html += ` (${dataPoint.year}) S. ${dataPoint.page}`
-            let sourceNum = 1;
-            for (const source of dataPoint.sources) {
-                if (sourceNum > 1) {
-                    html += `,`
-                }
-                html += ` <a href="${source}">↗</a>`
-                sourceNum += 1;
-            }
-            html += '</p><p>'
-            let sourceText = dataPoint.text.replaceAll("\n", '<br>')
-            for (const cat of dataPoint['slf-kategorien']) {
-                html += ` <small class="category">${cat.anzeige}</small>`
-                if (cat['text-marker'].length > 0) {
-                    const mrkPatt = new RegExp(cat['text-marker'], 'g')
-                    sourceText = sourceText.replace(mrkPatt, '<span class="cat-mark">$&</span>')
-                }
-            }
-            html += `</p><p><blockquote>${sourceText}</blockquote></p>`
-
-            content.innerHTML = html;
-            overlay.classList.add('active');
-        }
-
-        function hideOverlay() {
-            const overlay = document.getElementById('overlay');
-            overlay.classList.remove('active');
-        }
 
         // Add click handler to paths
         dataPoints.on("click", function (event, d) {
@@ -1223,6 +1223,14 @@
             .attr("fill", "var(--pico-primary)")
             .attr("opacity", 0)
             .attr("display", "none");
+
+        // Add click handler to data points
+        dataPoints
+            .attr("cursor", "pointer")
+            .on("click", function (event, d) {
+                event.stopPropagation();
+                showOverlay(d);
+            });
 
         // Function to refresh the display based on current activeGroups
         function refreshDisplay() {
