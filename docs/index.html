@@ -1180,8 +1180,8 @@
             }
         ];
 
-        // Track active group
-        let activeGroup = null;
+        // Track active groups (can have multiple selected)
+        const activeGroups = new Set();
 
         // Create symbol generator
         const symbolGenerator = d3.symbol()
@@ -1224,13 +1224,33 @@
             .attr("opacity", 0)
             .attr("display", "none");
 
-        // Function to update data points based on active group
+        // Function to update data points based on active groups
         function updateDataPoints(group) {
-            if (activeGroup === group) {
-                // Deselect - show all with original shapes
-                activeGroup = null;
-                dataPoints.each(function (d) {
-                    const pointGroup = d3.select(this);
+            // Toggle group in the active set
+            if (activeGroups.has(group)) {
+                activeGroups.delete(group);
+            } else {
+                activeGroups.add(group);
+            }
+
+            // Collect all data points from active groups
+            const activeDataPoints = new Set();
+            activeGroups.forEach(g => {
+                g.dataPoints.forEach(d => activeDataPoints.add(d));
+            });
+
+            // Update display for all data points
+            dataPoints.each(function (d) {
+                const pointGroup = d3.select(this);
+                if (activeDataPoints.has(d)) {
+                    // Highlighted: show as square with primary color
+                    pointGroup.select(".original-shape")
+                        .attr("display", "none");
+                    pointGroup.select(".selection-shape")
+                        .attr("opacity", 0.75)
+                        .attr("display", null);
+                } else {
+                    // Not highlighted: show original shape with default color
                     pointGroup.select(".original-shape")
                         .attr("fill", "var(--pico-color)")
                         .attr("opacity", 0.75)
@@ -1238,33 +1258,8 @@
                     pointGroup.select(".selection-shape")
                         .attr("opacity", 0)
                         .attr("display", "none");
-                });
-            } else {
-                // Select new group
-                activeGroup = group;
-                const groupNodeSet = new Set(group.dataPoints);
-
-                dataPoints.each(function (d) {
-                    const pointGroup = d3.select(this);
-                    if (groupNodeSet.has(d)) {
-                        // Highlighted: show as square with primary color
-                        pointGroup.select(".original-shape")
-                            .attr("display", "none");
-                        pointGroup.select(".selection-shape")
-                            .attr("opacity", 0.75)
-                            .attr("display", null);
-                    } else {
-                        // Not highlighted: show original shape with default color
-                        pointGroup.select(".original-shape")
-                            .attr("fill", "var(--pico-color)")
-                            .attr("opacity", 0.75)
-                            .attr("display", null);
-                        pointGroup.select(".selection-shape")
-                            .attr("opacity", 0)
-                            .attr("display", "none");
-                    }
-                });
-            }
+                }
+            });
 
             // Update button styles
             updateButtonStyles();
@@ -1324,12 +1319,14 @@
             return buttonGroup;
         }
 
-        // Function to update button styles based on active group
+        // Function to update button styles based on active groups
         function updateButtonStyles() {
             svg.selectAll(".highlight-button").each(function () {
                 const button = d3.select(this);
                 const label = button.attr("data-label");
-                const isActive = activeGroup && activeGroup.label === label;
+                // Check if this button's group is in the active groups set
+                const group = highlightGroups.find(g => g.label === label);
+                const isActive = activeGroups.has(group);
 
                 button.select("rect")
                     .attr("fill", isActive ? "var(--pico-primary)" : "none")
