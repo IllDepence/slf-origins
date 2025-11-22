@@ -167,13 +167,13 @@ Ergebnis in Zahlen
     * LLM-Kategorisierung
         * → 139
     * Manuelle Überprüfung
-        * → 23 (2 ICL, 8 bekannt, 13 neu)
+        * → 22 (2 ICL, 8 bekannt, 12 neu)
 * Klassifikation
     * 2 ICL-Texte ausgeschlossen
-    * 21 korrekt-positive (TP)
-    * 116 falsch-positive (FP)
+    * 20 korrekt-positive (TP)
+    * 117 falsch-positive (FP)
     * Genauigkeit (precision)
-        * 21/21+116 = 0.15 
+        * 20/(20+117) = 0.15
     * Trefferquote (recall)
         * Von LLM als nicht relevant klassifizierte 138,110 nicht manuell geprüft, daher keine Zahl für falsch-negative Klassifikationen und somit Trefferquote nicht bestimmbar. Bei niedriger Genauigkeit (0.15), sprich zu freizügiger Klassifikation als relevant, aber vermutlich eher hoch als tief.
 * LLM
@@ -187,8 +187,6 @@ Neue Funde (DB ID, PPN, Seite)
     * **_Mein Nachbar gefällt mir (1887)_**
 * (2109991, 745139965, 00000070.xml)
     * **_Die Poſt (1887)_**
-* (2109991, 745139965, 00000111.xml)
-    * **_Die vier Wortklaſſen (1887)_**
 * (1121138, 74518166X, 00000740.xml)
     * **_Mein Nachbar gefällt mir (1911)_**
 * (4507196, 74518961X, 00000094.xml)

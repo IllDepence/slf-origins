@@ -480,47 +480,6 @@ data = [
   "text": "69. Die Poſt.\n\nEiner fängt an: „Trara!“ Der Spielordner fragt: „Wer da?“ Antwort: „Die Poſt.“ — „Woher?“ Und herauf muß mit dem Namen eines Landes, einer Stadt, oder ſonſt eines Ortes mit A anfangend geantwortet werden. Dann: „wohin geht ſie?“ worauf wieder mit einem Orte auf A geantwortet werden muß, und endlich: „was bringt ſie mit?“ worauf irgend eine Ware oder Sache wieder auf A geantwortet wird. Iſt der Erſte fertig, ſo muß entweder der Nächſte oder (damit niemand im voraus wiſſe, welcher Buchſtabe ihn treffen wird) ein vom Spielordner hierzu Aufgeforderter mit B, der Dritte mit C u. ſ. w. fortfahren. Wer ſtecken bleibt, giebt ein Pfand."
 },
 {
-  "name": "Die vier Wortklaſſen",
-  "work-title": "Das Spiel im Zimmer",
-  "work-subtitle": "eine reichhaltige Sammlung ausgewählter Spiele zum Gebrauche für jung und alt, für den Einzelnen, wie für kleinere und größere Kreise",
-  "author": "L. Mittenzwey",
-  "publisher": "Merseburger",
-  "year": 1887,
-  "page": 56,
-  "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0111"
-  ],
-  "slf-kategorien": [
-    {
-      "anzeige": "Eigeschaftswort",
-      "text-marker": "Eigenſchaftswörter"
-    },
-    {
-      "anzeige": "Hauptwort",
-      "text-marker": "Hauptwörter"
-    },
-    {
-      "anzeige": "Umstandswort",
-      "text-marker": "Umſtands- \\(oder Eingenſchafts\\)wörter"
-    },
-    {
-      "anzeige": "Zeitwort",
-      "text-marker": "(?<=4. )Zeitwörter"
-    }
-  ],
-  "slf-antwortform": "verbal",
-  "slf-antwortzeitstruktur": "sequenziell",
-  "slf-antwortzeitende": "-",
-  "slf-buchstabenwechsel": "?",
-  "slf-buchstabenwahl": "?",
-  "slf-spielende": "?",
-  "slf-wertung": "?",
-  "notes": "?\n→ fraglich ob Anfangsbuchstaben tatsächlich relevant sind",
-  "text": "121. Die vier Wortklaſſen.\n\nDer Spielordner ſetzt ſich mit Paper und Bleiſtift oben an den Tiſch und macht ſich auf dem Blatte vier Rubriken, in welche kommen:\n1. Eigenſchaftswörter, 2. Hauptwörter, 3. Umſtands- (oder Eingenſchafts)wörter, 4. Zeitwörter.\nJedes Mitglied der Geſellſchaft muß nun zuerst ein Eigenſchaftswort nennen, welches in die erſte Rubrik eingetragen wird. Darauf nennt jedes, aber in der umgekehrten Reihenfolge, d.h. das erſte Mal in der Reihenfolge A, B, C, das zweite Mal Z, Y, X, W, u. ſ. w. ein Hauptwort für die zweite Rubrik und ebenſo Umſtands- und Zeitwörter für die Rubrik Nr. 3 und 4.\nIſt das Verzeichnis beendet, ſo verlieſt der Spielordner dasſelbe und bringt jedes Beiſpiel mit den anweſenden Perſonen der Reihe nach, wie ſie am Tiſche ſitzen, in Verbindung.\n\n<pre>            Beispiel. A. Verzeichnis:\nPersonen:     1.      2.        3.            4.\nHerr R.R.|grün    |Ochse   |liebens-    |ge-\n         |        |        |würdig      |träumt.\nFrl. R.R.|teuer   |Reisbrei|fürchterlich|gelechzt.\nHerr R.R.|verloren|Taſchen-|glücklich   |verſetzt.\n         |        |uhr     |            |</pre>B. Vorleſen:\nHerr R. R. hat von einem grünen Ochſen liebenswürdig geträumt.\nFrl. R. R. hat nach einem teuren Reisbrei fürchterllich gelechzt.\nHerr R. R. hat ſeine verlorene Taſchenuhr glücklich verſetzt. U. ſ. f."
-}
-,
-{
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Das Spiel im Zimmer",
   "work-subtitle": "eine reichhaltige Sammlung ausgewählter Spiele zum Gebrauche für jung und alt, für den Einzelnen, wie für kleinere und größere Kreise",
