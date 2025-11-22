@@ -25,7 +25,7 @@
     },
     {
       "anzeige": "Zeitwort",
-      "text-marker": "Zeitwörter"
+      "text-marker": "(?<=4. )Zeitwörter"
     }
   ],
   "slf-antwortform": "verbal",

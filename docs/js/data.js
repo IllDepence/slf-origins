@@ -506,7 +506,7 @@ data = [
     },
     {
       "anzeige": "Zeitwort",
-      "text-marker": "Zeitwörter"
+      "text-marker": "(?<=4. )Zeitwörter"
     }
   ],
   "slf-antwortform": "verbal",
@@ -518,7 +518,8 @@ data = [
   "slf-wertung": "?",
   "notes": "?\n→ fraglich ob Anfangsbuchstaben tatsächlich relevant sind",
   "text": "121. Die vier Wortklaſſen.\n\nDer Spielordner ſetzt ſich mit Paper und Bleiſtift oben an den Tiſch und macht ſich auf dem Blatte vier Rubriken, in welche kommen:\n1. Eigenſchaftswörter, 2. Hauptwörter, 3. Umſtands- (oder Eingenſchafts)wörter, 4. Zeitwörter.\nJedes Mitglied der Geſellſchaft muß nun zuerst ein Eigenſchaftswort nennen, welches in die erſte Rubrik eingetragen wird. Darauf nennt jedes, aber in der umgekehrten Reihenfolge, d.h. das erſte Mal in der Reihenfolge A, B, C, das zweite Mal Z, Y, X, W, u. ſ. w. ein Hauptwort für die zweite Rubrik und ebenſo Umſtands- und Zeitwörter für die Rubrik Nr. 3 und 4.\nIſt das Verzeichnis beendet, ſo verlieſt der Spielordner dasſelbe und bringt jedes Beiſpiel mit den anweſenden Perſonen der Reihe nach, wie ſie am Tiſche ſitzen, in Verbindung.\n\n<pre>            Beispiel. A. Verzeichnis:\nPersonen:     1.      2.        3.            4.\nHerr R.R.|grün    |Ochse   |liebens-    |ge-\n         |        |        |würdig      |träumt.\nFrl. R.R.|teuer   |Reisbrei|fürchterlich|gelechzt.\nHerr R.R.|verloren|Taſchen-|glücklich   |verſetzt.\n         |        |uhr     |            |</pre>B. Vorleſen:\nHerr R. R. hat von einem grünen Ochſen liebenswürdig geträumt.\nFrl. R. R. hat nach einem teuren Reisbrei fürchterllich gelechzt.\nHerr R. R. hat ſeine verlorene Taſchenuhr glücklich verſetzt. U. ſ. f."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Das Spiel im Zimmer",
