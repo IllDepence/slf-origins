@@ -43,10 +43,16 @@
         }
 
         header,
-        article {
+        article,
+        footer {
             max-width: 65ch;
             margin: 0 auto;
             padding: 2rem 2rem;
+        }
+
+        footer {
+            text-align: center;
+            line-height: 1.25;
         }
 
         header small {
@@ -57,7 +63,8 @@
         }
 
         article,
-        blockquote {
+        blockquote,
+        footer {
             hyphens: auto;
         }
 
@@ -169,7 +176,7 @@
                     Da müsste man mal was machen ...
                 </p>
                 <p>
-                    Und so lässt sich <a href="#recherche">einiges Machen</a> später nun sagen:
+                    Und so lässt sich <a href="#toc">einiges Machen</a> später nun sagen:
                     Den Namen „Stadt, Land, Fluss“ gibt es seit spätestens 1937&nbsp;<a href="#lit33"
                         title="zur Quellenangabe">[33]</a>,
                     das Spielprinzip, je nach Auslegung, aber schon seit 1784&nbsp;<a href="#lit1"
@@ -693,17 +700,6 @@
                 </p>
             </section>
             <section>
-                <p style="line-height: 1.25;">
-                    <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de"><img src="img/cc-zero.svg"
-                            style="margin-bottom: 0.5em;"></a><br>
-                    <small style="color: var(--pico-code-color);">
-                        Der vorliegende Inhalt ist in die Gemeinfreiheit entlassen.
-                        Zitierte Texte können Lizenzbedingungen unterliegen.
-                        Bei Verwendung bitte die verlinkten Quellen überprüfen.
-                    </small>
-                </p>
-            </section>
-            <section>
                 <h2 id="literaturverzeichnis">Literaturverzeichnis</h2>
                 <ol>
                     <li id="lit1">
@@ -896,6 +892,20 @@
                 </ol>
             </section>
         </article>
+
+        <footer>
+            <section>
+                <p>
+                    <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de"><img src="img/cc-zero.svg"
+                            style="margin-bottom: 0.5em;"></a><br>
+                    <small style="color: var(--pico-code-color);">
+                        Der Inhalt dieser Seite ist in die Gemeinfreiheit entlassen.
+                        Zitierte Texte können Lizenzbedingungen unterliegen.
+                        Bei Verwendung bitte die verlinkten Quellen überprüfen.
+                    </small>
+                </p>
+            </section>
+        </footer>
     </main>
 
     <!-- Overlay for data point details -->
