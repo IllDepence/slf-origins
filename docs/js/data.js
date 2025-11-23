@@ -9,7 +9,9 @@ data = [
   "year": 1784,
   "page": 17,
   "sources": [
-    "https://scripta.bbf.dipf.de/viewer/image/477674860/24/"
+    "https://archive.org/details/477674860/page/16/mode/1up",
+    "https://scripta.bbf.dipf.de/viewer/image/477674860/24/",
+    "https://www.deutsche-digitale-bibliothek.de/item/FJIESVQRLXM6FHKL4GQHREZCB6YGGPQ3"
   ],
   "slf-kategorien": [
     {
@@ -34,7 +36,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "Referenziert in\n* [Allgemeine deutsche Bibliothek (1785)](https://archive.org/details/allgemeinedeuts20unkngoog/page/551/mode/1up)\n* [Encyklopädisches Handbuch der Pädagogik (1903)](https://archive.org/details/bub_gb__qSgAAAAMAAJ/page/626/mode/1up).",
   "text": "2. Das Handlungs-Spiel.\n\nAuguſt und Ferdinand geben ſich für Kaufleute aus, und nennen abwechſelnd einen Namen, eine Stadt oder ein Land, aus welchem ſie kommen, und eine Ware, womit ſie handeln; alles nach der Folge der Buchſtaben.\n\nAuguſt. Ich heiſſe Auguſt, komme aus Afrika, und handle mit Affen.\nFerdinand. Ich heiſſe Bernhard, komme aus Berlin, und handle mit Büchern.\nAuguſt. Ich heiſſe Chriſtoph, komme aus Chemiz, und handle mit Chalzedonen.\nFerdinand. Ich heiſſe David, komme aus Deſſau, und handle mit Droſſeln.\nAuguſt. Ich heiſſe Ernſt, komme aus Elbingen, und handle mit Elfenbein.\nFerdinand. Ich heiſſe Ferdinand, komme aus Frankfurt am Main, und hande mit Feigen.\nAuguſt. Ich heiſſe Guſtav, komme aus Goslar, und handle mit Goſe.\nFerdinand. Ich heiſſe Heinrich, komme aus Harlem, und handle mit Hiazinthen.\nAuguſt. Ich heiſſe Immerman, komme aus Indien, und handle mit Igeln.\nFerdinand. Ich heiſſe Jonathan, komme aus Jena, und handle mit Juchten.\nAuguſt. Ich heiſſe Karl, komme aus Koppenhagen, und handle mit Kaſtanien.\nFerdinand. Ich heiſſe Ludewig, komme aus Leipzig, und handle mit Lerchen.\nAuguſt. Ich heiſſe Moſes, komme aus Malaga, und handle mit Mandeln.\nFerdinand. Ich heiſſe Neumann, komme aus Nürnberg und handle mit Nüſſen.\nAuguſt. Ich heiſſe Otto, komme aus Ofen, und handle mit Ochſen.\nFerdinand. Ich heiſſe Peter, komme aus Paris, und handle mit Papagaien.\nAuguſt. Ich heiſſe Qwintus, komme aus Qwendlinburg, und handle mit Qwirlen.\nFerdinand. Ich heiſſe Reinhard, komme aus Rom, und handle mit Roſinen.\nAuguſt. Ich heiſſe Salomo, komem aus Stockholm, und handle mit Seide.\nFerdinand. Ich heiſſe Titus, komme aus Trieſt, und handle mit Trauben\nAuguſt. Ich heiſſe Unruh, komme aus Ulm, und handle mit Uhren.\nFerdinand. Ich heiſſe Valer, komme aus Venedig, und handle mit Vogelbauern.\nAuguſt. Ich heiſſe Wollmann, komme aus Wien, und handle mit Wein.\nFerdinand. Ich heiſſe Zacharias, komme aus Zürich und handle mit Zucker."
-},
+}
+,
 {
   "name": "Das Kaufmannsſpiel",
   "work-title": "Der angenehme Gesellſchafter",
