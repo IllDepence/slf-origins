@@ -1,5 +1,5 @@
-// Cited texts from literature sources in the JSON files may be subject to
-// license terms. Please check the provided source URLs in case of re-use.
+// Cited texts from literature sources in may be subject to license terms.
+// Please check the provided source URLs in case of re-use.
 data = [
 {
   "name": "Das Handlungs-Spiel",
