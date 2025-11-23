@@ -31,7 +31,7 @@ def generate_sources_html():
             page = data['page']
             source_urls = data['sources']
 
-            parts = [f'<li id="lit{idx}"><emph>{name}</emph> in „{work_title}“']
+            parts = [f'<li id="lit{idx}"><em>{name}</em> in „{work_title}“']
             if author:
                 parts.append(f'von {author}')
             if year and not has_date_in_title(work_title):
