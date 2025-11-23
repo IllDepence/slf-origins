@@ -7,8 +7,8 @@
   "publisher": "Arnold",
   "page": 128,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000F01D00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN766629139&PHYSID=PHYS_0146&DMDID=DMDLOG_0004"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN766629139&PHYSID=PHYS_0146",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000F01D00000000"
   ],
   "slf-kategorien": [
     {

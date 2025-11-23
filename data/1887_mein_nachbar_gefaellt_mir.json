@@ -7,8 +7,8 @@
   "publisher": "Merseburger",
   "page": 51,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0065"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0065",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000"
   ],
   "slf-kategorien": [
     {

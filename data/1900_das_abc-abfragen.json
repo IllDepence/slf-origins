@@ -7,8 +7,8 @@
   "publisher": "Herlet",
   "page": 1,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D61800000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745158323&PHYSID=PHYS_0011"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745158323&PHYSID=PHYS_0011",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D61800000000"
   ],
   "slf-kategorien": [
     {

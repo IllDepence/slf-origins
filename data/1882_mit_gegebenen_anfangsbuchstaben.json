@@ -7,8 +7,8 @@
   "publisher": "Spamer",
   "page": 12,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D62500010000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745171761&PHYSID=PHYS_0066"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745171761&PHYSID=PHYS_0066",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D62500010000"
   ],
   "slf-kategorien": [
     {

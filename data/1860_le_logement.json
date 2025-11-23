@@ -6,8 +6,8 @@
   "publisher": "Hachette",
   "page": 192,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000F31100000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN767214722&PHYSID=PHYS_0203"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN767214722&PHYSID=PHYS_0203",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000F31100000000"
   ],
   "slf-kategorien": [
     {

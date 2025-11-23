@@ -7,8 +7,8 @@
   "publisher": "Kummer",
   "page": 720,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63700000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN74518166X&PHYSID=PHYS_0740"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN74518166X&PHYSID=PHYS_0740",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63700000000"
   ],
   "slf-kategorien": [
     {

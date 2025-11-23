@@ -7,8 +7,8 @@
   "publisher": "Merkur",
   "page": 4,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63400000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0024"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0024",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63400000000"
   ],
   "slf-kategorien": [
     {

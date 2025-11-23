@@ -176,8 +176,8 @@ data = [
   "publisher": "Arnold",
   "page": 128,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000F01D00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN766629139&PHYSID=PHYS_0146&DMDID=DMDLOG_0004"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN766629139&PHYSID=PHYS_0146",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000F01D00000000"
   ],
   "slf-kategorien": [
     {
@@ -206,7 +206,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Buch-Editionen\n* erste: ?\n* zweite: 1836",
   "text": "Mein Nachbar gefällt mir.\n\nJeder aus der Geſsellſchaft ſagt der Reihe nach: Mein Nachbar gefällt mir, und giebt dabei 1) die Urſache an, warum er ihm gefällt, 2) womit er ihn täglich ernährt, 3) in welche Stadt er ihn ſchickt und 4) was er ihm auf die Reiſe mitgiebt.\nDieſe vier Sachen müſſen ſich aber alle mit einem und demſselben Anfangsbuchſtaben aus dem Alphabete anfangen. Der Erſte nimmt den Buchſtaben A, der Zeite B, der Dritte C, u.ſ.w. Z.B. Mein Nachbar gefällt mir, weil er ſo artig iſt, ich ernähre ihn übrigens mit Amſeln, ſchicke ihn in Kurzem nach Aachen und gebe ihm ein Achtgroſchenſtück mit auf den Weg. Mach Nachbar gefällt mir, weil er niemals brummt, deßhalb ernähre ich ihn mit Butterbrot, ſchicke ihn aber nach Budiſſin und gebe ihm ein halb Schock Birnen auf die Reiſe.\nWer bei dem betreffenden Satze kein Wort unter dem beſtimmten Buchſtaben zu treffen weiß, giebt eine Strafe. Wurde aber ein, vielleicht abſichtlich gemachter Fehler von der Geſellſchaft nicht bemerkt, ſo kann derjenige, der ihn machte, die ganze Geſellſchaft ſtrafen."
-},
+}
+,
 {
   "name": "Le Logement",
   "work-title": "Jeux et exercises de jeunes filles",
@@ -215,8 +216,8 @@ data = [
   "publisher": "Hachette",
   "page": 192,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000F31100000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN767214722&PHYSID=PHYS_0203"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN767214722&PHYSID=PHYS_0203",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000F31100000000"
   ],
   "slf-kategorien": [
     {
@@ -261,7 +262,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "",
   "text": "LE LOGEMENT.\n\nChaque jeune fille prend une lettre de l’alphabet et là-dessus on forme tous les mots nécessaires au récit d’un voyage. Quand cela est fait, la maîtresse du jeu demande à celle qui a choisi l’A: Comment vous appelez-vous? Il faut qu’elle réponde Annette, ou Aline, ou bien un nom d’homme commençant par la lettre choisie, si c’est ainsi convenu, et ensuite un surnom à son choix qui commence par la même lettre. On lui demande ensuite : D'où venez-vous? elle répond: d'Amiens ou d’Arras, etc. Il faut répondre de la même manière pour dire l’enseigne de l’auberge où on a logé, le nom de l’hôte, celui de l’hôtesse, celui de la servante, le mets qu’on a mangé; on peut multiplier les questions pour rendre le jeu plus difficile, en demandant au voyageur le nom des arbres qui étaient dans le lieu d’où il vient, les médicaments qu’on a donnés à un malade; les armes dont on s’est servi dans une bataille, le vêtement que l’on portait, etc. Les réponses doivent être faites, autant que possible, dans le sens de la question, et il faut tâcher d’y mettre un peu d’intérêt."
-},
+}
+,
 {
   "name": "Das ABC-Spiel",
   "work-title": "Kinder-Conversations-Lexikon",
@@ -271,8 +273,8 @@ data = [
   "publisher": "Manz",
   "page": 724,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D78500000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745861873&PHYSID=PHYS_0732"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745861873&PHYSID=PHYS_0732",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D78500000000"
   ],
   "slf-kategorien": [
     {
@@ -297,7 +299,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "6. Das A B C-Spiel.\n\nJeder muß drei Wörter nennen, die mit gleichen Buchſtaben anfangen: einen Vornamen, den Namen einer Stadt, und einer Speiſe, z. B. Ich heiße Auguſt, bin aus Augsburg, und eſſe gern Auſtern — und ſo muß es fortgehen durch das ganze Alphabet; wer ein Wort nicht zu finden weiß, muß ein Pfand geben und hernach löſen."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Encyklopädie der Gesellschafts-Spiele",
@@ -307,8 +310,8 @@ data = [
   "publisher": "Voigt",
   "page": 228,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5DF00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139280&PHYSID=PHYS_0256&DMDID=DMDLOG_0001"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139280&PHYSID=PHYS_0256",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5DF00000000"
   ],
   "slf-kategorien": [
     {
@@ -337,7 +340,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]], nur mit anderem Text beschrieben.",
   "text": "Mein Nachbar gefällt mir!\n\nDer Reihe nach ſagt jedes Mitglied der Geſellſchaft: „Mein Nachbar gefällt mir!“ Dabei giebt er dann die Urſache an, weshalb ihm ſein Nachbar gefällt, die tägliche Nahrung, die er ihm giebt, in welche Stadt er ihn ſchickt und was er ihm auf dieſe Reiſe mitgiebt. Dieſe vier verſchiedenen Gegenſtände müſſen aber mit einem und demſselben Buchſtaben des Alphabets anfangen, und zwar bei dem Erſtes mit A, bei dem Zeiten mit B, dem Dritten mit C, u.ſ.w. Zum Beispiel: Meine Nachbarin gefällt mir, weil ſie ſo anmutg iſt; deshalb gebe ich ihr auch täglich „Ananas“ zu eſſen, und wenn ich mich einmal von ihr trennen muß, um ſie nach „Ausburg“ zu ſchicken, gebe ich ihr „Auſtern“ mit, weil ſie dieſe außerordentlich gerne ißt. — Order: Mein Nachbar gefällt mir, weil er „beſcheiden“ iſt, obgleich er als tägliche Nahrung nichts als „Backobſt“ bekommt; zuweilen ſchicke ich ihn nach „Bernburg“, und gebe ihm dann „Bretzeln“ mit. — Wer sich zu lage beſinnt oder einen falſchen Buchſtaben nennt, giebt ein Pfand. — Macht Einer abſichtlich ein Versehen, und dies wird von Niemand gerügt, ſo giebt er es ſelbſt an, und dann müſſen außer ihm Alle ein Pfand geben."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Deutschlands spielende Jugend",
@@ -347,8 +351,8 @@ data = [
   "publisher": "Kummer",
   "page": 292,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000DB7C00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746636121&PHYSID=PHYS_0308"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746636121&PHYSID=PHYS_0308",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000DB7C00000000"
   ],
   "slf-kategorien": [
     {
@@ -377,7 +381,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]] und [[Mein Nachbar gefällt mir (1874)]], nur mit anderem Text beschrieben.",
   "text": "336. Mein Nachbar gefällt mir.\n(Für größere Kinder.)\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt Einer nach dem $nderen: „Mein Nachbar gefällt mir“ und gibt dabei an: 1. die Urſache, warum er ihm gefällt; 2. die Speiſe, mit der er ihn täglich ernährt; 3. den Ort, nach welchem hin er ihn ſchickt; 4. den Gegenſtand, den er ihm auf die Reiſe mitgibt. Die Namen dieſer vier Gegenſtände müſſen aber mit demſelben Anfangsbuchſtaben beginnen. Auch muſz von den Neneneinanderſitzenden die alphabetiſche Aufeinanderfolge der Buchſtaben beibehalten werden. So beginnt z.B. der Erſte und ſagt:\nMein Nachbar gefällt mir, weil er aufmerkſam iſt, ich gebe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Amerika ſchiffen und ihm als Reiſegeld ein Achtgroſchenſtück geben.\nDer Zweite fährt fort:\nMein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchiffe ihn nach Breslau und gebe ihm einen Bedienten mit ꝛc.\nWer beim betreffenden Satze kein Wort mit dem beſtimmten Buchſtaben zu treffen weiß, gibt eine Strafe (Pfand). Man kann auch abſichtlich einen Fehler machen, und wenn derſelbe nicht bemerkt wird, die ganze Geſellſchaft in Strafe nehmen. —"
-},
+}
+,
 {
   "name": "Mit gegebenen Anfangsbuchſtaben",
   "work-title": "Illustrirtes allgemeines Familien-Spielbuch",
@@ -387,8 +392,8 @@ data = [
   "publisher": "Spamer",
   "page": 12,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D62500010000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745171761&PHYSID=PHYS_0066"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745171761&PHYSID=PHYS_0066",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D62500010000"
   ],
   "slf-kategorien": [
     {
@@ -413,7 +418,8 @@ data = [
   "slf-wertung": "_/_/-1/-1",
   "notes": "Alternativvariante am Ende identisch zu [[Le Logement (1860)]].",
   "text": "Geſellſchafts- und Perſonenspiele\n\n[...]\n\nMit gegebenen Anfangsbuchſtaben.\n(11.) Wer freiwillig oder gewählt den Anfang macht, hat zu ſagen, wohin er reiſt. Doch müſſen alle Worte mit demselben Buchſtaben beginnen. Gleiches thut der Zweite und alle Folgenden, was natürlich für die ſpäter an die Reihe kommenden immer ſchwieriger wird, weil niemand wiederholen darf, was ſchon da war. Wem ein Wort fehlt, wer zu lange zögert oder ſchon Genanntes wiederholt, gibt ein Pfand oder zahlt ſonst eine beſtimmte Strafe. Hat ein Buchſtabe eine Runde gemacht, ſo wird ein anderer gewählt, bei dem aus Billigkeitsgründen nun der Letzte anfängt.\nIn einer Geſellſchaft von Erwachſenen wird dieſes ſonſt ſehr einfache Spiel dadurch pikant gemacht, daß man ungewöhnliche und überraſchende Orte oder Namen in Zuſammenhang bringt; z.B.: Ich heiße Atreus, komme von Attika, handle mit Antiquitäten und reiſe nach dem Aetna. Oder: Ich heiße Melanchton, komme von Memphis, handle mit Mumien und gehe nach der Metropole von Marokko.\nDieses Spiel kann auf alle Weiſe variirt werden, indem man mit den nämlichen Anfangsbuchſtaben sagt, was man iſt, mit wem man sich zu verloben gedenkt, wohin man ſeine Hochzeitsreiſe machen möchte, und wo man ſeinen bleibenden Wohnſitz zu nehmen wünſcht. Z.B.: Ich bin Bergrath, beabſichtige mich mit der Bernſteinhexe zu verloben, eine Hochzeitsreiſe nach dem Brocken zu machen und auf dem Blocksberge ein Haus zu bauen. Da die Damen von dieſem Spiele nicht ausgeſchloſſen ſein dürfen, ſo könnte Frl. B. ſagen: Ich heiße Linchen, handle mit Locken, komme von Lauterbrunn und gehe nach London. — Im zweiten Falle: Ich bin eine Kaferlatin, gedenke mich mit einem Krauskopfe zu verloben, wünſche mit ihm einen Ausflug in die Katakomben zu machen und mich in Kapernaum dauernd niederzulaſſen. — Ich heiße Harlequine, handle mit Haarzöpfen, komme vom Harz und reiſe nach Hamburg.\nZur Abwechſelung kann man auch die Buchſtaben der Reihe nach folgen laſſen. Sind z.B. fünf Perſonen beiſammen, ſo beantwortet die erſte alle Fragen mit dem Anfangsbuchſtaben A, die zweite mit B, die dritte mit C, die vierte mit D, die fünfte mit E. ꝛc. Die Fragen darf der Frageſteller frei wählen, etc ſo: A.: Wo kommen Sie her? — B.: Wo haben Sie dort logirt? C.: Wie hieß denn der Wirth? — D.: Was ſtand auf dem Schilde? — E.: Was gab’s zu eſſen? ꝛc.\nAntworten: Von Amerika, im Bären, Caspar, Deutſcher Kaiſer, Entenbraten ꝛc."
-},
+}
+,
 {
   "name": "Das ABC-Spiel",
   "work-title": "Das Buch der Spiele und Unterhaltungen für Knaben und Mädchen",
@@ -422,8 +428,8 @@ data = [
   "publisher": "Ad. Spaarmann",
   "page": 25,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D7A000000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745998185&PHYSID=PHYS_0027&DMDID=DMDLOG_0001"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745998186&PHYSID=PHYS_0027",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D7A000000000"
   ],
   "slf-kategorien": [
     {
@@ -448,7 +454,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "Das ABC-Spiel.\nEiner aus der Geſellſchaft, der durch Auszählen beſimmt wird, fragt ſeinen Nachbar links: Wie heißt Du? Antwort: Ich heiße Anton. Wo kommſt Du her? Ich komme aus Amſterdam. Womit handelſt Du? Mit Apfelſinen. Wo gehſt Du hin? Nach Annaburg. — Jetzt fragt der, welcher bisher geantwortet hat, ſeinen Nachbar zur Linken, und dieſer antwortet auf die vorſtehenden Fragen etwa: „Ich heiße Bernhard, komme aus Bromberg, handle mit Bratheringen und gehe nach Bitterfeld.\" So geht es der Reihe nach fort. Der Dritte kann z. B. antworten: „Ich heiße Cäsar, komme aus Celle, handle mit Citronen und gehe nach Chemnitz.\" Hierauf folgen die Antworten D, E, F, G, H, ꝛc., immer nach dem Alphabete. Schwere Buchſtaben, wie Q, X, Y, werden weggelaſſen. Wer nicht raſch und gewandt antwortet, gibt ein Pfand zur Strafe."
-},
+}
+,
 {
   "name": "Die Poſt",
   "work-title": "Das Spiel im Zimmer",
@@ -458,8 +465,8 @@ data = [
   "year": 1887,
   "page": 56,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0070"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0070",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000"
   ],
   "slf-kategorien": [
     {
@@ -480,7 +487,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "69. Die Poſt.\n\nEiner fängt an: „Trara!“ Der Spielordner fragt: „Wer da?“ Antwort: „Die Poſt.“ — „Woher?“ Und herauf muß mit dem Namen eines Landes, einer Stadt, oder ſonſt eines Ortes mit A anfangend geantwortet werden. Dann: „wohin geht ſie?“ worauf wieder mit einem Orte auf A geantwortet werden muß, und endlich: „was bringt ſie mit?“ worauf irgend eine Ware oder Sache wieder auf A geantwortet wird. Iſt der Erſte fertig, ſo muß entweder der Nächſte oder (damit niemand im voraus wiſſe, welcher Buchſtabe ihn treffen wird) ein vom Spielordner hierzu Aufgeforderter mit B, der Dritte mit C u. ſ. w. fortfahren. Wer ſtecken bleibt, giebt ein Pfand."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Das Spiel im Zimmer",
@@ -490,8 +498,8 @@ data = [
   "publisher": "Merseburger",
   "page": 51,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0065"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745139965&PHYSID=PHYS_0065",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5E900000000"
   ],
   "slf-kategorien": [
     {
@@ -520,7 +528,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]], nur mit anderem Text beschrieben.",
   "text": "61. Mein Nachbar gefällt mir.\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt nun der eine nach dem anderen: „Mein Nachbar gefällt mir!“ und giebt dabei an 1., die Urſache, warum er ihm gefällt, 2. die Speiſe, mit welcher er ihn täglich ernährt, 3. den Ort, an den er ihn ſickt und 4. den Gegenſtand, den er ihm auf die Reiſe mitgiebt. Die Namen der vier Gegenſtände müſſen aber mit demſselben Anfangsbuchſtaben beginnen. So beginnt z.B. der Erſte: „Mein Nachbar gefällt mir, weil er artig iſt, ich gehe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Afrika ſicken und ihm ein Glas Augenwaſſer mitgeben. Der zweite fährt fort: Mein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſchicke ihn nach Berlin und gebe ihm einen Bedienten mit. In dieſer Weiſe geht es weider, bis das Alphabet durch iſt. Wer ſtecken bleibt, giebt ein Pfand."
-},
+}
+,
 {
   "name": "Steeple-Chase",
   "work-title": "Spielbuch",
@@ -530,8 +539,8 @@ data = [
   "publisher": "Flemming",
   "page": 102,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D71400000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745605478&PHYSID=PHYS_0114"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745605478&PHYSID=PHYS_0114",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D71400000000"
   ],
   "slf-kategorien": [
     {
@@ -577,7 +586,8 @@ data = [
   "slf-mehrfachnennungen": true,
   "notes": "",
   "text": "Steeple-Chase.\n\nBei dem „Steeple-Chase“ kommt es darauf an, in einer zuvor feſtgeſetzten Zeit, z.B. fünf Minuten, möglichſt viele berühmte Namen, z.B. von Feldherrn, Dichtern, Komponiſten, Malern, Bildhauern, Schauſpielern, Virtuoſen u. ſ. w. aufzuſchreiben, und zwar nur Namen mit einem beſtimmten Anfangsbuchſtaben.\nMan einigt ſich zunächſt über drei Kategorien von Namen und wählt z.B. Feldherrn, Komponiſten und berühmte Frauen. Nachdem ein Anfansgbuchſtabe durch das Los beſtimmt iſt, erhält jeder aus der Geſellſchaft einen Zettel und einen Bleiſtift. Sofort nach der Verteilung der Zettel wird eine Uhr auf den Tiſch gelegt und eine Friſt, z. B. fünf Minuten, feſtgeſetzt. Wer in dieſer Zeit die meiſten gültigen Namen auſgeſchrieben hat, geht als Sieger aus dem Wettſtreit hervor. Über Gültigkeit reſpektive Ungültigkeit der einzelnen Namen entſcheidet die Majorität der Geſellſchaft, und zwar in der folgenden Weiſe: Nachdem die zum Aufſchreiben bewilligte Zeit verſtrichen iſt, übergiebt jeder ſofort ſeinen Zettel dem Nachbar zur Linken. Die Zettel werden nun der Reihe nach vorgeleſen, und über jeden Namen, deſſen Gültigkeit zweifelhaft erſcheint, wird abgeſtimmt. Erklärt ihn die Majorität für ungültig, ſo wird er geſtrichen. Alle nicht geſtrichenen Namen eines Zettels werden dann zuſammengezählt und die Summenzahl wird am Ende des Zettels notiert.\nDer Reiz des „Steeple-Chase“ beſteht darin, daß die ruhige Überlegung, die Prüfung der einzelnen Namen immer durch die Haſt beim Aufſchreiben und durch das Verlangen, als Sieger hervorzugeben, ſehr beeinträchtigt wird. Daher finden ſich wohl auf jedem Zettel einige ganz unberechtigte Eindringlinge, die aber die ganze Geſellſchaft in der fröhlichſten Stimmung begrüßt. Oft trägt ein luſtiger Einfall dazu bei, die frohe Laune noch zu erhöhnen. So hatte bei einer Probe unſeres Spiel ein Schalk auch Guſtav Kühn in Neu-Ruppin als berühmten Maler, Diana und Circe als berühmte Frauen, den Kater und den Kuckuck als berühmte Virtuoſen aufgeführt."
-},
+}
+,
 {
   "name": "Das Fünfminutenſpiel",
   "work-title": "Beschäftigungsbuch für Mädchen",
@@ -587,8 +597,8 @@ data = [
   "year": 1890,
   "page": 329,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D85900000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746238983&PHYSID=PHYS_0345"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746238983&PHYSID=PHYS_0345",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D85900000000"
   ],
   "slf-kategorien": [
     {
@@ -618,7 +628,8 @@ data = [
   "slf-mehrfachnennungen": true,
   "notes": "",
   "text": "38. Das Fünfminutenſpiel iſt ein ſehr unterhalendes und das Gedächtnis übendes Spiel. Es wird nämlich ein Buchſtabe des Alphabets verabredet; und innerhalb 5 Minuten nun — die nach der Uhr genau eingehalten werden — ſchreibt jeder alle ihm in dieſer Zeit eingefallenen Städtenamen, die denſelben zum Anfangsbuchſtaben haben. Iſt die Zeit um, ſo beginnt die, die die meiſten Städte hat, mit Vorleſen. Sobald ſie einen Namen nennt, den auch ein anderer hat, meldet ſich der letztere, worauf beide — oder wenn es mehrere ſind, alle Betreffenden — den Namen ausſtreichen. Die Zweite lieſt ihre ausgeſtrichenen Städge nich mit, ebenſo die 3., 4., u. ſ. w. So wird es forgeſetzt, bis alles vorgeleſen iſt; darauf wird gezählt, wer am meiſten übrig behalten hat, und dieſer darf den Buchſtaben für das nächſte Spiel geben.\n    Es können auch z.B. berühmte Männer, oder nur Dichter, nur Maler u. ſ. w. gewählt werden."
-},
+}
+,
 {
   "name": "Die Handlungsreisenden",
   "work-title": "Beschäftigungsbuch für Mädchen",
@@ -626,8 +637,8 @@ data = [
   "year": 1890,
   "page": 319,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D85900000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746238983&PHYSID=PHYS_0335"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN746238983&PHYSID=PHYS_0335",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D85900000000"
   ],
   "slf-kategorien": [
     {
@@ -652,7 +663,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "Zuvor in [[Das Kaufmannsſpiel (1791)]].",
   "text": "16. Die Handlungsreiſenden. Die Geſellſchaft ſtellt Handlungsreiſende vor, die ſich gegenſeitig der Reihe nach mitteilen, wie ſie heißen, woher ſie kommen, wohin ſie gehen und womit ſie handeln. Jeder der dabei von einem Reiſenden genannten Namen und Orte aber muß mit demſelben Buchſtaben anfangen, und zwar wird das Alphabet nach der Reihe durchgenommen, der erſte hat A, der zweite B und ſo fort.\nBeispiel: Ich heiße Auguſt und komme von Achen und gehe nach Augsburg und handle mit Atlas. Zweitens: Ich heiße Berthold und komme von Berlin und gehe nach Breslau und handle mit Bändern."
-},
+}
+,
 {
   "name": "Die Poſt",
   "work-title": "Das Bewegungsspiel",
@@ -661,8 +673,8 @@ data = [
   "year": 1894,
   "page": 79,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D64A00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN74518961X&PHYSID=PHYS_0093"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN74518961X&PHYSID=PHYS_0093",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D64A00000000"
   ],
   "slf-kategorien": [
     {
@@ -683,7 +695,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "63. Die Poſt.\n\nDie Spieler ſtellen ſich im Kreiſe auf. Jeder Spieler wählt ſich den Namen einer Stadt. Einer, dem die Augen mit einem Tuche verbunden werden, iſt Reiſender. Er ſpricht: „Ich will von Bublitz nach Köslin reiſen.“ Soft müſſen die Betreter dieſer Städte ihre Plätze wechſeln, wobei der Paſſagier einen der Spieler zu erhaſchen ſucht. Gelingt ihm dies nicht, und kommen beide ungefährdet am neuen Orte an, ſo rufen ſie: „Angekommen!“ Hierauf wählt der Paſſagier zwei andere Städtenamen. Wird einer der Fliehenden ergriffen, ſo muß dieser die Stelle des Paſſagiers übernehmen. —\nAuch in der Form eines Zwiegeſprächs zwiſchen einem Spielordner und irgend einem Mitſpieler bietet dieses Spiel eine ſchöne Unterhaltung. Irgend ein Spieler beginnt: „Trara!“\nDer Spielordner fragt: Wer iſt da?\nSpieler: Die Poſt.\nSpielordner: Von wo?\nDer Spieler muß hierauf den Namen eines Landes, einer Stadt oder eines Dorfes mit A anfangend, nennen.\nSpielordner: Wohin fährt ſie?\nDieſe Frage hat der Spieler ebenfalls mit einem Ortsnamen auf A zu beantworten.\nSpielordner: Was bringt ſie mit?\nDer Spieler muß eine Waren oder Sache auf A angeben. Jetzt kommt ein anderer Spieler an die Reihe, der vom Spielordner beſtimmt wird; er hat obrige Fragen mit Namen auf B zu beantworten. Weitere Schüler haben dies mit C, D ꝛc. zu thun. Wer eine Antwort ſchuldig bleibt, muß zur Strafe beide Arme ſo lange hochheben, bis es ihm vom Spielordner erlaſſen wird. Bis zur Ermüdung der Arme darf die Strafe niemals ausgedehnt werden."
-},
+}
+,
 {
   "name": "Reiſeſpiel",
   "work-title": "Das Buch der Jugend-Spiele und -Beschäftigungen",
@@ -693,8 +706,8 @@ data = [
   "year": 1899,
   "page": 275,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D6E700000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745588514&PHYSID=PHYS_0295"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745588514&PHYSID=PHYS_0295",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D6E700000000"
   ],
   "slf-kategorien": [
     {
@@ -727,7 +740,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "",
   "text": "Reiſeſpiel.\n\nEin anderes Reiſeſpiel iſt folgendes, bei dem die erzählende Form innegehalten werden muß. Alle Hauptwörter müſſen unbedingt die gleichen Anfangsbuchſtaben haben. Der Abwechslung wegen hat jeden Theilnehmer einen anderen Buchſtaben zu wählen. Jeder Satz muß der Reihenfolge nach einen Namen, eine Stadt, ein Gebirge, einen Gegenſtand und ein Eigenſchaftswort enthalten, die, wie geſagt, alle mit dem gleichen Buchſtaben zu beginnen haben.\nZum Beiſpiel: Ich heiße Anton, reiſe morgen von Altona über die Alpen nach Alexandrien, ſuche dort Anemonen und kehre altersſchwach heim."
-},
+}
+,
 {
   "name": "Das ABC-Abfragen",
   "work-title": "Großes illustriertes Spielbuch für Mädchen",
@@ -737,8 +751,8 @@ data = [
   "publisher": "Herlet",
   "page": 1,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D61800000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745158323&PHYSID=PHYS_0011"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745158323&PHYSID=PHYS_0011",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D61800000000"
   ],
   "slf-kategorien": [
     {
@@ -767,7 +781,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "Das ABC-Abfragen\n\nVon den Spielenden ſteht eine in der Mitte des Kreiſes und die um ſie herumſitzenden haben von einem Buchſtaben zum anderen auf eine Frage eine paſſende Antwort mit dem betreffenden Anfangslaut zu geben. Lange nachgedacht darf nicht werden. Es geht raſch weiter, und wer nichts weiß, muß ſich hinter den Stuhl ſtellen, bis eine andere die Beſtrafte ablöſt. Die Fragende beginnt:\nA: „Ein Bauwerk?“    Antwort: „Amphitheater.“\nB: „Ein Kunſtſtück?“    “     „Bänder aus dem Munde ziehen.“\nC: „Ein Gemälde?“       “     „Columbus auf dem Schiff, die\n                               Meuterer zu ſeinen Füßen.“\nD: „Ein Gewerbe?“       “     „Drechslerei.“\nSo geht es weiter von der erſten zur zweiten, zur dritten ſtockt es und iſt erſt die vierte oder fünfte mit einer Antwort zur Hand, ſo müſſen ſich alle drei oder vier vorher befragten hinter ihre Stühle ſtellen, bis ſie von anderen Nichtwiſſenden abgelöſt werden.\nDas Antworten erheiſcht kein Nachdenken, aber etwas wiſſen muß man und Geiſtesgegenwart haben."
-},
+}
+,
 {
   "name": "Der Handlungsreiſende",
   "work-title": "Wiener Hausfrauen-Zeitung vom 18.09.1904",
@@ -809,8 +824,9 @@ data = [
   "publisher": "Spamer",
   "page": 8,
   "sources": [
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745865518&PHYSID=PHYS_0028",
     "https://archive.org/details/BuchDerSpiele/page/8/mode/2up",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht/?PPN=PPN745865518"
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D78C00000000"
   ],
   "slf-kategorien": [
     {
@@ -835,7 +851,8 @@ data = [
   "slf-wertung": "_/_/-1/-1",
   "notes": "Text fast identisch zu [[Mit gegebenen Anfangsbuchſtaben (1882)]].\n\nBuch-Editionen\n* erste: 1893? (→ Datierung im Vorwort)\n* ...\n* vierte: 1905? (→ archive.org Metadaten)\n* fünfte: 1909",
   "text": "I Geſellſchaftsſpiele\n\n[...]\n\nMit gegebenen Anfangsbuchſtaben\nWer freiwillig oder gewählt den Anfang macht, hat zu ſagen, wohin er reiſt. Doch müſſen alle Worte mit demselben Buchſtaben beginnen. Gleiches thut der zweite und alle folgenden, was natürlich für die ſpäter an die Reihe kommenden immer ſchwieriger wird, weil niemand wiederholen darf, was ſchon da war. Wem ein Wort fehlt, wer zu lange zögert oder ſchon Genanntes wiederholt, gibt ein Pfand oder zahlt ſonst eine beſtimmte Strafe. Hat ein Buchſtabe eine Runde gemacht, ſo wird ein anderer gewählt, bei dem aus Billigkeitsrückſichten nun der letzte anfängt.\nIn der Geſellſchaft von Erwachſenen wird dieſes ſonſt ſehr einfache Spiel dadurch pikant gemacht, daß man ungewöhnliche und überraſchende Orte oder Namen in Zuſammenhang bringt; z.B.: „Ich heiße Atreus, komme aus Attika, handle mit Antiquitäten und reiſe nach dem Ätna.“ Oder: „Ich heiße Melanchton, komme von Memphis, handle mit Mumien und gehe nach der Metropole von Marokko.“\nDieses Spiel kann auf alle Weiſe variiert werden, indem man mit den nämlichen Anfangsbuchſtaben sagt, was man iſt, mit wem man sich zu verloben gedenkt, wohin man ſeine Hochzeitsreiſe machen möchte, und wo man ſeinen bleibenden Wohnſitz zu nehmen wünſcht. Z.B.: „Ich bin Bergrat, beabſichtige mich mit der Bernſteinhexe zu verloben, eine Hochzeitsreiſe nach dem Brocken zu machen und auf dem Blocksberg ein Haus zu bauen.“ Da die Damen von dieſem Spiel nicht ausgeſchloſſen ſein dürfen, ſo könnte Frl. B. ſagen: „Ich heiße Linchen, handle mit Locken, komme von Lauterbrunn und gehe nach London.“ Oder: „Ich bin eine Korintherin gedenke mich mit einem Krauskopf zu verloben, wünſche mit ihm einen Ausflug in die Katakomben zu machen und mich in Kapernaum dauernd niederzulaſſen.“ — „Ich heiße Harlequine, handle mit Haarzöpfen, komme vom Harz und reiſe nach Hamburg.\nZur Abwechſelung kann man auch die Buchſtaben der Reihe nach folgen laſſen. Sind z.B. fünf Perſonen zuſammen, ſo beantwortet die erſte alle Fragen mit dem Anfangsbuchſtaben A, die zweite mit B, die dritte mit C u.ſ.w. Nun fragt jemand die erste z.B.: „Wo kommen Sie her?“ Antwort: „Aus Achen.“ Frage an B.: „Wo haben Sie dort gewohnt?“ „Im Bären.“ An C.: „Waren Sie dort zufrieden?“ „Charmant war es.“ An D.: „Wie hieß denn der Wirt des Hotels“ „Deinhardſtein.“ An E.: „Was haben Sie denn gegeſſen?“ „Entenbraten“ u.ſ.w."
-},
+}
+,
 {
   "name": "Das ABC der Großen oder das Reiſeſpiel",
   "work-title": "Das große illustrierte Spielbuch",
@@ -845,8 +862,8 @@ data = [
   "publisher": "Merkur",
   "page": 4,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63400000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0024"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0024",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63400000000"
   ],
   "slf-kategorien": [
     {
@@ -875,7 +892,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "",
   "text": "Das ABC der Großen oder das Reiſeſpiel.\n\nEs iſt das ein ſehr underhaltendes Spiel, das auch an die geiſtige Gewandtheit der Spielenden gewiſſe Anforderungen ſtellt.\nEs wird im Kreiſe geſpielt. Der erſte (Vorherbeſtimmte) fragt den Nachbar oder die Nachbarin:\nWie heißt du? Die Antwort lautet: Abraham (Anton oder irgend ein anderer Name mit dem Anfangsbuchſtaben A wird genannt).\nWo kommſt du her? Ich komme aus Aaleſund (Amſterdam, Apolda, Arnſtadt, Arnswalde uſw).\nWomit handelſt du? Ich handle mit Angoraziegenfellen (Apfelſinen, Aalen, Axtſtielen uſw.).\nWas ißt du? Aale, Aſſeln uſw.\nWohin gehſt du? Nach Amſterdam uſw.\nDarauf fragt der Herr oder die Dame, die mit A geantwortet hat, ihren Nachbar oder ihre Nachbarin zu rechter Hand:\nWie heißt du? Ich heiße Bernhard Bülow (er hat dabei gleich zwei Worte mit B; oder Bärenſtiel, Barlapp, Benedikt, Bruno uſw.).\nWo kommſt du her? Ich komme aus Brandenburg (Bautzen, Bremen, Bromberg uſw.).\nWomit handelſt du? Ich handle mit Birnkernen (Bärenfellen, Badſteinen, Bullenbeißern uſw.).\nWas ißt du? Blech (Brombeeren, Blätter uſw.).\nWohin gehſt du? Ich reiſe nach Berlin, (Bernburg, Bärental uſw.).\nSo geht es der Reihe nach, den Buchſtaben des Alphabets folgend, duch die geſamte Spielgeſellſchaft. Schwere Buchſtaben wie Q, X und Y werden ausgelaſſen.\nGewandte Geiſter ſprechen ſich auf die erſte Frage ihres Nachbars gleich zuſammenhängend aus: z.B.: Ich heiße Cicero, komme aus Czenſtochau, handle mit Chloral (Chloroform uſw.) eſſe gern Citronenkerne und reiſe nach Carouge (Ort bei Genf).\nDas Spiel bekommt dadurch intereſſante und witzige Bezeichnugen, indem man Orte, Dinge uſw. nennt, die in der ſpieldenen Geſellſchaft eine beſtimmte Bedeutung haben."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Das große illustrierte Spielbuch",
@@ -885,8 +903,8 @@ data = [
   "publisher": "Merkur",
   "page": 70,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63400000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0090"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745180493&PHYSID=PHYS_0090",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63400000000"
   ],
   "slf-kategorien": [
     {
@@ -915,7 +933,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]] und [[Mein Nachbar gefällt mir (1874)]], nur mit anderem Text beschrieben.",
   "text": "Mein Nachbar gefällt mir.\n\nDas Spiel iſt das Gegenſtück von dem Spiel: „Wie gefällt dir dein Nachbar?“ Jeder aus der Geſellſchaft ſagt der Reihe nach: „Mein Nachbar gefällt mir“ und gibt dabei\n  erſtens die Urſache an, warum er ihm gefällt,\n  zweitens, womit er ihn täglich ernährt,\n  drittens, in welche Stadt er ihn gern ſchicken würde, und\n  viertens, was er ihm auf die Reiſe mitgibt\nan. Dieſe vier Sachen müſſen aber mit ein und demſselben Anfangsbuchſtaben nach der Reihe des Alphabets anfangen. Der erſte nimmt den Buchſtaben A, der zweite B, dem dritte C, der vierte D uſw.\nBeispielsweiſe: „Mein Nachbar gefällt mir, weil er ſo artig iſt; ich ernähre ihn übrigens mit fein gemahlenen und in Öl gebratenen Aalfloſſen, ſchicke ihn in kurzer Zeit nach Abardeen und gebe ihm ein Achtel Bier mit auf den Weg.“ Die daneben ſitzende Dame ſagt: „Mein Nachbar gefällt mir, weil er niemals brummig ist; deshalb ernähre ich ihn auch fein ſäuberlich mit braungebrantem Bärenſchinken, will ihn nach Borodim ſchicken und gebe ihm einen Sack gebackener Birnen mit auf den Weg.“ Der nächſte Herr ſpricht: „Meine Nachbarin gefällt mir außerordentlich gut, weil ſie redneriſch begabt wie Cicero iſt; darum füttere ich ſie auch mit Citronenſaft, ſicke ſie in eine Wüſte ohne Ciſternen und gebe ihr Caramellen mit auf den Weg.“ Die nächste Dame ſpricht: „Mein lieber Nachbar gefält mir, weil er keine Dochte verſchluckt, und darum von mir mit Dorſchleber geſpeiſt wird. Ich ſicke ihn nächſtes Jahr nach Durſtfeld in Deutſch-Südweſtafrika zur Sommerfriſche und gebe ihm ein Donnerwetter mit auf den Weg” uſw. Der Nachbar muß ſich während der Lobrede vom Platze erheben. Beide können danach ihre Plätze wechſeln."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Illustriertes Spielbuch für Knaben",
@@ -925,8 +944,8 @@ data = [
   "publisher": "Spamer",
   "page": 302,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D76D00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745846971&PHYSID=PHYS_0334"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745846971&PHYSID=PHYS_0334",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D76D00000000"
   ],
   "slf-kategorien": [
     {
@@ -951,7 +970,8 @@ data = [
   "slf-wertung": "_/_/_/_",
   "notes": "Ähnlich zu\n* [[Mein Nachbar gefällt mir (1836)]]\n* [[Mein Nachbar gefällt mir (1874)]]\n* [[Mein Nachbar gefällt mir (1909 b)]]",
   "text": "560. Mein Nachbar gefällt mir. Jeder bekommt einen Buchſtaben, z.B. A, F, L u.ſ.w. oder wählt den Anfangsbuchſtaben ſeines Namens. Er hat nun ſeinem Nachbar zu erklären, warum, wo und wann letzterer ihm gefalle. Das Stichwort muß in allen drei Fällen mit dem vom Nachbar gewählten Anfangsbuchſtaben beginnen. Beispiel: Der Anfangsbuchſtabe iſt B, ſo kann die Ausſage lauten: Er gefällt mir weil er bedächtig iſt; er gefällt mir im Bade; er gefällt mir, wenn er Ball ſpielt."
-},
+}
+,
 {
   "name": "The Holiday ABC",
   "work-title": "The new Children's encyclopædia",
@@ -959,8 +979,8 @@ data = [
   "year": 1910,
   "page": 104,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D67D00000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745280099&PHYSID=PHYS_0110"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745280099&PHYSID=PHYS_0110",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D67D00000000"
   ],
   "slf-kategorien": [
     {
@@ -981,7 +1001,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "THE HOLIDAY ABC\n\nA GOOD game for the train, and one that is quite appropriate to holiday-makers, is what may be called the Holiday ABC. Having decided who shall begin, a player gives quickly the name of some holiday place that begins with A. Then the next player asks: “What shall you do there?” And the first player must give an appropriate answer, every word in which begins with A. Then the second player gives the name of a place beginning with B, and the third player asks: “What shall you do there?” to which number 2 must answer in a sentence of words beginning with B; and so on. Thirty seconds only are allowed for an answer, and those who take longer are given one mark for each second that they take over the thirty. At the end of the game the player with the fewest marks wins. Of course, after getting to the end of the alphabet, we can begin again, and give fresh places, if we are not tired of the game. The letters X and Z should be left out, as hey are too difficult. Here are one or two specimen answers: I am going to Aberystwyth. What shall you do there? Attempt almost anything. I am going to Brighton. What shall you do there? Breath briny breezes. I am going to Clacton. What shall you do there? Catch crawling crabs."
-},
+}
+,
 {
   "name": "Das Handel-Bandel-Spiel",
   "work-title": "Spiel und Spaß und noch etwas",
@@ -991,8 +1012,8 @@ data = [
   "year": 1911,
   "page": 104,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D73300000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745725198&PHYSID=PHYS_0048"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745725198&PHYSID=PHYS_0048",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D73300000000"
   ],
   "slf-kategorien": [
     {
@@ -1017,7 +1038,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "Das Handel-Bandel-Spiel.TeubnerTeubner\n\nDer Spielleiter teilt jedem Mitſpielenden einen Buchſtaben des Abc zu, dem erſten A, dem zweiten B, dem dritten C uſw. Jeder hat ſich nun einen Vornamen, eine Stadt oder ein Land und eine Ware auszudenken, die mit dem ihm zugeteilten Buchſtaben beginnt; z. B. Alfred, Alfeld, Aprikoſe — Hans, Hamburg, Hering. Und dann hat jeder zu ſagen, wie er heißt, woher er kommt, wo er wohnt und womit er handelt. Z. B.: „Alfred heiße ich, aus Alfeld komme ich, mit Aprikoſen handle ich.“ — „Ich heiße Theodor, wohne in der Türkei und verkaufe Tabak.“ Wer nichts weiß, muß ein Pfand zahlen."
-},
+}
+,
 {
   "name": "Mein Nachbar gefällt mir",
   "work-title": "Deutschlands spielende Jugend",
@@ -1027,8 +1049,8 @@ data = [
   "publisher": "Kummer",
   "page": 720,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63700000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN74518166X&PHYSID=PHYS_0740"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN74518166X&PHYSID=PHYS_0740",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D63700000000"
   ],
   "slf-kategorien": [
     {
@@ -1057,7 +1079,8 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "Identisch zu [[Mein Nachbar gefällt mir (1836)]] und [[Mein Nachbar gefällt mir (1874)]], nur mit anderem Text beschrieben. Text fast identisch zu [[Mein Nachbar gefällt mir (1879)]].",
   "text": "8. Mein Nachbar gefällt mir.\n(Für größere Kinder.)\n\nDie Geſellſchaft ſetzt ſich im Kreiſe zuſammen. Der Reihe nach ſagt einer nach dem anderen: „Mein Nachbar gefällt mir“ und gibt dabei an: 1. die Urſache, warum er ihm gefällt; 2. die Speiſe, mit der er ihn täglich ernährt; 3. den Ort, nach welchem hin er ihn ſchickt; 4. den Gegenſtand, den er ihm auf die Reiſe mitgibt. Die Namen dieſer vier Gegenſtände müſſen aber mit demſelben Anfangsbuchſtaben beginnen. Auch muß von den Neneneinanderſitzenden die alphabetiſche Aufeinanderfolge der Buchſtaben beibehalten werden. So beginnt z.B. der Erſte und ſagt:\n„Mein Nachbar gefällt mir, weil er aufmerkſam iſt, ich gebe ihm täglich einen Apfel zu eſſen, werde ihn aber nächſtens nach Amerika ſchicken und ihm als Reiſegeld ein Achtgroſchenſtück geben.“\nDer Zweite fährt fort:\n„Mein Nachbar gefällt mir, weil er niemals brummt, deshalb ernähre ich ihn mit Birnen, ſicke ihn nach Breslau und gebe ihm einen Bedienten mit“ uſw.\nWer beim betreffenden Satze kein Wort mit dem beſtimmten Buchſtaben zu treffen weiß, gibt ein Pfand. Man kann auch abſichtlich einen Fehler machen und, wenn derſelbe nicht bemerkt wird, die ganze Geſellſchaft in Strafe nehmen."
-},
+}
+,
 {
   "name": "Schreibspiel",
   "work-title": "Spiele aus meiner Jugend für die Jugend",
@@ -1066,8 +1089,8 @@ data = [
   "year": 1911,
   "page": 26,
   "sources": [
-    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5C000000000",
-    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745127436&PHYSID=PHYS_0030"
+    "https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN745127436&PHYSID=PHYS_0030",
+    "http://resolver.staatsbibliothek-berlin.de/SBB0000D5C000000000"
   ],
   "slf-kategorien": [
     {
@@ -1089,7 +1112,8 @@ data = [
   "slf-mehrfachnennungen": true,
   "notes": "",
   "text": "SCHREIBSPIEL\n\nDie Gesellschaft sitzt um den Tisch. Jedes Kind hat eine Tafel oder ein Stück Papier mit Bleistift vor sich. Auf ein gegebenes Zeichen der Spielleiterin (Spielleiter) als „nun“, — „jetzt”, beginnen die Kinder, in 5 Minuten, alle ihnen bekannten Städte- und Ländernamen mit M aufzuschreiben. Ein andermal mit B oder irgend einem beliebigen Buchstaben, dem die Spielleiterin (Spielleiter) wählt. Nach der festgesetzten Zeit, müssen alle sofort den Bleistift niederlegen. Gewöhnlich tut ihnen die Spielleiterin (Spielleiter) durch Klopfen kund, wann dieser Moment gekommen. Jedes Kind zählt nun, wieviel Wörder es aufgeschrieben hat. Wer die meisten aufweisen kann, darf sie vorlesen."
-},
+}
+,
 {
   "name": "Wer reiſt mit",
   "work-title": "Hohenſtein-Ernſtthaler Tageblatt vom 17.07.1912",
