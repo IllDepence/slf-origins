@@ -6,11 +6,11 @@ Erstelle ein [Issue](https://github.com/IllDepence/slf-origins/issues) und besch
 
 ## Selbst Hand anlegen
 
-Erstelle einen [Pull request](https://github.com/IllDepence/slf-origins/pulls) mit vorgeschlagenen Änderungen.
+Erstelle einen [Pull request](https://github.com/IllDepence/slf-origins/pulls) mit vorgeschlagenen Änderungen. ([Informationen zu Pull Requests](https://docs.github.com/de/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests))
 
 ### Artikel-Text
 
-Einfach [docs/index.html](docs/index.html) bearbeiten.
+Direkt [docs/index.html](docs/index.html) bearbeiten.
 
 ### Artikel-Layout o.Ä.
 
@@ -20,12 +20,12 @@ Bitte die Änderungen auf Desktop und Mobil-Endgerät im Light- und Dark-Mode ü
 
 1. JSON-Datei in [data/](data) anlegen
     * Datei-Name
-        * `yyyy_name_des_werkes.json` wenn nur Publikationsjahr bekannt
-        * `yyyy-mm-dd_name_des_werkes.json` wenn Publikationtag bekannt
+        * `yyyy_name_des_werkes.json` wenn nur Publikationsjahr bekannt (idR Bücher)
+        * `yyyy-mm-dd_name_des_werkes.json` wenn Publikationtag bekannt (idR Zeitungen)
     * Inhalt
         * die grundlegenden Felder sind hoffentlich selbsterklärend
-        * `page`: wenn angegeben die gedruckte Seitennummer im Werk angeben, nicht z.B. um die wievielte Seite einer PDF es sich handelt
-        * `slf-kategorien.text-marker`: wird als Regex auf den text angewandt, um die Stelle die, welche Kategorie benennt, zu unterstreichen
+        * `page`: sofern angegeben, die gedruckte Seitennummer im Werk verwenden, nicht z.B. um die wievielte Seite einer PDF es sich handelt
+        * `slf-kategorien.text-marker`: wird als Regex auf den Text der Spielbeschreibung angewandt, um die Stelle die, welche Kategorie benennt, zu unterstreichen
         * `slf-antwortform`: werden Antworten nur gesprochen (→ "verbal") oder erstmal aufgeschrieben (→ "schriftlich")?
         * `slf-antwortzeitstruktur`: wird nacheinander geantwortet (→ "sequenziell") oder zeitgleich (→ "zeitgleich")?
         * weitere `slf-`-Felder werden derzeit nicht verwendet und können weggelassen werden
