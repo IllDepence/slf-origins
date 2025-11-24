@@ -443,7 +443,7 @@
                 </p>
                 <p>
                     3.) Gegenstand der KI-gestützten Suche ist die Staatsbibliothek Berlin.
-                    Über 25,000 Werke bzw. knapp 5 Millionen Seiten Text, die von den wundervollen Leuten bei der Stabi
+                    Über 25.000 Werke bzw. knapp 5 Millionen Seiten Text, die von den wundervollen Leuten bei der Stabi
                     als Datensatz <a href="https://zenodo.org/records/7716098">frei verfügbar</a> gemacht wurden.
                     Die Grundidee für die Suche ist recht simpel. Ein <a
                         href="https://de.wikipedia.org/wiki/Large_Language_Model">Sprachmodell</a> beurteilen lassen, ob
@@ -451,21 +451,22 @@
                     Funde dann händisch überprüfen.
                 </p>
                 <p>
-                    Spannend wird das ganze aber, weil bei insgesamt 5 Millionen Seiten auch schon eine vermeintlich
+                    Spannend wird das Ganze aber, weil bei insgesamt 5 Millionen Seiten auch schon eine vermeintlich
                     kurze Bearbeitungszeit und niedrige Kosten pro Seite schnell unrealistisch zeitintensiv und teuer
                     werden.
-                    Beispiel: bei derzeitigen GPT-5-Kosten pro 1 Million <a
-                        href="https://de.wikipedia.org/wiki/Byte_Pair_Encoding">Tokens</a> von $&nbsp;1.25 bei der
-                    Eingabe und $&nbsp;10.000 bei der Ausgabe, sowie im Durchschnitt 5,000 Eigabe-Tokens (zu
-                    beurteilender Text und Anweisungen) und 25 Ausgabe-Tokens (Beurteilung der KI), kommen wir auf ein
-                    Kostenschätzung von $&nbsp;1.2 Millionen.
+                    Beispiel: GPT-5 kostet momentan pro 1 Million <a
+                        href="https://de.wikipedia.org/wiki/Byte_Pair_Encoding">Tokens</a> (&asymp;Wörter) $&nbsp;1.25
+                    bei der Eingabe (was man dem Modell sagt) und $&nbsp;10.000 bei der Ausgabe (was das Modell
+                    antwortet).
+                    Schätzt man nun pro Seite 5.000 Eingabe-Tokens und 25 Ausgabe-Tokens, kommt man auf ein
+                    Kostenschätzung von $&nbsp;1,2 Millionen.
                 </p>
                 <p>
                     Noch spannender wird die Sache, da günstigere KI-Modelle weniger „clever“ sind, und deshalb
                     im Zweifelsfall ausführlichere Anweisungen brauchen.
                     Da Anweisungen <em>für jede Seite</em> anfallen, multipliziert sich jedes zusätzliche
                     Eingabe-Token dann mit der Zahl der zu vearbeitenden Seiten. — Details wie Prompt-Caching und
-                    die Möglichkeit der Verarbeitung mehrer Seiten in einer „Konversation“ etc. seien der Kürze halber
+                    die Möglichkeit der Verarbeitung mehrer Seiten in einer „Konversation“ usw. seien der Kürze halber
                     hier weggelassen.
                 </p>
                 <p>
@@ -522,7 +523,7 @@
                     Wie zu Beginn in <a href="#fig1">Abbildung 1</a>, finden sich unten wieder alle Literaturquellen auf
                     einem Zeitstrahl.
                     Kreise sind weiterhin gesprochene Varianten, Dreiecke geschriebene Varianten mit Mehrfachnennung,
-                    und Sterene die Spielform, die wir heutzutage kennen.
+                    und Sterne die Spielform, die wir heutzutage kennen.
                     Über die Schaltflächen auf der rechten Seite lassen sich verschiedene Spielegruppen hervorheben.
                 </p>
                 <figure id="fig2">
@@ -542,7 +543,7 @@
                     „ABC-Spiel“&nbsp;<a href="#lit11">[12]</a>, usw.
                     Das Spielprinzip ist allerdings immer das gleiche. Reihum muss für einen gegebenen Anfangsbuchstaben
                     ein Name, ein Ort, und eine Ware genannt werden. In den meisten Fällen erfolgt das in einem Satz,
-                    wie beiepielsweise „Ich heiße Alex, komme aus Aachen, und handle mit Antiquitäten“.
+                    wie beispielsweise „Ich heiße Alex, komme aus Aachen, und handle mit Antiquitäten“.
                 </p>
                 <p>
                     Ebenfalls häufig in der Literatur beschrieben, allerdings von Beginn an mit einem einheitlichen
@@ -571,21 +572,22 @@
                     einem Gebirge, einem Gegenstand, und einem Eigenschaftswort. Beispiel aus der Quelle: „Ich heiße
                     Anton, reise morgen von Altona über die Alpen nach Alexandrien, suche dort Anemonen und kehre
                     altersschwach heim.“
-                    Bei „Das ABC-Abfragen“&nbsp;<a href="#lit20">[20]</a> wird reihum pro Spieler spontan eine
+                    Bei „Das ABC-Abfragen“&nbsp;<a href="#lit20">[20]</a> wird reihum pro Spieler spontan <em>eine</em>
                     Kategorie vorgegeben, was das Spiel als Rechercheergebnis grenzwertig macht, allerdings sind die
-                    Kategoriebeispiele wie „Bauwerk“, „Gemälde“, und „Gewerbe“ sehr Stadt-Land-Fluss-typisch.
+                    Kategorie-Beispiele wie „Bauwerk“, „Gemälde“, und „Gewerbe“ sehr Stadt-Land-Fluss-typisch.
                     Das englische „The Holiday ABC“&nbsp;<a href="#lit26">[26]</a> ist ein weiterer Grenzfall, bei dem
                     ein Reiseziel genannt werden muss, sowie eine Vorhabensbekundnung aus Wörtern mit dem gegebenen
                     Anfangsbuchstaben. Beispiel: „Brighton“ mit „Breath briny breezes“.
                     Zu guter Letzt sind „Steeple-Chase“&nbsp;<a href="#lit15">[15]</a> und „Das
                     Fünf­minuten­ſpiel“&nbsp;<a href="#lit16">[16]</a> die ersten Schreibvarianten in den
-                    Recherche-Ergebnissen, wobei als Kategorien noch nicht „Stadt“, „Land“, und „Fluss“ vorgesehen sind.
+                    Recherche-Ergebnissen. Allerdings sind als Kategorien noch nicht „Stadt“, „Land“, und „Fluss“
+                    vorgesehen.
                 </p>
                 <p>
                     Das „Schreibspiel“&nbsp;<a href="#lit29">[29]</a> und „Wer reiſt mit“<a href="#lit30">&nbsp;[30]</a>
-                    — in der Abbildung oben als „Proto-Stadt-Land-Fluss“ — unterscheiden sich vom heutigen Spielprinzip
-                    nur noch dadurch, dass in einem gegebenen Zeitlimit so viele Antworten wie möglich aufzuschreiben
-                    sind.
+                    — in der Abbildung oben als „Proto-Stadt-Land-Fluss“ gruppiert — unterscheiden sich vom heutigen
+                    Spielprinzip nur noch dadurch, dass in einem gegebenen Zeitlimit so viele Antworten wie möglich
+                    aufzuschreiben sind.
                 </p>
                 <p>
                     „Das Achterſpiel“&nbsp;<a href="#lit32">[32]</a> und „Ein lehrreiches Spiel“&nbsp;<a
@@ -605,19 +607,19 @@
                     Herausgeber des „Neuigkeits-Welt-Blatt“&nbsp;<a href="#lit34">[34]</a> das Spiel auch so benannt.
                 </p>
                 <p>
-                    Ob sich das Spielprinzip von Stadt, Land, Fluss entlang der hier präsentierten Quellen granuell
-                    entwicklet hat, lässt sich nicht abschließend beurteilen. Die Quellen zu „Vorgängervarianten“ sind
-                    lediglich Beschreibungen von Spielen, die Ähnlichkeiten aufweisen. In keiner der Quellen steht
-                    explizit, dass eine der vorherigen Spiele die Inspiration für das vorliegende gewsen sei.
-                    Im Großen und Ganzen legt die allmähliche Annäherung an das heutige Spielprinzip eine graduelle
-                    Entwicklung allerdings nahe.
+                    Ob sich das Spielprinzip von Stadt, Land, Fluss entlang der hier präsentierten Quellen tatsächlich
+                    graduell entwicklet hat, lässt sich nicht abschließend beurteilen. Die Quellen zu
+                    „Vorgängervarianten“ sind lediglich Beschreibungen von Spielen, die Ähnlichkeiten aufweisen. In
+                    keiner der Quellen steht explizit, dass eine der vorherigen Spiele die Inspiration für das
+                    vorliegende gewesen sei. Im Großen und Ganzen legt die allmähliche Annäherung an das heutige
+                    Spielprinzip eine graduelle Entwicklung allerdings nahe.
                 </p>
             </section>
             <section>
                 <h2 id="kuriositaeten">Kuriositäten</h2>
                 <p>
-                    Zum Abschluss ein Sammelsorium an kleinen Erkenntnissen, Entdeckungen, und Kuriositäten, die den
-                    Unterhaltungsfaktor während der Recherche hochgehalten haben.
+                    Zu guter Letzt werfen wir einen Blick auf das Sammelsorium an kleinen Erkenntnissen, Entdeckungen,
+                    und Kuriositäten, die den Unterhaltungsfaktor während der Recherche hochgehalten haben.
                 </p>
                 <p>
                     Der Begriff „<a href="https://de.wikipedia.org/wiki/Pf%C3%A4nderspiel">Pfänderspiel</a>“ war mir
@@ -633,18 +635,17 @@
                         href="#lit33">[33]</a>.
                 </p>
                 <p>
-                    Nahtlos weiter auf besagtem <em>Kontinet</em>, findet sich in „Mein Nachbar gefällt mir“ von
-                    1909 eine Erinnerung an die Zeit, in der die Quellen entstanden sind. Folgende Antwort wird als
-                    Beispiel für den Buchstaben „D“ gegeben: „Mein lieber Nachbar gefällt mir, weil er keine Dochte
-                    verſchluckt, und darum von mir mit Dorſchleber geſpeiſt wird. Ich ſicke ihn nächſtes Jahr nach
-                    Durſtfeld in <a
+                    Nahtlos weiter auf besagtem <em>Kontinent</em>, findet sich in „Mein Nachbar gefällt mir“ von
+                    1909 ein Relikt der Zeit, in der die Quellen entstanden sind. Folgende Antwort wird als Beispiel für
+                    den Buchstaben „D“ gegeben: „Mein lieber Nachbar gefällt mir, weil er keine Dochte verſchluckt, und
+                    darum von mir mit Dorſchleber geſpeiſt wird. Ich ſchicke ihn nächſtes Jahr nach Durſtfeld in <a
                         href="https://de.wikipedia.org/wiki/Deutsch-S%C3%BCdwestafrika">Deutſch-Südweſtafrika</a> zur <a
                         href="https://de.wikipedia.org/wiki/Sommerfrische">Sommerfriſche</a> und gebe ihm ein
-                    Donnerwetter mit auf den Weg”&nbsp;<a href="#lit14">[14]</a>.
+                    Donnerwetter mit auf den Weg“&nbsp;<a href="#lit14">[14]</a>.
                 </p>
                 <p>
                     In einer Beschreibung von „Mein Nachbar gefällt mir“ aus dem Jahr 1836, wird für „B“ auf die Reise
-                    „ein halb Schock Birnen” mitgegeben&nbsp;<a href="#lit6">[6]</a>.
+                    „ein halb Schock Birnen“ mitgegeben&nbsp;<a href="#lit6">[6]</a>.
                     „Schock“ war offenbar eine Mengeneinheit für 60 Stück.
                     Aus dem <a href="https://www.digitale-sammlungen.de/view/bsb11347544?page=782%2C783">Handwörterbuch
                         der deutschen Sprache</a> von 1849: „gew. eine Zahl von 60 Stück od. 4 Mandel, ſ. d. (z.B. ein
@@ -671,9 +672,11 @@
                         Mittelpunkt der Erde</a>“.
                 </p>
                 <p>
-                    Unterhaltungswert war nicht nur auf Relikte aus der Vergangenheit beschränkt. Einer der <a
+                    Unterhaltungswert war aber nicht nur auf Relikte aus der Vergangenheit beschränkt.
+                    Auch das Sprachmodell hatte etwas zu bieten.
+                    Einer seiner <a
                         href="https://de.wikipedia.org/wiki/Beurteilung_eines_bin%C3%A4ren_Klassifikators#Wahrheitsmatrix:_Richtige_und_falsche_Klassifikationen">falsch-positiven</a>
-                    Funde der KI-gestützten Recherche ist Seite 164 im Buch <a
+                    Funde ist Seite 164 im Buch <a
                         href="https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN672537451&PHYSID=PHYS_0179">
                         Fremdenlegionär Kirsch</a> von 1917. Hier die ausschlaggebende Textstelle:
                 </p>
@@ -701,8 +704,8 @@
                 <p>
                     „Seit wann gibt es eigentlich Stadt, Land, Fluss?“ Wer sich diese Frage stellt, findet hier
                     <em>eine</em> Antwort — nicht notwendigerweise <em>die</em> Antwort.
-                    Ausschlaggebend ist, dass die Quellen, auf denen eine Antwort basiert, mit angegeben werden und frei
-                    zugänglich sind. Das macht zwei wichtige Dinge möglich.
+                    Ausschlaggebend ist, dass die Quellen, auf denen die Aussagen basieren, mit angegeben werden und
+                    frei zugänglich sind. Das macht zwei wichtige Dinge möglich.
                 </p>
                 <p>
                     Erstens schafft es Transparenz. Es versetzt jeden in die Lage, die präsentierten Informationen
@@ -717,22 +720,22 @@
                     Der ganze Spaß ist allerdings nur möglich, wenn wir öffentlich verfügbares Kulturgut haben, auf das
                     wir unsere Gerüste bauen können.
                     Glücklicherweise ist der deutsche Sprachraum hier verblüffend gut aufgestellt.
-                    Neben <a href="#recherche">oben</a> erwähnten Recherchequellen gibt es noch etliche weitere <a
+                    Neben <a href="#recherche">oben</a> erwähnten Recherchequellen existieren etliche weitere <a
                         href="https://www.archivportal-d.de/">Archive</a>.
                 </p>
                 <p>
                     Es gibt also noch viel Spannendes zu entdecken!
                     Ist das Buch „Kinder, wir spielen!“ von 1937 <a href="#lit33">[33]</a> wirklich der erste Text,
-                    der „Stadt, Land, Fluss“ erwähnt?
+                    der Stadt, Land, Fluss erwähnt?
                     Gibt es vielleicht doch bestehende Forschung zum Urpsrung von Stadt, Land, Fluss — und falls ja,
-                    waren die Ergebnisse anders, als die hier beschreibenen?
+                    sind die Ergebnisse anders, als die hier beschreibenen?
                     Wann wurde Stadt, Land, Fluss das erste mal im Radio erwähnt?
                     Und müsste man in historischen Tagebüchern nicht interessante Funde machen können?
                     Der Fantasie für Folgefragen sind hier keine Grenzen gesetzt.
                 </p>
                 <p>
                     Hoffentlich konnte der Artikel etwas Lust machen, selbst Wissen zu schaffen,
-                    und die Wichtigkeit von Transparenz nachvollziehbar darstellen.
+                    und die Wichtigkeit von Transparenz verdeutlichen.
                     Das ist nicht nur bei
                     <a href="https://okfn.de/">Wissen</a>
                     wichtig, sondern auch bei
