@@ -123,10 +123,8 @@
             overscroll-behavior: contain;
         }
 
-        .overlay-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+        .overlay-close,
+        .overlay-nav-button {
             background: none;
             border: none;
             font-size: 1.5rem;
@@ -136,8 +134,38 @@
             line-height: 1;
         }
 
-        .overlay-close:hover {
+        .overlay-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .overlay-close:hover,
+        .overlay-nav-button:hover:not(:disabled) {
             color: var(--pico-primary-hover);
+        }
+
+        .overlay-nav {
+            position: absolute;
+            top: 4rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+
+        .overlay-nav-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .overlay-card h3 {
+            padding-right: 2.5rem;
+        }
+
+        .overlay-card .overlay-citation {
+            padding-right: 2.5rem;
         }
 
         .category {
@@ -971,6 +999,10 @@
     <div id="overlay" class="overlay">
         <div class="overlay-card">
             <button class="overlay-close" aria-label="Close">×</button>
+            <div class="overlay-nav">
+                <button class="overlay-nav-button" id="overlay-nav-prev" aria-label="Previous">‹</button>
+                <button class="overlay-nav-button" id="overlay-nav-next" aria-label="Next">›</button>
+            </div>
             <div id="overlay-content"></div>
         </div>
     </div>
@@ -979,13 +1011,65 @@
 <script src="js/data.js"></script>
 <script>
     // Shared overlay functions for both figures
+    let currentOverlayIndex = -1;
+
+    // Find index of a data point in the data array (which is already sorted chronologically)
+    function findDataPointIndex(dataPoint) {
+        return data.findIndex(d =>
+            d.name === dataPoint.name &&
+            d.year === dataPoint.year &&
+            d['work-title'] === dataPoint['work-title']
+        );
+    }
+
+    // Update navigation button states
+    function updateNavigationButtons() {
+        const prevButton = document.getElementById('overlay-nav-prev');
+        const nextButton = document.getElementById('overlay-nav-next');
+
+        prevButton.disabled = currentOverlayIndex <= 0;
+        nextButton.disabled = currentOverlayIndex >= data.length - 1;
+    }
+
+    // Navigate to previous data point
+    function navigateToPrevious() {
+        if (currentOverlayIndex > 0) {
+            showOverlayByIndex(currentOverlayIndex - 1);
+        }
+    }
+
+    // Navigate to next data point
+    function navigateToNext() {
+        if (currentOverlayIndex < data.length - 1) {
+            showOverlayByIndex(currentOverlayIndex + 1);
+        }
+    }
+
+    // Show overlay by index
+    function showOverlayByIndex(index) {
+        if (index >= 0 && index < data.length) {
+            currentOverlayIndex = index;
+            showOverlay(data[index]);
+        }
+    }
+
     function showOverlay(dataPoint) {
         const overlay = document.getElementById('overlay');
         const content = document.getElementById('overlay-content');
+
+        // Find and set current index
+        currentOverlayIndex = findDataPointIndex(dataPoint);
+        // Safety check: if not found, try to find by year and name only
+        if (currentOverlayIndex === -1) {
+            currentOverlayIndex = data.findIndex(d =>
+                d.name === dataPoint.name && d.year === dataPoint.year
+            );
+        }
+
         // Build HTML content
         let html = '';
         html += `<h3>${dataPoint.name}</h3>`
-        html += `<p>In: „${dataPoint['work-title']}"`
+        html += `<p class="overlay-citation">In: „${dataPoint['work-title']}"`
         if (dataPoint.author) {
             html += ` von ${dataPoint.author}`
         }
@@ -1011,6 +1095,9 @@
 
         content.innerHTML = html;
         overlay.classList.add('active');
+
+        // Update navigation button states
+        updateNavigationButtons();
     }
 
     function hideOverlay() {
@@ -1671,6 +1758,8 @@
             // Set up overlay event listeners (only once)
             const overlayElement = document.getElementById('overlay');
             const closeButton = overlayElement.querySelector('.overlay-close');
+            const prevButton = document.getElementById('overlay-nav-prev');
+            const nextButton = document.getElementById('overlay-nav-next');
 
             overlayElement.addEventListener('click', function (event) {
                 if (event.target === overlayElement) {
@@ -1685,12 +1774,32 @@
                 overlay.classList.remove('active');
             });
 
+            // Navigation button event listeners
+            prevButton.addEventListener('click', function (event) {
+                event.stopPropagation();
+                navigateToPrevious();
+            });
+
+            nextButton.addEventListener('click', function (event) {
+                event.stopPropagation();
+                navigateToNext();
+            });
+
             // Close overlay on Escape key
             document.addEventListener('keydown', function (event) {
                 if (event.key === 'Escape') {
                     const overlay = document.getElementById('overlay');
                     if (overlay.classList.contains('active')) {
                         overlay.classList.remove('active');
+                    }
+                } else if (overlayElement.classList.contains('active')) {
+                    // Arrow key navigation when overlay is open
+                    if (event.key === 'ArrowLeft') {
+                        event.preventDefault();
+                        navigateToPrevious();
+                    } else if (event.key === 'ArrowRight') {
+                        event.preventDefault();
+                        navigateToNext();
                     }
                 }
             });
