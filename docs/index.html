@@ -175,6 +175,16 @@
             text-decoration: underline dotted var(--pico-ins-color);
             text-decoration-thickness: 2px;
         }
+
+        /* Keyboard focus styles for SVG elements */
+        svg [role="button"]:focus {
+            outline: 2px solid var(--pico-primary);
+            outline-offset: 2px;
+        }
+
+        svg [role="button"]:focus:not(:focus-visible) {
+            outline: none;
+        }
     </style>
 </head>
 
@@ -1117,7 +1127,14 @@
 
         const svg = d3.select(`#${figId}`).insert("svg", "figcaption")
             .attr("width", width)
-            .attr("height", height);
+            .attr("height", height)
+            .attr("role", "img")
+            .attr("aria-label", "Zeitstrahl der Literaturquellen zu Stadt, Land, Fluss von 1784 bis 1954");
+
+        // Add title and description for accessibility
+        svg.append("title").text("Abbildung 1: Literaturquellen zu Stadt, Land, Fluss");
+        svg.append("desc").text("Ein interaktiver Zeitstrahl zeigt Literaturquellen von 1784 bis 1954. Kreise repräsentieren gesprochene Varianten, Dreiecke geschriebene Varianten mit Mehrfachnennung, und Sterne die moderne Spielform.");
+
         // svg.append("rect")
         //     .attr("width", "100%")
         //     .attr("height", "100%")
@@ -1216,6 +1233,18 @@
         let hoverAnnotation = null;
         // Array to store default annotation groups
         const defaultAnnotations = [];
+
+        // Make data points keyboard accessible
+        dataPoints
+            .attr("tabindex", "0")
+            .attr("role", "button")
+            .attr("aria-label", d => `${d.name} (${d.year}) - Details anzeigen`)
+            .on("keydown", function (event, d) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    showOverlay(d);
+                }
+            });
 
         // Add hover effects
         dataPoints
@@ -1423,7 +1452,13 @@
 
         const svg = d3.select(`#${figId}`).insert("svg", "figcaption")
             .attr("width", width)
-            .attr("height", height);
+            .attr("height", height)
+            .attr("role", "img")
+            .attr("aria-label", "Interaktiver Zeitstrahl mit gruppierten Literaturquellen zu Stadt, Land, Fluss");
+
+        // Add title and description for accessibility
+        svg.append("title").text("Abbildung 2: Gruppierte Literaturquellen zu Stadt, Land, Fluss");
+        svg.append("desc").text("Ein interaktiver Zeitstrahl mit Schaltflächen zum Hervorheben verschiedener Spielegruppen wie Kaufmannsspiel, Mein Nachbar gefällt mir, und andere Varianten von 1784 bis 1954.");
 
         // y-scale from year data
         const years = data.map(d => d.year);
@@ -1599,12 +1634,21 @@
             .attr("opacity", 0)
             .attr("display", "none");
 
-        // Add click handler to data points
+        // Make data points keyboard accessible
         dataPoints
             .attr("cursor", "pointer")
+            .attr("tabindex", "0")
+            .attr("role", "button")
+            .attr("aria-label", d => `${d.name} (${d.year}) - Details anzeigen`)
             .on("click", function (event, d) {
                 event.stopPropagation();
                 showOverlay(d);
+            })
+            .on("keydown", function (event, d) {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    showOverlay(d);
+                }
             });
 
         // Function to refresh the display based on current activeGroups
@@ -1680,7 +1724,17 @@
                 .attr("class", "highlight-button")
                 .attr("data-label", label)
                 .attr("cursor", "pointer")
-                .on("click", () => updateDataPoints(group));
+                .attr("tabindex", "0")
+                .attr("role", "button")
+                .attr("aria-label", `Gruppe "${label}" hervorheben`)
+                .attr("aria-pressed", "false")
+                .on("click", () => updateDataPoints(group))
+                .on("keydown", function (event) {
+                    if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        updateDataPoints(group);
+                    }
+                });
 
             // Draw rectangle
             buttonGroup.append("rect")
@@ -1714,6 +1768,9 @@
                 // Check if this button's group is in the active groups set
                 const group = highlightGroups.find(g => g.label === label);
                 const isActive = activeGroups.has(group);
+
+                // Update aria-pressed state
+                button.attr("aria-pressed", isActive ? "true" : "false");
 
                 button.select("rect")
                     .attr("fill", isActive ? "var(--pico-primary)" : "none")
