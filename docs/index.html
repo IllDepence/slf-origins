@@ -127,10 +127,10 @@
             position: absolute;
             top: 1rem;
             right: 1rem;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: min-content;
             gap: 0.5rem;
-            align-items: flex-end;
+            justify-items: end;
         }
 
         .overlay-button {
@@ -141,6 +141,8 @@
             color: var(--pico-primary);
             padding: 0.5rem;
             line-height: 1;
+            width: 100%;
+            text-align: center;
         }
 
         .overlay-button:hover:not(:disabled) {
