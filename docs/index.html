@@ -123,8 +123,17 @@
             overscroll-behavior: contain;
         }
 
-        .overlay-close,
-        .overlay-nav-button {
+        .overlay-controls {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+        }
+
+        .overlay-button {
             background: none;
             border: none;
             font-size: 1.5rem;
@@ -134,28 +143,11 @@
             line-height: 1;
         }
 
-        .overlay-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-        }
-
-        .overlay-close:hover,
-        .overlay-nav-button:hover:not(:disabled) {
+        .overlay-button:hover:not(:disabled) {
             color: var(--pico-primary-hover);
         }
 
-        .overlay-nav {
-            position: absolute;
-            top: 4rem;
-            right: 1rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            align-items: flex-end;
-        }
-
-        .overlay-nav-button:disabled {
+        .overlay-button:disabled {
             opacity: 0.3;
             cursor: not-allowed;
         }
@@ -998,10 +990,10 @@
     <!-- Overlay for data point details -->
     <div id="overlay" class="overlay">
         <div class="overlay-card">
-            <button class="overlay-close" aria-label="Close">×</button>
-            <div class="overlay-nav">
-                <button class="overlay-nav-button" id="overlay-nav-prev" aria-label="Previous">‹</button>
-                <button class="overlay-nav-button" id="overlay-nav-next" aria-label="Next">›</button>
+            <div class="overlay-controls">
+                <button class="overlay-button" id="overlay-close" aria-label="Close">×</button>
+                <button class="overlay-button" id="overlay-nav-prev" aria-label="Previous">‹</button>
+                <button class="overlay-button" id="overlay-nav-next" aria-label="Next">›</button>
             </div>
             <div id="overlay-content"></div>
         </div>
@@ -1757,7 +1749,7 @@
 
             // Set up overlay event listeners (only once)
             const overlayElement = document.getElementById('overlay');
-            const closeButton = overlayElement.querySelector('.overlay-close');
+            const closeButton = document.getElementById('overlay-close');
             const prevButton = document.getElementById('overlay-nav-prev');
             const nextButton = document.getElementById('overlay-nav-next');
 
