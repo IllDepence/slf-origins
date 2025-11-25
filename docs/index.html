@@ -155,11 +155,12 @@
         }
 
         .overlay-card h3 {
-            padding-right: 2.5rem;
+            padding-right: 1.5rem;
         }
 
-        .overlay-card .overlay-citation {
-            padding-right: 2.5rem;
+        .overlay-card .overlay-citation,
+        .overlay-card .overlay-cats {
+            padding-right: 1.5rem;
         }
 
         .category {
@@ -1076,7 +1077,7 @@
             html += ` <a href="${source}">↗</a>`
             sourceNum += 1;
         }
-        html += '</p><p>'
+        html += '</p><p class="overlay-cats">'
         let sourceText = dataPoint.text.replaceAll("\n", '<br>')
         for (const cat of dataPoint['slf-kategorien']) {
             html += ` <small class="category">${cat.anzeige}</small>`
