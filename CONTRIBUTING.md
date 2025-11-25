@@ -1,6 +1,6 @@
 # Mitmachen
 
-## Nur darauf hinweisen
+## Auf etwas hinweisen
 
 Erstelle ein [Issue](https://github.com/IllDepence/slf-origins/issues) und beschreibe Dein Anliegen.
 
