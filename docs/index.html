@@ -1491,7 +1491,8 @@
                 ...d,  // spread all attributes from d
                 x: defaultX,
                 y: yPos,
-                fy: yPos // fix y position
+                fy: yPos, // fix y position
+                originalX: defaultX // store original x for reset
             };
         });
 
@@ -1507,6 +1508,7 @@
             // Constrain x to be >= defaultX (only move right)
             nodes.forEach(node => {
                 if (node.x < defaultX) node.x = defaultX;
+                node.originalX = node.x; // update original x after simulation
             });
         }
 
@@ -1595,6 +1597,9 @@
 
         // Track active groups (can have multiple selected)
         const activeGroups = new Set();
+
+        // Track spread state for horizontal spacing button
+        let isSpread = false;
 
         // Create symbol generator
         const symbolGenerator = d3.symbol()
@@ -1686,6 +1691,63 @@
 
             // Update button styles
             updateButtonStyles();
+        }
+
+        // Function to toggle horizontal spread of highlighted groups
+        function toggleSpread() {
+            isSpread = !isSpread;
+
+            if (isSpread) {
+                // Calculate new x positions for each group
+                const xSpacing = 15; // Distance between groups
+
+                // Create a map from data point to group index (for ALL groups, not just active)
+                const dataPointToGroupIndex = new Map();
+                highlightGroups.forEach((group, index) => {
+                    group.dataPoints.forEach(dp => {
+                        if (dp) {
+                            dataPointToGroupIndex.set(dp, index);
+                        }
+                    });
+                });
+
+                // Move points with transitions
+                dataPoints.each(function (d) {
+                    const groupIndex = dataPointToGroupIndex.get(d);
+                    if (groupIndex !== undefined) {
+                        // Point belongs to a group, move it to group's x position
+                        const newX = defaultX + (groupIndex * xSpacing);
+                        d3.select(this)
+                            .transition()
+                            .duration(500)
+                            .attr("transform", `translate(${newX},${d.y})`);
+                        d.x = newX; // Update stored position
+                    }
+                });
+            } else {
+                // Reset to original positions
+                dataPoints.each(function (d) {
+                    d3.select(this)
+                        .transition()
+                        .duration(500)
+                        .attr("transform", `translate(${d.originalX},${d.y})`);
+                    d.x = d.originalX; // Restore original position
+                });
+            }
+
+            // Update spread button style
+            updateSpreadButtonStyle();
+        }
+
+        // Function to update spread button style
+        function updateSpreadButtonStyle() {
+            const button = svg.select(".spread-button");
+            button.attr("aria-pressed", isSpread ? "true" : "false");
+            button.select("rect")
+                .attr("fill", isSpread ? "var(--pico-primary)" : "none")
+                .attr("stroke", isSpread ? "var(--pico-primary)" : "var(--pico-color)");
+            button.select("text")
+                .attr("fill", isSpread ? "var(--pico-background-color)" : "var(--pico-color)");
         }
 
         // Function to toggle a group and update display
@@ -1791,6 +1853,71 @@
             const yOffset = index * (buttonHeight + buttonSpacing);
             addHighlightGroup(group.label, group, yOffset);
         });
+
+        // Add spread button at bottom right
+        function addSpreadButton() {
+            const label = "↔";
+            const rectPadding = 4;
+            const rectRadius = 4;
+
+            // Create temporary text element to measure width
+            const tempText = svg.append("text")
+                .attr("opacity", 0)
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .text(label);
+            const textWidth = tempText.node().getBBox().width;
+            const textHeight = tempText.node().getBBox().height;
+            tempText.remove();
+
+            // Calculate rectangle dimensions
+            const rectWidth = textWidth + rectPadding * 2;
+            const rectHeight = textHeight + rectPadding * 2;
+
+            // Position at bottom right
+            const rectX = width - margin.right - rectWidth;
+            const rectY = height - margin.bottom - rectHeight;
+
+            // Create group for button
+            const buttonGroup = svg.append("g")
+                .attr("class", "spread-button")
+                .attr("cursor", "pointer")
+                .attr("tabindex", "0")
+                .attr("aria-label", "Gruppen horizontal verteilen")
+                .attr("aria-pressed", "false")
+                .on("click", () => toggleSpread())
+                .on("keydown", function (event) {
+                    if (event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        toggleSpread();
+                    }
+                });
+
+            // Draw rectangle
+            buttonGroup.append("rect")
+                .attr("x", rectX)
+                .attr("y", rectY)
+                .attr("width", rectWidth)
+                .attr("height", rectHeight)
+                .attr("rx", rectRadius)
+                .attr("ry", rectRadius)
+                .attr("fill", "none")
+                .attr("stroke", "var(--pico-color)")
+                .attr("stroke-width", 0.5);
+
+            // Add text
+            buttonGroup.append("text")
+                .attr("x", rectX + rectPadding)
+                .attr("y", rectY + rectPadding + textHeight * 0.75)
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .attr("fill", "var(--pico-color)")
+                .text(label);
+
+            return buttonGroup;
+        }
+
+        addSpreadButton();
 
         // Pre-select "Stadt, Land, Fluss" group
         const stadtLandFlussGroup = highlightGroups.find(g => g.label === "Stadt, Land, Fluss");
