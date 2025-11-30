@@ -177,6 +177,30 @@
         }
 
         /* Keyboard focus styles for SVG elements */
+        svg [role="button"] {
+            /* Reset specific Pico CSS button styles without affecting SVG rendering */
+            background: none !important;
+            background-color: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+
+        /* Ensure SVG path and rect elements with role=button use their fill attribute, not button styles */
+        svg path[role="button"],
+        svg rect[role="button"] {
+            fill: var(--pico-color) !important;
+        }
+
+        /* For elements where D3 sets a specific fill color via attribute */
+        svg path[role="button"][fill*="primary"],
+        svg rect[role="button"][fill*="primary"] {
+            fill: var(--pico-primary) !important;
+        }
+
         svg [role="button"]:focus {
             outline: 2px solid var(--pico-primary);
             outline-offset: 2px;
@@ -1015,6 +1039,31 @@
 <script src="js/d3.v7.min.js"></script>
 <script src="js/data.js"></script>
 <script>
+    // Helper function to resolve CSS variables to actual color values
+    function resolveCSSVariable(varName) {
+        return getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+    }
+
+    // Helper function to set fill with !important, resolving CSS variables first
+    function setFillImportant(element, fillValue) {
+        // If fillValue is a CSS variable, resolve it first
+        if (fillValue.startsWith('var(--')) {
+            const varName = fillValue.match(/var\((--[^)]+)\)/)[1];
+            fillValue = resolveCSSVariable(varName);
+        }
+        element.style.setProperty('fill', fillValue, 'important');
+    }
+
+    // Helper function to set stroke with !important, resolving CSS variables first
+    function setStrokeImportant(element, strokeValue) {
+        // If strokeValue is a CSS variable, resolve it first
+        if (strokeValue.startsWith('var(--')) {
+            const varName = strokeValue.match(/var\((--[^)]+)\)/)[1];
+            strokeValue = resolveCSSVariable(varName);
+        }
+        element.style.setProperty('stroke', strokeValue, 'important');
+    }
+
     // Shared overlay functions for both figures
     let currentOverlayIndex = -1;
 
@@ -1207,18 +1256,19 @@
                 return symbolGenerator.type(symbolType)();
             })
             .attr("transform", d => `translate(${d.x},${d.y})`)
-            .attr(
-                "fill",
-                d => d.name.match(/Stadt, Land, Flu(ss|ß)/)
-                    ? "var(--pico-primary)"
-                    : "var(--pico-color)"
-            )
             .attr("opacity", 0.75)
-            .attr("cursor", "pointer");
+            .attr("cursor", "pointer")
+            .each(function (d) {
+                // Set fill with !important to override Pico CSS button styles
+                const fillColor = d.name.match(/Stadt, Land, Flu(ss|ß)/)
+                    ? "var(--pico-primary)"
+                    : "var(--pico-color)";
+                setFillImportant(this, fillColor);
+            });
 
         // Store original fill colors for restoration
         dataPoints.each(function (d) {
-            d.originalFill = d3.select(this).attr("fill");
+            d.originalFill = this.style.fill || 'var(--pico-color)';
         });
 
         // Get tick positioning values from existing ticks to avoid magic numbers
@@ -1237,7 +1287,7 @@
         // Make data points keyboard accessible
         dataPoints
             .attr("tabindex", "0")
-            .attr("role", "button")
+            .attr("role", "button")  // breaks visual style
             .attr("aria-label", d => `${d.name} (${d.year}) - Details anzeigen`)
             .on("keydown", function (event, d) {
                 if (event.key === "Enter" || event.key === " ") {
@@ -1271,10 +1321,12 @@
                     .text(d.year);
 
                 // Make all data points colored 'var(--pico-color)'
-                dataPoints.attr("fill", "var(--pico-color)");
+                dataPoints.each(function () {
+                    setFillImportant(this, 'var(--pico-color)');
+                });
 
                 // Make the hovered data point colored 'var(--pico-primary)'
-                d3.select(this).attr("fill", "var(--pico-primary)");
+                setFillImportant(this, 'var(--pico-primary)');
 
                 // Hide all default annotations
                 defaultAnnotations.forEach(ann => {
@@ -1297,7 +1349,7 @@
 
                 // Restore original fill colors
                 dataPoints.each(function (d) {
-                    d3.select(this).attr("fill", d.originalFill);
+                    setFillImportant(this, d.originalFill);
                 });
 
                 // Show all default annotations again
@@ -1374,36 +1426,42 @@
                     source: { x: linkSourceX, y: dataPointY },
                     target: { x: linkTargetX, y: rectY + rectHeight / 2 }
                 };
-                annotationGroup.append("path")
+                const linkPath = annotationGroup.append("path")
                     .attr("d", linkGenerator(linkData))
-                    .attr("stroke", "var(--pico-color)")
                     .attr("stroke-width", 1)
-                    .attr("fill", "none")
                     .attr("opacity", 0.5);
+                linkPath.each(function () {
+                    setFillImportant(this, 'none');
+                    setStrokeImportant(this, 'var(--pico-color)');
+                });
             }
 
             // Draw rectangle with rounded corners
-            annotationGroup.append("rect")
+            const annotationRect = annotationGroup.append("rect")
                 .attr("x", rectX)
                 .attr("y", rectY)
                 .attr("width", rectWidth)
                 .attr("height", rectHeight)
                 .attr("rx", rectRadius)
                 .attr("ry", rectRadius)
-                .attr("fill", "none")
-                .attr("stroke", "var(--pico-color)")
                 .attr("stroke-width", 0.5);
+            annotationRect.each(function () {
+                setFillImportant(this, 'none');
+                setStrokeImportant(this, 'var(--pico-color)');
+            });
 
             // Add main text (name and year) inside rectangle
-            annotationGroup.append("text")
+            const annotationText = annotationGroup.append("text")
                 .attr("x", rectX + rectPadding)
                 .attr("y", rectY + rectPadding + mainTextHeight * 0.75) // Approximate baseline position
                 .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
                 .attr("font-family", "var(--pico-font-family)")
-                .attr("fill", "var(--pico-color)")
                 .attr("cursor", "pointer")
                 .text(mainText)
                 .on("click", () => showOverlay(node));
+            annotationText.each(function () {
+                setFillImportant(this, 'var(--pico-color)');
+            });
 
             // Add optional text below rectangle if provided
             if (optionalText) {
@@ -1620,8 +1678,10 @@
         dataPoints.append("path")
             .attr("class", "original-shape")
             .attr("d", d => symbolGenerator.type(d.originalSymbol)())
-            .attr("fill", "var(--pico-color)")
-            .attr("opacity", 0.75);
+            .attr("opacity", 0.75)
+            .each(function () {
+                setFillImportant(this, 'var(--pico-color)');
+            });
 
         // Add squares (hidden by default, for selection)
         dataPoints.append("rect")
@@ -1630,15 +1690,17 @@
             .attr("y", -radius)
             .attr("width", radius * 2)
             .attr("height", radius * 2)
-            .attr("fill", "var(--pico-primary)")
             .attr("opacity", 0)
-            .attr("display", "none");
+            .attr("display", "none")
+            .each(function () {
+                setFillImportant(this, 'var(--pico-primary)');
+            });
 
         // Make data points keyboard accessible
         dataPoints
             .attr("cursor", "pointer")
             .attr("tabindex", "0")
-            .attr("role", "button")
+            .attr("role", "button")  // breaks visual style
             .attr("aria-label", d => `${d.name} (${d.year}) - Details anzeigen`)
             .on("click", function (event, d) {
                 event.stopPropagation();
@@ -1671,10 +1733,12 @@
                         .attr("display", null);
                 } else {
                     // Not highlighted: show original shape with default color
-                    pointGroup.select(".original-shape")
-                        .attr("fill", "var(--pico-color)")
+                    const originalShape = pointGroup.select(".original-shape")
                         .attr("opacity", 0.75)
                         .attr("display", null);
+                    originalShape.each(function () {
+                        setFillImportant(this, 'var(--pico-color)');
+                    });
                     pointGroup.select(".selection-shape")
                         .attr("opacity", 0)
                         .attr("display", "none");
@@ -1725,7 +1789,7 @@
                 .attr("data-label", label)
                 .attr("cursor", "pointer")
                 .attr("tabindex", "0")
-                .attr("role", "button")
+                .attr("role", "button")    // breaks visual style
                 .attr("aria-label", `Gruppe "${label}" hervorheben`)
                 .attr("aria-pressed", "false")
                 .on("click", () => updateDataPoints(group))
@@ -1737,25 +1801,29 @@
                 });
 
             // Draw rectangle
-            buttonGroup.append("rect")
+            const buttonRect = buttonGroup.append("rect")
                 .attr("x", rectX)
                 .attr("y", rectY)
                 .attr("width", rectWidth)
                 .attr("height", rectHeight)
                 .attr("rx", rectRadius)
                 .attr("ry", rectRadius)
-                .attr("fill", "none")
-                .attr("stroke", "var(--pico-color)")
                 .attr("stroke-width", 0.5);
+            buttonRect.each(function () {
+                setFillImportant(this, 'none');
+                setStrokeImportant(this, 'var(--pico-color)');
+            });
 
             // Add text
-            buttonGroup.append("text")
+            const buttonText = buttonGroup.append("text")
                 .attr("x", rectX + rectPadding)
                 .attr("y", rectY + rectPadding + textHeight * 0.75)
                 .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
                 .attr("font-family", "var(--pico-font-family)")
-                .attr("fill", "var(--pico-color)")
                 .text(label);
+            buttonText.each(function () {
+                setFillImportant(this, 'var(--pico-color)');
+            });
 
             return buttonGroup;
         }
@@ -1772,12 +1840,16 @@
                 // Update aria-pressed state
                 button.attr("aria-pressed", isActive ? "true" : "false");
 
-                button.select("rect")
-                    .attr("fill", isActive ? "var(--pico-primary)" : "none")
-                    .attr("stroke", isActive ? "var(--pico-primary)" : "var(--pico-color)");
+                const buttonRect = button.select("rect");
+                buttonRect.each(function () {
+                    setFillImportant(this, isActive ? "var(--pico-primary)" : "none");
+                    setStrokeImportant(this, isActive ? "var(--pico-primary)" : "var(--pico-color)");
+                });
 
-                button.select("text")
-                    .attr("fill", isActive ? "var(--pico-background-color)" : "var(--pico-color)");
+                const buttonText = button.select("text");
+                buttonText.each(function () {
+                    setFillImportant(this, isActive ? "var(--pico-background-color)" : "var(--pico-color)");
+                });
             });
         }
 
