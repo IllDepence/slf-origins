@@ -177,12 +177,15 @@
         }
 
         /* Keyboard focus styles for SVG elements */
-        svg [role="button"]:focus {
-            outline: 2px solid var(--pico-primary);
+        .highlight-button:focus,
+        .data-point:focus {
+            outline: 2px ridge var(--pico-primary);
             outline-offset: 2px;
+            border-radius: 5px;
         }
 
-        svg [role="button"]:focus:not(:focus-visible) {
+        .highlight-button:focus:not(:focus-visible),
+        .data-point:focus:not(:focus-visible) {
             outline: none;
         }
     </style>
@@ -1237,7 +1240,7 @@
         // Make data points keyboard accessible
         dataPoints
             .attr("tabindex", "0")
-            .attr("role", "button")
+            .attr("class", "data-point")
             .attr("aria-label", d => `${d.name} (${d.year}) - Details anzeigen`)
             .on("keydown", function (event, d) {
                 if (event.key === "Enter" || event.key === " ") {
@@ -1638,7 +1641,7 @@
         dataPoints
             .attr("cursor", "pointer")
             .attr("tabindex", "0")
-            .attr("role", "button")
+            .attr("class", "data-point")
             .attr("aria-label", d => `${d.name} (${d.year}) - Details anzeigen`)
             .on("click", function (event, d) {
                 event.stopPropagation();
@@ -1725,7 +1728,6 @@
                 .attr("data-label", label)
                 .attr("cursor", "pointer")
                 .attr("tabindex", "0")
-                .attr("role", "button")
                 .attr("aria-label", `Gruppe "${label}" hervorheben`)
                 .attr("aria-pressed", "false")
                 .on("click", () => updateDataPoints(group))
