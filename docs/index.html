@@ -1485,6 +1485,7 @@
         // Use force simulation to avoid collisions
         const defaultX = margin.left + 20;
         const radius = 3;
+        const xSpacing = 15; // Distance between groups in spread mode
 
         // Prepare data with initial positions
         const nodes = data.map(d => {
@@ -1606,6 +1607,26 @@
         // Store references to group number labels
         const groupNumberLabels = [];
 
+        // Store references to vertical group lines
+        const groupVerticalLines = [];
+
+        // Add vertical lines for groups (hidden by default, will appear in spread mode)
+        const groupLinesGroup = svg.append("g").attr("class", "group-lines");
+        highlightGroups.forEach((group, index) => {
+            const groupX = defaultX + (index * xSpacing);
+            const line = groupLinesGroup.append("line")
+                .attr("class", "group-vertical-line")
+                .attr("x1", groupX)
+                .attr("x2", groupX)
+                .attr("y1", margin.top)
+                .attr("y2", height - margin.bottom)
+                .attr("stroke", "var(--pico-color)")
+                .attr("stroke-width", 0.25)
+                .attr("opacity", 0);
+
+            groupVerticalLines.push(line);
+        });
+
         // Create symbol generator
         const symbolGenerator = d3.symbol()
             .size(Math.PI * radius * radius);
@@ -1703,9 +1724,6 @@
             isSpread = !isSpread;
 
             if (isSpread) {
-                // Calculate new x positions for each group
-                const xSpacing = 15; // Distance between groups
-
                 // Create a map from data point to group index (for ALL groups, not just active)
                 const dataPointToGroupIndex = new Map();
                 highlightGroups.forEach((group, index) => {
@@ -1742,6 +1760,13 @@
                     .transition()
                     .duration(500)
                     .attr("opacity", 1);
+
+                // Show vertical group lines
+                groupVerticalLines.forEach(line => {
+                    line.transition()
+                        .duration(500)
+                        .attr("opacity", 0.5);
+                });
             } else {
                 // Reset to original positions
                 dataPoints.each(function (d) {
@@ -1764,6 +1789,13 @@
                     .transition()
                     .duration(500)
                     .attr("opacity", 0);
+
+                // Hide vertical group lines
+                groupVerticalLines.forEach(line => {
+                    line.transition()
+                        .duration(500)
+                        .attr("opacity", 0);
+                });
             }
 
             // Update spread button style
@@ -1898,7 +1930,6 @@
         });
 
         // Add group numbers at the bottom of the figure (hidden by default)
-        const xSpacing = 15; // Must match the spacing in toggleSpread
         highlightGroups.forEach((group, index) => {
             const groupX = defaultX + (index * xSpacing);
             const labelY = height - margin.bottom + 12;
