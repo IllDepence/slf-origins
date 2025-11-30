@@ -1601,6 +1601,9 @@
         // Track spread state for horizontal spacing button
         let isSpread = false;
 
+        // Store references to group number labels
+        const groupNumberLabels = [];
+
         // Create symbol generator
         const symbolGenerator = d3.symbol()
             .size(Math.PI * radius * radius);
@@ -1724,6 +1727,19 @@
                         d.x = newX; // Update stored position
                     }
                 });
+
+                // Show group numbers at bottom
+                groupNumberLabels.forEach(label => {
+                    label.transition()
+                        .duration(500)
+                        .attr("opacity", 1);
+                });
+
+                // Show group numbers next to buttons
+                svg.selectAll(".group-number-button")
+                    .transition()
+                    .duration(500)
+                    .attr("opacity", 1);
             } else {
                 // Reset to original positions
                 dataPoints.each(function (d) {
@@ -1733,6 +1749,19 @@
                         .attr("transform", `translate(${d.originalX},${d.y})`);
                     d.x = d.originalX; // Restore original position
                 });
+
+                // Hide group numbers at bottom
+                groupNumberLabels.forEach(label => {
+                    label.transition()
+                        .duration(500)
+                        .attr("opacity", 0);
+                });
+
+                // Hide group numbers next to buttons
+                svg.selectAll(".group-number-button")
+                    .transition()
+                    .duration(500)
+                    .attr("opacity", 0);
             }
 
             // Update spread button style
@@ -1762,7 +1791,7 @@
         }
 
         // Function to add clickable highlight group button
-        function addHighlightGroup(label, group, yOffset) {
+        function addHighlightGroup(label, group, yOffset, groupIndex) {
             const rectPadding = 4;
             const rectRadius = 4;
 
@@ -1821,6 +1850,18 @@
                 .attr("fill", "var(--pico-color)")
                 .text(label);
 
+            // Add group number to the left of the button (hidden by default)
+            const numberLabel = buttonGroup.append("text")
+                .attr("class", "group-number-button")
+                .attr("x", rectX - 10)
+                .attr("y", rectY + rectPadding + textHeight * 0.75)
+                .attr("text-anchor", "end")
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .attr("fill", "var(--pico-color)")
+                .attr("opacity", 0)
+                .text(groupIndex + 1);
+
             return buttonGroup;
         }
 
@@ -1851,7 +1892,27 @@
             // Calculate y offset based on button height and spacing
             const buttonHeight = 16; // Approximate height
             const yOffset = index * (buttonHeight + buttonSpacing);
-            addHighlightGroup(group.label, group, yOffset);
+            addHighlightGroup(group.label, group, yOffset, index);
+        });
+
+        // Add group numbers at the bottom of the figure (hidden by default)
+        const xSpacing = 15; // Must match the spacing in toggleSpread
+        highlightGroups.forEach((group, index) => {
+            const groupX = defaultX + (index * xSpacing);
+            const labelY = height - margin.bottom + 12;
+
+            const numberLabel = svg.append("text")
+                .attr("class", "group-number-bottom")
+                .attr("x", groupX)
+                .attr("y", labelY)
+                .attr("text-anchor", "middle")
+                .attr("font-size", "calc(var(--pico-font-size) * 0.5)")
+                .attr("font-family", "var(--pico-font-family)")
+                .attr("fill", "var(--pico-color)")
+                .attr("opacity", 0)
+                .text(index + 1);
+
+            groupNumberLabels.push(numberLabel);
         });
 
         // Add spread button at bottom right
