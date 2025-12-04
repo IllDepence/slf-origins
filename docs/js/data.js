@@ -991,7 +991,7 @@ data = [
       "text-marker": "holiday place"
     },
     {
-      "anzeige": "Tätigkeitsbeschreibung (Satz, alle Wörter)",
+      "anzeige": "Tätigkeit (Satz, alle Wörter)",
       "text-marker": "(What shall you do there(?=\\?” A)|every word)"
     }
   ],
@@ -1004,8 +1004,7 @@ data = [
   "slf-wertung": "_/_/_/-1",
   "notes": "",
   "text": "THE HOLIDAY ABC\n\nA GOOD game for the train, and one that is quite appropriate to holiday-makers, is what may be called the Holiday ABC. Having decided who shall begin, a player gives quickly the name of some holiday place that begins with A. Then the next player asks: “What shall you do there?” And the first player must give an appropriate answer, every word in which begins with A. Then the second player gives the name of a place beginning with B, and the third player asks: “What shall you do there?” to which number 2 must answer in a sentence of words beginning with B; and so on. Thirty seconds only are allowed for an answer, and those who take longer are given one mark for each second that they take over the thirty. At the end of the game the player with the fewest marks wins. Of course, after getting to the end of the alphabet, we can begin again, and give fresh places, if we are not tired of the game. The letters X and Z should be left out, as hey are too difficult. Here are one or two specimen answers: I am going to Aberystwyth. What shall you do there? Attempt almost anything. I am going to Brighton. What shall you do there? Breath briny breezes. I am going to Clacton. What shall you do there? Catch crawling crabs."
-}
-,
+},
 {
   "name": "Das Handel-Bandel-Spiel",
   "work-title": "Spiel und Spaß und noch etwas",

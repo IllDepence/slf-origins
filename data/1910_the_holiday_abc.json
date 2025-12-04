@@ -14,7 +14,7 @@
       "text-marker": "holiday place"
     },
     {
-      "anzeige": "Tätigkeitsbeschreibung (Satz, alle Wörter)",
+      "anzeige": "Tätigkeit (Satz, alle Wörter)",
       "text-marker": "(What shall you do there(?=\\?” A)|every word)"
     }
   ],
