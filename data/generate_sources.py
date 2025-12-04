@@ -37,7 +37,7 @@ def generate_sources_html():
             if year and not has_date_in_title(work_title):
                 parts.append(f'({year})')
             parts.append(f'S. {page}')
-            parts.append(', '.join([f'<a href="{url}">↗</a>' for url in source_urls]) + '</li>')
+            parts.append(', '.join([f'<a href="{url}">↗&#xFE0E;</a>' for url in source_urls]) + '</li>')
             output_lines.append(' '.join(parts))
 
         except Exception as e:
