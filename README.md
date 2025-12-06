@@ -20,3 +20,17 @@ Inhalte des Repositories
     * Notizen mit Details, verlinkt im Artikel
 * [data/](data)
     * Daten zu den Literaturquellen
+
+## Zitieren
+
+Saier, T. (2025). Seit wann gibt es Stadt, Land, Fluss?. Zenodo. https://doi.org/10.5281/zenodo.17836060
+
+```bibtex
+@misc{Saier2025stadtlandfluss,
+    author       = {Saier, Tarek},
+    year         = 2025,
+    month        = dec,
+    title        = {{Seit wann gibt es Stadt, Land, Fluss?}},
+    doi          = {10.5281/zenodo.17836060}
+}
+```
